@@ -2,7 +2,7 @@
 
 Pemeriksaan pengembangan: 31 Oktober 2026. Periode masing-masing angka berbeda; tanggal ini bukan periode seluruh data.
 
-32 pengujian otomatis lulus, meliputi kegagalan/cadangan, rollback periode, pemisahan periode publikasi/pengamatan, pemetaan tier deposito, tanda perubahan yield, rekonsiliasi fiskal, perubahan narasi, PV/YTM dan perencanaan pribadi. Build produksi diperiksa. Tampilan desktop diperiksa di browser; verifikasi produksi pada akun pengguna tetap diperlukan.
+38 pengujian otomatis lulus, meliputi kegagalan/cadangan, rollback periode, pemisahan periode publikasi/pengamatan, pemetaan tier deposito, tanda perubahan yield, rekonsiliasi fiskal, perubahan narasi, daya beli, model prospek, pembanding upah sebulan sama, PV/YTM dan perencanaan pribadi. Build produksi diperiksa. Tampilan desktop diperiksa di browser; verifikasi produksi pada akun pengguna tetap diperlukan.
 
 | Kelompok | Sudah tersedia | Batas yang perlu diketahui |
 |---|---|---|
@@ -20,3 +20,12 @@ Pemeriksaan pengembangan: 31 Oktober 2026. Periode masing-masing angka berbeda; 
 ## Arti otomatis
 
 Program dan jadwal sudah ada dalam paket. Agar berjalan di internet, pengguna harus memasang seluruh proyek, mengaktifkan Actions dengan izin tulis, mengonfigurasi BPS_API_KEY untuk BPS, dan memastikan commit bot memicu Vercel. Kegagalan sumber ditampilkan; tidak disembunyikan. Belum ada bukti deployment akun pengguna atau seluruh koneksi berhasil terus-menerus.
+
+## Validasi rombakan daya beli dan prospek
+
+- Beranda mengawali cerita dari penghasilan setelah kenaikan harga, bukan level inflasi saja. Perubahan pendapatan positif dapat mengimbangi inflasi; rumus Fisher diuji.
+- Pembanding upah resmi Februari 2025 Rp3,09 juta ditambahkan terhadap Februari 2026 Rp3,29 juta. Inflasi yoy Februari 2026 4,76% digunakan untuk estimasi upah riil sekitar +1,63%. Ini estimasi dari angka upah dibulatkan; perubahan komposisi pekerja dan rata-rata tidak mewakili semua keluarga.
+- Adapter BPS mencari rilis ketenagakerjaan tahun sebelumnya dan mempertahankan histori untuk pembanding bulan yang sama. Belum diuji langsung dengan kunci API pengguna.
+- Model median tetap diuji bergulir tanpa memakai observasi masa depan. Waktu sasaran, celah histori dan ketidakcocokan angka terbaru diperiksa. Batas prakiraan dalam panel tidak sama dengan ramalan nasional yang tervalidasi.
+- Mesin skenario menghitung arus kas dasar/tekanan, tambahan cicilan, daya beli, cadangan menutup defisit, kewajiban USD dan sensitivitas durasi. Semua asumsi ditampilkan dan dapat diubah.
+- Tidak ditambahkan klaim prediksi resesi, PHK, keputusan BI, pemotongan bantuan, atau rekomendasi obligasi per seri tanpa model/data yang memadai.

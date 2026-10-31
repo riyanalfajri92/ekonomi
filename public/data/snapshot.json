@@ -354,8 +354,17 @@
         {
           "period": "2026-02",
           "value": 3.29
+        },
+        {
+          "period": "2025-02",
+          "value": 3.09
         }
-      ]
+      ],
+      "previous": 3.09,
+      "previousPeriod": "2025-02",
+      "comparison": "same-period-prior-year",
+      "comparisonUrl": "https://www.bps.go.id/id/pressrelease/2025/05/05/2432/labour-situation.html",
+      "comparisonVerifiedAt": "2026-10-31T03:57:09.707Z"
     },
     {
       "id": "bpsPoverty",
@@ -572,8 +581,8 @@
     }
   ],
   "schemaVersion": 1,
-  "snapshotId": "9851bbcd7d6a6e17",
-  "dataChangedAt": "2026-10-31T03:27:35.685Z",
+  "snapshotId": "e733b50ba0f3554d",
+  "dataChangedAt": "2026-10-31T03:57:09.714Z",
   "checkedAt": "2026-10-31T02:41:14.505Z",
   "metrics": [
     {
