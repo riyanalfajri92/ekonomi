@@ -6,7 +6,7 @@
   "functions": {
     "api/economy.js": {
       "maxDuration": 60,
-      "includeFiles": "public/data/snapshot.json"
+      "includeFiles": "{public/data/snapshot.json,node_modules/pdf-parse/dist/pdf-parse/esm/pdf.worker.mjs}"
     }
   },
   "headers": [

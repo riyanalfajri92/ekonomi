@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "ace52be39a9be860",
-  "dataChangedAt": "2026-10-30T22:20:26.199Z",
-  "checkedAt": "2026-10-30T22:20:26.199Z",
+  "snapshotId": "9c0d2c10930930d1",
+  "dataChangedAt": "2026-10-31T01:25:27.946Z",
+  "checkedAt": "2026-10-31T01:25:27.946Z",
   "metrics": [
     {
       "id": "jisdor",
@@ -61,11 +61,14 @@
       "previousPeriod": "2026-10-29",
       "deltaUnit": "nilai",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:22:15.411Z",
       "datasetUpdated": null,
-      "status": "ok",
-      "error": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
       "observationOld": false,
       "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
     },
@@ -126,8 +129,11 @@
       "previousPeriod": "2026-08",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "datasetUpdated": null,
       "status": "ok",
       "error": null,
@@ -191,13 +197,195 @@
       "previousPeriod": "2026-09-23",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:22:15.411Z",
+      "datasetUpdated": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
+      "observationOld": false,
+      "note": "Tanggal keputusan terakhir yang terbaca; bukan jaminan belum ada keputusan lain."
+    },
+    {
+      "id": "fxreserves",
+      "name": "Cadangan devisa · posisi bulanan",
+      "unit": "USD miliar",
+      "frequency": "monthly",
+      "maxAgeDays": 75,
+      "meaning": "Cadangan valas membantu menghadapi kebutuhan pembayaran luar negeri dan tekanan kurs. Penurunan tidak otomatis berarti krisis; lihat pembiayaan, impor dan kebijakan stabilisasi.",
+      "source": "Bank Indonesia",
+      "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
+      "history": [
+        {
+          "id": "fxreserves",
+          "period": "2026-09",
+          "value": 146.32
+        }
+      ],
+      "period": "2026-09",
+      "value": 146.32,
+      "delta": null,
+      "previousPeriod": null,
+      "deltaUnit": "nilai",
+      "publishedAt": null,
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:22:15.411Z",
+      "datasetUpdated": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
+      "observationOld": false,
+      "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
+    },
+    {
+      "id": "indonia",
+      "name": "INDONIA · bunga antarbank semalam",
+      "unit": "%",
+      "frequency": "daily",
+      "maxAgeDays": 7,
+      "meaning": "Harga pinjam-meminjam rupiah semalam antarbank. Bukan bunga deposito atau cicilan; berguna membaca kondisi pasar uang jangka sangat pendek.",
+      "source": "Bank Indonesia",
+      "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
+      "history": [
+        {
+          "id": "indonia",
+          "period": "2026-10-30",
+          "value": 5.16112
+        }
+      ],
+      "period": "2026-10-30",
+      "value": 5.16112,
+      "delta": null,
+      "previousPeriod": null,
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:22:15.411Z",
+      "datasetUpdated": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
+      "observationOld": false,
+      "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
+    },
+    {
+      "id": "srbiflow",
+      "name": "SRBI · transaksi neto nonresiden",
+      "unit": "Rp triliun",
+      "frequency": "range",
+      "maxAgeDays": 14,
+      "suppressDelta": true,
+      "meaning": "Angka positif berarti beli neto nonresiden pada SRBI untuk rentang transaksi yang tertulis. Ini hanya SRBI, bukan keseluruhan arus asing dan bukan posisi kepemilikan.",
+      "source": "Bank Indonesia",
+      "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
+      "history": [
+        {
+          "id": "srbiflow",
+          "period": "2026-10-29",
+          "value": -5.11,
+          "rangeStart": "2026-10-26"
+        }
+      ],
+      "period": "2026-10-29",
+      "value": -5.11,
+      "delta": null,
+      "previousPeriod": null,
+      "deltaUnit": "nilai",
+      "publishedAt": null,
+      "rangeStart": "2026-10-26",
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:22:15.411Z",
+      "datasetUpdated": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
+      "observationOld": false,
+      "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
+    },
+    {
+      "id": "confidence",
+      "name": "Indeks Keyakinan Konsumen · IKK",
+      "unit": "indeks",
+      "frequency": "monthly",
+      "maxAgeDays": 80,
+      "meaning": "Di atas 100 menunjukkan optimisme responden menurut metodologi survei BI. Ini persepsi konsumen, bukan bukti semua keluarga memiliki pendapatan lebih tinggi.",
+      "source": "Bank Indonesia",
+      "url": "https://www.bi.go.id/id/publikasi/laporan/Pages/SK-September-2026.aspx",
+      "publishedAt": "2026-10-08",
+      "pdfUrl": "https://www.bi.go.id/id/publikasi/laporan/Documents/SK-September-2026.pdf",
+      "history": [
+        {
+          "id": "confidence",
+          "period": "2026-09",
+          "value": 118.1
+        }
+      ],
+      "period": "2026-09",
+      "value": 118.1,
+      "delta": null,
+      "previousPeriod": null,
+      "deltaUnit": "nilai",
+      "rangeStart": null,
+      "officialForecast": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "datasetUpdated": null,
       "status": "ok",
       "error": null,
       "observationOld": false,
-      "note": "Tanggal keputusan terakhir yang terbaca; bukan jaminan belum ada keputusan lain."
+      "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
+    },
+    {
+      "id": "manufacturing",
+      "name": "PMI-BI · industri pengolahan",
+      "unit": "indeks (%)",
+      "frequency": "quarterly",
+      "maxAgeDays": 160,
+      "meaning": "Di atas 50 menunjukkan fase ekspansi menurut survei PMI-BI. Ini indeks kegiatan manufaktur, bukan persentase pertumbuhan PDB dan bukan PMI penyedia lain.",
+      "source": "Bank Indonesia",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823126.aspx",
+      "officialForecast": {
+        "quarter": 4,
+        "year": 2026,
+        "value": 52.37,
+        "publishedAt": "2026-10-19"
+      },
+      "publishedAt": "2026-10-19",
+      "history": [
+        {
+          "id": "manufacturing",
+          "period": "2026-09",
+          "quarter": 3,
+          "value": 52.28,
+          "officialForecast": {
+            "quarter": 4,
+            "year": 2026,
+            "value": 52.37,
+            "publishedAt": "2026-10-19"
+          }
+        }
+      ],
+      "period": "2026-09",
+      "value": 52.28,
+      "delta": null,
+      "previousPeriod": null,
+      "deltaUnit": "poin persentase",
+      "rangeStart": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "datasetUpdated": null,
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
     },
     {
       "id": "gdp",
@@ -266,8 +454,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -340,8 +531,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "nilai",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -414,8 +608,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -488,8 +685,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -562,8 +762,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -636,8 +839,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "nilai",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -710,8 +916,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -784,8 +993,11 @@
       "previousPeriod": "2024",
       "deltaUnit": "poin persentase",
       "publishedAt": null,
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "rangeStart": null,
+      "officialForecast": null,
+      "pdfUrl": null,
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -796,14 +1008,14 @@
     {
       "title": "Bank Indonesia dan APUVINDO Perkuat Sinergi Akselerasi Pendalaman Pasar Uang dan Pasar Valuta Asing",
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823726.aspx",
-      "publishedAt": null,
+      "publishedAt": "2026-10-27",
       "source": "Bank Indonesia",
       "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
     },
     {
       "title": "GPIPS Sulampua 2026: ”Tallukarsa Pangan Sulampua” Fokus Langkah Sinergis Menjaga Inflasi Pangan",
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823626.aspx",
-      "publishedAt": null,
+      "publishedAt": "2026-10-23",
       "source": "Bank Indonesia",
       "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
     },
@@ -817,21 +1029,21 @@
     {
       "title": "Survei Perbankan Triwulan III 2026: Penyaluran Kredit Baru Diprakirakan Meningkat",
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823426.aspx",
-      "publishedAt": null,
+      "publishedAt": "2026-10-22",
       "source": "Bank Indonesia",
       "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
     },
     {
       "title": "BI-Rate Tetap 5,75%: Memperkuat Stabilitas, Mendorong Pertumbuhan Ekonomi",
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823326.aspx",
-      "publishedAt": null,
+      "publishedAt": "2026-10-21",
       "source": "Bank Indonesia",
       "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
     },
     {
       "title": "ISEF 2026: Kolaborasi Global Sebagai Fondasi Ketahanan Ekonomi Keuangan Syariah Nasional",
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823226.aspx",
-      "publishedAt": null,
+      "publishedAt": "2026-10-19",
       "source": "Bank Indonesia",
       "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
     },
@@ -845,7 +1057,7 @@
     {
       "title": "Survei Kegiatan Dunia Usaha Triwulan III 2026: Kegiatan Dunia Usaha Terjaga",
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823026.aspx",
-      "publishedAt": null,
+      "publishedAt": "2026-10-19",
       "source": "Bank Indonesia",
       "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
     }
@@ -864,40 +1076,390 @@
     {
       "id": "apbn",
       "status": "ok",
-      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "error": null
+    },
+    {
+      "id": "bi-extra",
+      "status": "error",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "consumer-survey",
+      "status": "ok",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "error": null
+    },
+    {
+      "id": "deposit-bca",
+      "status": "ok",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "error": null
+    },
+    {
+      "id": "deposit-mandiri",
+      "status": "ok",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
       "error": null
     },
     {
       "id": "inflation",
       "status": "ok",
-      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
       "error": null
     },
     {
       "id": "jisdor",
+      "status": "error",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "lps-disclosure",
       "status": "ok",
-      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
       "error": null
     },
     {
       "id": "news",
       "status": "ok",
-      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
       "error": null
     },
     {
       "id": "rate",
-      "status": "ok",
-      "checkedAt": "2026-10-30T22:20:26.199Z",
-      "error": null
+      "status": "error",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "worldbank",
       "status": "ok",
-      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "checkedAt": "2026-10-31T01:25:27.946Z",
       "error": null
     }
   ],
+  "deposits": [
+    {
+      "id": "bca",
+      "name": "BCA",
+      "url": "https://www.bca.co.id/individu/produk/simpanan/deposito-berjangka",
+      "tenors": [
+        1,
+        3,
+        6,
+        12
+      ],
+      "minimum": 8000000,
+      "tier": [
+        0,
+        10000000,
+        100000000,
+        500000000,
+        2000000000,
+        5000000000,
+        10000000000,
+        25000000000,
+        100000000000
+      ],
+      "product": "Deposito Rupiah reguler",
+      "productEn": "Regular IDR term deposit",
+      "effectiveAt": "2026-04-01",
+      "sourceUpdated": null,
+      "tiers": [
+        {
+          "label": "< Rp 10 Jt",
+          "min": 0,
+          "max": 10000000,
+          "rates": {
+            "1": 2.75,
+            "3": 2.75,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 10 Jt - < Rp 100 Jt",
+          "min": 10000000,
+          "max": 100000000,
+          "rates": {
+            "1": 2.75,
+            "3": 2.75,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 100 Jt - < Rp 500 Jt",
+          "min": 100000000,
+          "max": 500000000,
+          "rates": {
+            "1": 2.75,
+            "3": 2.75,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 500 Jt - < Rp 2 M",
+          "min": 500000000,
+          "max": 2000000000,
+          "rates": {
+            "1": 2.75,
+            "3": 2.75,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 2 M - < Rp 5 M",
+          "min": 2000000000,
+          "max": 5000000000,
+          "rates": {
+            "1": 3,
+            "3": 3,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 5 M - < Rp 10 M",
+          "min": 5000000000,
+          "max": 10000000000,
+          "rates": {
+            "1": 3,
+            "3": 3,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 10 M - < Rp 25 M",
+          "min": 10000000000,
+          "max": 25000000000,
+          "rates": {
+            "1": 3,
+            "3": 3,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 25 M - < Rp 100 M",
+          "min": 25000000000,
+          "max": 100000000000,
+          "rates": {
+            "1": 3,
+            "3": 3,
+            "6": 3,
+            "12": 3
+          }
+        },
+        {
+          "label": "≥ Rp 100 M",
+          "min": 100000000000,
+          "max": null,
+          "rates": {
+            "1": 3,
+            "3": 3,
+            "6": 3,
+            "12": 3
+          }
+        }
+      ],
+      "conditions": "Tarif reguler Rupiah. Promo, negosiasi, kanal khusus, penalti dan biaya tidak tercakup. Verifikasi syarat pembukaan langsung ke bank.",
+      "conditionsEn": "Regular IDR rates only. Promotions, negotiated rates, special channels, penalties and fees are excluded. Confirm opening requirements with the bank.",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "status": "ok"
+    },
+    {
+      "id": "mandiri",
+      "name": "Bank Mandiri",
+      "url": "https://www.bankmandiri.co.id/web/guest/suku-bunga-dana",
+      "tenors": [
+        1,
+        3,
+        6,
+        12,
+        24
+      ],
+      "minimum": null,
+      "tier": [
+        0,
+        100000000,
+        1000000000,
+        2000000000,
+        5000000000
+      ],
+      "product": "Deposito Rupiah · bunga bulanan/jatuh tempo",
+      "productEn": "IDR deposit · monthly/at-maturity interest",
+      "effectiveAt": null,
+      "sourceUpdated": "2025-07-15",
+      "tiers": [
+        {
+          "label": "< Rp 100 Juta",
+          "min": 0,
+          "max": 100000000,
+          "rates": {
+            "1": 2.25,
+            "3": 2.25,
+            "6": 2.5,
+            "12": 2.5,
+            "24": 2.5
+          }
+        },
+        {
+          "label": "≥ Rp 100 Juta s.d. < 1 M",
+          "min": 100000000,
+          "max": 1000000000,
+          "rates": {
+            "1": 2.25,
+            "3": 2.25,
+            "6": 2.5,
+            "12": 2.5,
+            "24": 2.5
+          }
+        },
+        {
+          "label": "≥ Rp 1 M s.d. < 2 M",
+          "min": 1000000000,
+          "max": 2000000000,
+          "rates": {
+            "1": 2.25,
+            "3": 2.25,
+            "6": 2.5,
+            "12": 2.5,
+            "24": 2.5
+          }
+        },
+        {
+          "label": "≥ Rp 2 M s.d. < 5 M",
+          "min": 2000000000,
+          "max": 5000000000,
+          "rates": {
+            "1": 2.25,
+            "3": 2.25,
+            "6": 2.5,
+            "12": 2.5,
+            "24": 2.5
+          }
+        },
+        {
+          "label": "≥ Rp 5 M",
+          "min": 5000000000,
+          "max": null,
+          "rates": {
+            "1": 2.25,
+            "3": 2.25,
+            "6": 2.5,
+            "12": 2.5,
+            "24": 2.5
+          }
+        }
+      ],
+      "conditions": "Tarif reguler Rupiah. Promo, negosiasi, kanal khusus, penalti dan biaya tidak tercakup. Verifikasi syarat pembukaan langsung ke bank.",
+      "conditionsEn": "Regular IDR rates only. Promotions, negotiated rates, special channels, penalties and fees are excluded. Confirm opening requirements with the bank.",
+      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "status": "ok"
+    }
+  ],
+  "lps": {
+    "rate": 3.75,
+    "fxRate": 2,
+    "from": "2026-10-01",
+    "until": "2027-01-31",
+    "bankType": "Bank umum konvensional",
+    "currency": "IDR",
+    "source": "Pengungkapan Bank Mandiri tentang TBP LPS",
+    "sourceEn": "Bank Mandiri disclosure of LPS coverage rates",
+    "url": "https://www.bankmandiri.co.id/en/tingkat-bunga-penjamin",
+    "scope": "Bukan verifikasi seluruh syarat penjaminan.",
+    "fetchedAt": "2026-10-31T01:25:27.946Z",
+    "status": "ok"
+  },
+  "fiscal": {
+    "period": "2026-09",
+    "revenue": 2341.5,
+    "spending": 2660.5,
+    "balance": -319,
+    "deficitGDP": -1.24,
+    "primary": 125.5,
+    "page": 2,
+    "unit": "Rp triliun",
+    "basis": "Realisasi kumulatif sejak Januari",
+    "basisEn": "Cumulative realisation from January",
+    "note": "Ekstraksi template ringkasan; harus cocok pendapatan − belanja = saldo. Defisit dalam % PDB mengikuti angka sumber.",
+    "noteEn": "Summary-template extraction; revenue minus spending must reconcile to the balance. Deficit/GDP follows the source.",
+    "url": "https://api-djppr.kemenkeu.go.id/web/api/v1/media/841794DF-E28E-4B1E-A795-97246F0A46E8",
+    "edition": "2026-10",
+    "fetchedAt": "2026-10-31T01:15:00.348Z",
+    "status": "fallback",
+    "error": "The operation was aborted due to timeout"
+  },
+  "inflationTarget": {
+    "mid": 2.5,
+    "width": 1,
+    "year": 2026,
+    "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx"
+  },
+  "forecast": {
+    "status": "experimental",
+    "horizon": "2026-10",
+    "basePeriod": "2026-09",
+    "point": 3.19,
+    "method": "median3",
+    "mae": 0.2119999999999999,
+    "naiveMAE": 0.356,
+    "medianMAE": 0.2119999999999999,
+    "testCount": 5,
+    "trainCount": 10,
+    "errors": [
+      {
+        "period": "2026-05",
+        "actual": 3.08,
+        "naive": 2.42,
+        "median3": 3.48,
+        "naiveError": 0.6600000000000001,
+        "medianError": 0.3999999999999999
+      },
+      {
+        "period": "2026-06",
+        "actual": 3.34,
+        "naive": 3.08,
+        "median3": 3.08,
+        "naiveError": 0.2599999999999998,
+        "medianError": 0.2599999999999998
+      },
+      {
+        "period": "2026-07",
+        "actual": 2.88,
+        "naive": 3.34,
+        "median3": 3.08,
+        "naiveError": 0.45999999999999996,
+        "medianError": 0.20000000000000018
+      },
+      {
+        "period": "2026-08",
+        "actual": 3.19,
+        "naive": 2.88,
+        "median3": 3.08,
+        "naiveError": 0.31000000000000005,
+        "medianError": 0.10999999999999988
+      },
+      {
+        "period": "2026-09",
+        "actual": 3.28,
+        "naive": 3.19,
+        "median3": 3.19,
+        "naiveError": 0.08999999999999986,
+        "medianError": 0.08999999999999986
+      }
+    ],
+    "unit": "poin persentase",
+    "note": "Eksperimen satu bulan ke depan atas inflasi yoy. Model dipilih dari hasil uji bergulir yang sama; ini bukan evaluasi independen setelah pemilihan model. Data revisi terkini, bukan vintage waktu nyata. Galat historis bukan interval probabilitas. Tidak dipakai sebagai rekomendasi investasi.",
+    "noteEn": "An experimental one-month-ahead projection of year-on-year inflation. Selection uses the same rolling tests, so this is not independent post-selection evaluation. It uses currently revised data, not real-time vintages. Historical error is not a probability interval or investment recommendation."
+  },
   "gaps": [
     {
       "name": "IHSG & transaksi asing saham",
@@ -910,22 +1472,12 @@
       "reason": "Belum ada konektor angka yang terverifikasi. Perubahan posisi kepemilikan tidak diperlakukan sebagai arus neto."
     },
     {
-      "name": "Realisasi APBN terstruktur",
-      "url": "https://djppr.kemenkeu.go.id/paparanapbnkita",
-      "reason": "Pemantauan tautan publikasi disediakan; ekstraksi angka PDF belum diaktifkan. Pendapatan, belanja dan defisit belum tampil sebagai angka otomatis."
-    },
-    {
-      "name": "Deposito bank & TBP LPS",
-      "url": "https://lps.go.id/",
-      "reason": "Kalkulator tersedia. Bunga bank nyata, TBP dan rasio bank belum memiliki konektor terverifikasi; tidak ada peringkat keamanan bank."
-    },
-    {
       "name": "Harga daerah, upah & kemiskinan terkini",
       "url": "https://webapi.bps.go.id/developer/",
       "reason": "Belum terhubung ke seri BPS/daerah. Data tahunan World Bank tidak menggantikan indikator bulanan atau semesteran BPS."
     }
   ],
-  "newsFetchedAt": "2026-10-30T22:20:26.199Z",
-  "publicationsFetchedAt": "2026-10-30T22:20:26.199Z",
-  "coverage": "BI harian/bulanan/keputusan + indikator tahunan World Bank + tautan publikasi resmi. Bukan seluruh kondisi ekonomi atau terminal pasar real-time."
+  "newsFetchedAt": "2026-10-31T01:25:27.946Z",
+  "publicationsFetchedAt": "2026-10-31T01:25:27.946Z",
+  "coverage": "BI + indikator tahunan World Bank + angka ringkasan APBN + dua bank deposito reguler dan pengungkapan TBP pada bank. Bukan seluruh kondisi ekonomi atau terminal pasar real-time."
 }

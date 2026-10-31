@@ -1,92 +1,95 @@
-# Nadi — dashboard ekonomi otomatis
+# Nadi v2 — Ekonomi kita, dijelaskan dengan sederhana
 
-Proyek untuk diunggah ke **GitHub**, lalu diimpor ke **Vercel**. Bukan HTML demo: program server mengambil sumber publik dan dashboard menampilkan angka nyata. Tidak memerlukan kunci API untuk cakupan versi ini. Belum ada deployment GitHub/Vercel milik pengguna yang dibuat dalam penyerahan ini.
+Dashboard untuk menjembatani pengumuman angka ekonomi dengan pengalaman sehari-hari. Antarmuka dan penjelasan ID | EN; angka referensi diambil dari sumber resmi, lengkap dengan periode dan status. Proyek untuk GitHub → Vercel. Bukan halaman HTML tunggal.
 
-## Apa yang sudah otomatis
+## Memperbarui proyek yang sudah dideploy
 
-- JISDOR dari tabel resmi Bank Indonesia: rupiah per USD, bukan kurs transaksi bank.
-- Inflasi yoy bulanan dari tabel resmi BI.
-- BI-Rate dan tanggal keputusan yang tercantum di tabel BI.
-- Delapan seri tahunan World Bank: pertumbuhan riil, PDB per kapita dolar berjalan, pengangguran estimasi model ILO, transaksi berjalan, FDI, cadangan devisa dalam bulan impor, perdagangan/PDB, serta inflasi tahunan.
-- Tautan edisi APBN Kita pada halaman DJPPR. Edisi bukan periode realisasi; angka PDF belum diekstrak.
-- Judul dan tautan siaran pers dari halaman resmi BI. Tanggal berita belum diekstrak; urutan mengikuti halaman sumber.
-- Tanggal observasi, waktu pengambilan dan pemeriksaan, perubahan antarobservasi, riwayat seri dan penjelasan berbasis aturan.
-- Kalkulator utang, target tabungan, investasi, daya beli dan satu penawaran deposito. Asumsi kalkulator diisi pengguna, bukan penawaran bank otomatis.
+Lihat **PANDUAN_UPDATE.md**. Jangan membuat repositori atau proyek Vercel baru. Versi ini menambah dependensi PDF, `package-lock.json`, serta langkah `npm ci` pada workflow GitHub. Unggah semua perubahan, bukan hanya folder `public`.
 
-**Belum otomatis:** IHSG, arus asing saham/SBN/SRBI, angka realisasi APBN di PDF, perbandingan produk bank nyata, TBP LPS, rasio bank, harga daerah, upah dan kemiskinan terkini. Bagian ini diberi label belum terhubung; tidak diisi angka simulasi. Data tahunan tidak ditampilkan sebagai data hari ini. Ini versi awal yang bekerja, bukan seluruh cakupan dashboard ekonomi yang direncanakan.
+## Data yang diperiksa otomatis
 
-## Unggah ke GitHub dan deploy Vercel
+| Kelompok | Yang diambil | Periode/frekuensi |
+|---|---|---|
+| BI | JISDOR, inflasi yoy, BI-Rate | Harian hari kerja / bulanan / keputusan |
+| BI indikator | Cadangan devisa bulanan, INDONIA, transaksi neto nonresiden SRBI | Mengikuti tanggal/rentang sumber |
+| Survei BI | IKK dari PDF laporan; PMI-BI aktual dan perkiraan triwulan berikutnya | Bulanan / triwulanan |
+| APBN Kita DJPPR | Edisi dan tautan PDF; pendapatan, belanja, saldo, saldo/PDB pada ringkasan kumulatif | Mengikuti publikasi |
+| BCA & Mandiri | Bunga deposito Rupiah reguler per nominal dan tenor | Tabel resmi saat diperiksa; berubah mengikuti bank |
+| Pengungkapan Mandiri tentang LPS | TBP Rupiah/valas bank umum dan periode efektif | Mengikuti pengungkapan bank, bukan API langsung LPS |
+| World Bank WDI | 8 seri tahunan: PDB, PDB/kapita, pengangguran model ILO, transaksi berjalan, FDI, cadangan dalam bulan impor, perdagangan/PDB, inflasi tahunan | Tahunan; bukan keadaan harian |
+| Siaran pers BI | Judul, tautan, tanggal publikasi artikel jika dapat dibaca | Mengikuti halaman sumber |
+| Prospek | Sinyal berdasarkan kriteria, proyeksi PMI resmi, model inflasi sederhana | Dihitung ulang dari data yang lolos pemeriksaan |
 
-1. Ekstrak ZIP. Buka folder `nadi-otomatis`.
-2. Buat repositori GitHub baru, misalnya `nadi-ekonomi`. Public maupun private dapat digunakan sesuai hak akun/integrasi. Jika memakai tombol upload web GitHub, unggah **isi folder proyek** ke akar repositori. `package.json`, `vercel.json`, `api`, `lib`, `public`, `scripts`, `test`, dan `.github` harus sejajar. Jangan hanya mengunggah `index.html` atau menumpuk proyek di dalam folder lain. GitHub Desktop dapat mempermudah pengunggahan semua folder termasuk `.github`.
-3. Di Vercel: **Add New → Project → Import Git Repository**, pilih repositori itu dan izinkan integrasi GitHub.
-4. Root Directory: akar proyek. Framework Preset: **Other**. Build Command: `npm run build`. Output Directory: `public`. Node.js: **24.x**. Pengaturan ini sebagian sudah ditetapkan di berkas proyek. Tidak perlu environment variable untuk versi awal ini.
-5. Klik **Deploy**. Tunggu sampai deployment berhasil.
-6. Buka alamat Vercel dan periksa dashboard. Buka juga `https://ALAMAT-WEBMU/api/economy`: respons seharusnya JSON dengan `schemaVersion: 1`, `metrics`, `checks`, `checkedAt`, dan `snapshotId`. Jangan menilai otomatisasi hanya dari tampilan yang muncul; HTML dapat memakai snapshot cadangan saat API gagal.
-7. Buka **Sumber & status**. Pastikan sumber yang diperlukan terbaca. `Data dari server` menandakan API berfungsi; `Snapshot cadangan` menandakan frontend beralih ke berkas cadangan. Tanggal observasi tetap mengikuti sumber.
+Total 16 seri indikator, di luar angka ringkasan APBN, tabel deposito, pengungkapan TBP dan berita. Angka tidak ditulis manual sebagai pengganti respons yang gagal.
 
-**Mengunggah ZIP sebagai satu berkas ke GitHub tidak cukup.** Ekstrak dulu dan unggah seluruh isi proyek.
+**Belum terhubung:** IHSG, asing saham dan SBN, semua bank, promo/kanal deposito, rasio individual bank, data upah/kemiskinan/harga daerah BPS terkini. SRBI bukan total arus asing. Tidak ada skor kesehatan bank. Kalkulator memakai asumsi yang diisi pengguna; bukan sumber tarif pasar otomatis.
 
-## Otomatis ketika pengunjung membuka halaman
+## Cara kerja otomatis
 
-Dashboard memanggil `/api/economy`. Fungsi Node.js Vercel mengambil sumber secara paralel dengan timeout 12 detik per sumber. Kegagalan satu sumber tidak mematikan seluruh dashboard. Respons disimpan di cache CDN selama 15 menit dan proses fungsi sampai 15 menit; pada kondisi tertentu data yang ditampilkan dapat mendekati 30 menit sejak pemeriksaan terakhir, ditambah jendela revalidasi. Ketika halaman tetap aktif, frontend memanggil ulang setiap lima menit; panggilan bisa dilayani cache.
+- Saat dibuka, halaman menampilkan snapshot cadangan terlebih dahulu, lalu memanggil `/api/economy`.
+- Vercel mengambil sumber paralel. Tabel BI/World Bank dicek identitas, format dan unitnya. Ekstraksi APBN hanya dari empat halaman awal dan template ringkasan yang dikenali; pendapatan dikurangi belanja harus cocok dengan saldo dalam toleransi pembulatan. Tidak menebak tabel yang berubah.
+- Deposito memakai pemetaan tier yang diuji. Jika batas tier atau format berubah, angka baru ditahan; pemetaan perlu ditinjau manusia. Ini bukan janji konektor tidak pernah memerlukan perawatan.
+- Cache CDN 15 menit dan cache proses hingga 15 menit dapat membuat umur pengecekan mendekati 30 menit, ditambah revalidasi. Halaman aktif memeriksa ulang setiap lima menit melalui cache. Bukan pembaruan tick-by-tick.
+- Workflow `.github/workflows/update-data.yml` memeriksa sumber dan menyimpan `public/data/snapshot.json` setiap enam jam, bila Actions aktif dan izin tulis tersedia. Jadwal dapat terlambat/dinonaktifkan GitHub.
+- Jika sumber gagal, angka, periode dan waktu pengambilan terakhir dipertahankan dengan status `fallback`. Jika belum ada data valid, nilai kosong. Tanggal pemeriksaan tidak mengubah tanggal data.
+- Tidak ada database terpisah. Data terakhir proses server tidak dijamin bertahan lintas instance; snapshot yang dibundel dalam deployment menjadi cadangan. Commit snapshot oleh Actions perlu diterima integrasi Vercel agar snapshot deployment ikut diperbarui.
 
-Jadi, pembaruan tidak selalu seketika sumber menerbitkan angka. Web otomatis memeriksa ulang sesuai cache. Frekuensi publikasi sumber tetap berlaku: seri tahunan tidak menjadi seri harian.
+**“Terbaru” berarti data terbaru yang berhasil diambil dari sumber yang dicakup, sesuai jadwal dan cache. Tidak berarti semua sumber selalu tersedia, semua angka menggambarkan hari ini, atau data tidak mungkin terlambat.**
 
-Jika sumber gagal, fungsi memakai data terakhir di proses yang sama atau snapshot yang dibundel. Tidak ada database atau penyimpanan permanen untuk setiap permintaan server. Snapshot terjadwal di bawah menjadi cadangan permanen di repositori. Jika Vercel berhasil mengambil angka baru tetapi GitHub belum berhasil memperbarui snapshot, proses server lain masih bisa memakai snapshot lebih lama ketika sumber kemudian gagal; tanggal aslinya tetap terlihat.
+## ID | EN dan tautan penulis
 
-## Cadangan otomatis walaupun tidak ada pengunjung
+Pilihan bahasa mengubah navigasi, analisis, metadata, tabel dan kalkulator. Nama sumber, label tier bank dan judul asli rilis tetap menggunakan bahasa sumber; versi EN memberikan konteks berbahasa Inggris serta pengungkapan judul asli Indonesia. Tidak ada layanan penerjemahan AI yang diaktifkan.
 
-Workflow `.github/workflows/update-data.yml` disertakan dan tidak memerlukan secret:
+Tombol `bukanaktivis.id` dan `profil.bukanaktivis.id` membuka di tab yang sama.
 
-1. Pastikan berkas workflow ada di **default branch** repositori.
-2. Buka tab **Actions** dan aktifkan GitHub Actions jika diminta.
-3. Pilih **Perbarui data ekonomi → Run workflow** untuk uji awal.
-4. Workflow menjalankan tes, mengambil sumber, lalu commit `public/data/snapshot.json` memakai `GITHUB_TOKEN` bawaan dengan `contents: write`.
-5. Jadwal yang disertakan berjalan pukul **07.23, 13.23, 19.23, dan 01.23 WIB**, berdasarkan cron UTC setiap enam jam. Waktu aktual bisa terlambat.
-6. Pastikan job berwarna hijau dan snapshot di repositori berubah. Branch protection atau kebijakan organisasi bisa menolak commit bot. Dalam kondisi itu perlu menyesuaikan kebijakan repositori atau memilih penyimpanan terpisah; jangan menganggap cadangan terjadwal aktif.
-7. Vercel yang terhubung biasanya membuat deployment untuk commit baru. Periksa apakah commit bot diterima oleh kebijakan akun/tim dan integrasi Vercel. Bila deployment bot ditolak, API permintaan pengunjung tetap berfungsi tetapi snapshot yang dibundel belum ikut berubah.
+## Prospek dan kriteria
 
-GitHub dapat menunda/melewatkan jadwal saat beban tinggi. Scheduled workflow di repositori public dapat dinonaktifkan setelah masa tidak aktif sesuai kebijakan GitHub. Monitor tab Actions dan aktifkan ulang bila perlu. Penggunaan GitHub Actions, fungsi Vercel, bandwidth, dan deployment mengikuti kuota/paket akun; tidak dijanjikan gratis tanpa batas. Tidak ada job yang dibuat di akun Anda hanya dengan mengunduh ZIP ini.
+- IKK >100: optimisme sesuai definisi survei BI; bukan bukti kenaikan pendapatan semua keluarga.
+- PMI-BI >50: ekspansi sesuai definisi PMI-BI; bukan pertumbuhan PDB atau PMI penyedia lain.
+- Inflasi terhadap rentang sasaran BI: diperiksa dengan tahun observasi yang sesuai. “Dalam sasaran” bukan berarti semua harga murah.
+- SRBI: tanda net buy/sell pada rentang transaksi sumber. Tidak diagregasi dengan pasar lain yang belum tersedia.
+- Perkiraan PMI-BI triwulan berikutnya berasal dari BI, dibedakan dari aktual.
+- Model inflasi satu periode bulanan setelah data terakhir: memilih median tiga bulan atau nilai terakhir menggunakan uji bergulir. Menampilkan MAE dan benchmark, minimal delapan observasi bulanan tanpa celah. Hanya sekitar lima titik uji pada seri tabel awal; model sangat sederhana, bukan prediksi ekonomi menyeluruh.
+- Pemilihan model memakai hasil uji yang sama; itu bukan evaluasi independen setelah seleksi. Data revisi saat ini, bukan arsip vintage waktu nyata. MAE bukan interval probabilitas, dan tidak ada probabilitas resesi atau imbal hasil yang dibuat-buat.
+- Jika data inti gagal diperiksa, proyeksi model dihentikan; proyeksi resmi yang tersimpan tetap bertanggal dan harus dibaca sebagai proyeksi pada tanggal tersebut.
 
-## Memastikan tanggalnya benar
+## Deposito dan risiko
 
-- `period`: periode observasi, bukan waktu akses. Harian memakai YYYY-MM-DD; bulanan YYYY-MM; tahunan YYYY.
-- `publishedAt`: null jika tanggal publikasi observasi tidak bisa dibuktikan.
-- `fetchedAt`: kapan angka terakhir berhasil diambil.
-- `checkedAt`: kapan sumber terakhir dicoba.
-- `datasetUpdated`: tanggal pembaruan dataset World Bank, bukan tanggal publikasi observasi.
-- `dataChangedAt`: berubah bila isi observasi/tautan yang dipantau berubah, bukan hanya karena pengecekan baru.
-- `fallback`: data lama dipertahankan ketika sumber gagal. `old_observation`: umur observasi melewati ambang operasional, bukan kesimpulan ekonomi memburuk.
+Tabel mencakup deposito reguler Rupiah BCA dan Mandiri saja. Tarif nominal per tahun, bukan hasil bersih. Promo, dana baru, bunga negosiasi, produk syariah, kanal lain, penalti, biaya serta basis hari kontrak tidak termasuk. Minimum pembukaan Mandiri belum diekstrak; verifikasi langsung.
 
-Snapshot awal dalam ZIP diambil dari sumber nyata pada sesi pengembangan; tanggal persis ada dalam JSON. Itu cadangan, bukan angka hardcode yang akan diganti tanggalnya saat web dibuka.
+Uji bunga terhadap TBP hanya berjalan jika pengungkapan bank berhasil dibaca, belum lebih 24 jam sejak pengambilan, periode berlaku aktif dan data bukan snapshot cadangan. Di bawah TBP belum berarti seluruh syarat penjaminan terpenuhi. Cashback dan ketentuan lain harus dinilai sesuai aturan regulator. LCR, NSFR, CAR/KPMM, NPL/NPF belum dikumpulkan; tidak ada peringkat keamanan atau dugaan masalah likuiditas bank.
 
-## Batas validasi dan analisis
+## Deploy pertama kali
 
-Parser memeriksa header tabel, identitas seri/negara, format angka, periode masa depan dan batas nilai. Ini pemeriksaan teknis, bukan audit kebenaran sumber. Perubahan besar masih perlu dibaca manusia. Jika tata letak sumber berubah atau akses dibatasi, konektor perlu diperbaiki. Tidak ada bypass login atau captcha.
+1. Unggah seluruh isi folder `nadi-otomatis` ke akar repositori GitHub, termasuk `.github`, `package.json`, `package-lock.json`, `vercel.json`, `lib`, `api`, `public`, `scripts`, `test` dan dokumen.
+2. Vercel → Add New → Project → Import repositori. Framework **Other**, Root Directory `./`, Build Command `npm run build`, Output Directory `public`, Node **24.x**. Tidak perlu kunci API untuk cakupan versi ini.
+3. Vercel menginstal dependensi dari lockfile. `pdf-parse` diperlukan untuk membaca PDF resmi. Konfigurasi fungsi menyertakan file worker PDF dan snapshot.
+4. Setelah deploy, buka `/api/economy` pada alamat web. Periksa `checks`, `fiscal.status`, `deposits`, `lps`, dan `forecast`; jumlah indikator terisi saja tidak membuktikan semua sumber sedang berhasil.
+5. GitHub → Actions → **Perbarui data ekonomi** → Run workflow. Pastikan job hijau dan snapshot tersimpan. Workflow harus ada di default branch. Kebijakan organisasi/branch protection dapat menolak commit bot; perbaiki izin sesuai kebutuhan repositori.
+6. Periksa apakah commit bot diterima oleh integrasi Vercel. Jika tidak, snapshot yang dibundel belum ikut berubah, walaupun API permintaan pengunjung tetap dapat bekerja.
 
-Inflasi bulanan BI tidak disambung dengan inflasi tahunan WDI. Pengangguran yang tampil bukan TPT BPS. FDI bukan arus asing portofolio. Kesehatan bank tidak ditebak dari bunga. Tidak ada skor ekonomi gabungan atau prediksi probabilistik. Penjelasan memakai aturan sehingga tidak memerlukan langganan API AI. Menambah analisis AI adalah pekerjaan tambahan.
+Kuota GitHub Actions, deployment, fungsi dan bandwidth mengikuti paket masing-masing. Tidak dijanjikan gratis tanpa batas. Tidak ada layanan berbayar atau tugas dalam akun pengguna yang dibuat otomatis oleh pengunduhan ZIP.
 
-## Sumber dan atribusi
-
-- Bank Indonesia: https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx ; https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx ; https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx
-- Siaran pers BI: https://www.bi.go.id/id/publikasi/ruang-media/news-release/default.aspx
-- APBN Kita DJPPR: https://djppr.kemenkeu.go.id/paparanapbnkita . Konektor menggunakan endpoint publik yang dipakai situs DJPPR sendiri; bukan kontrak API yang dijamin stabil.
-- World Bank WDI: https://data.worldbank.org/country/indonesia . Identitas indikator dicantumkan pada `lib/catalog.mjs`, sumber dan tautan tiap seri tampil di dashboard. Ketentuan data: https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets . Periksa pengecualian sumber pihak ketiga pada seri terkait sebelum redistribusi skala besar.
-- Dokumentasi Vercel: https://vercel.com/docs/functions/runtimes/node-js ; https://vercel.com/docs/git/vercel-for-github
-- Dokumentasi jadwal GitHub: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
-
-## Pengembangan dan pemeriksaan lokal
-
-Memerlukan Node.js 24. Tidak ada dependensi npm eksternal.
+## Pengembangan
 
 ```sh
+npm ci --ignore-scripts
 npm test
 npm run update-data
 npm run build
 npm run dev
 ```
 
-Buka `http://localhost:3000`. Membuka `public/index.html` langsung sebagai `file://` bukan cara menjalankan server.
+Buka http://localhost:3000. Jangan menjalankan sebagai `file://`. Seluruh dependensi berasal dari npm dan dipatok oleh lockfile. Node.js 24 diperlukan.
 
-Struktur: `public` untuk tampilan, kalkulator dan snapshot; `api/economy.js` untuk fungsi server; `lib` untuk sumber/parser/kolektor; `scripts` untuk pengembangan/pembaruan; `test` untuk validasi dan penanganan gagal; `.github/workflows` untuk jadwal cadangan. Semua kode dan konfigurasi diperlukan di repositori.
+## Sumber
+
+BI: https://www.bi.go.id/id/statistik/indikator/default.aspx ; https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx ; https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx ; https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx ; https://www.bi.go.id/id/publikasi/laporan/default.aspx?kategori=survei+konsumen ; https://www.bi.go.id/id/publikasi/ruang-media/news-release/default.aspx
+
+APBN: https://djppr.kemenkeu.go.id/paparanapbnkita . Endpoint halaman publik DJPPR dipakai sesuai situsnya; bukan kontrak API yang dijamin stabil. Link PDF ditemukan ulang dari halaman tersebut.
+
+Bank: https://www.bca.co.id/individu/produk/simpanan/deposito-berjangka ; https://www.bankmandiri.co.id/web/guest/suku-bunga-dana ; https://www.bankmandiri.co.id/en/tingkat-bunga-penjamin . Regulator: https://lps.go.id/ . Pengungkapan TBP bank tidak disamarkan sebagai koneksi langsung ke LPS.
+
+World Bank: https://data.worldbank.org/country/indonesia ; ketentuan https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets . Identitas seri ada di katalog dan tautan tiap kartu. Periksa pengecualian sumber pihak ketiga bila memperluas redistribusi.
+
+Vercel: https://vercel.com/docs/functions/runtimes/node-js ; GitHub schedules: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule . Parser PDF: https://github.com/mehmet-kozan/pdf-parse .
