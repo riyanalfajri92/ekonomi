@@ -1,23 +1,25 @@
-# Memasang versi baru pada repositori ekonomi yang sama
+# Memasang pembaruan otomatis
 
-Paket ini belum mengubah repositori GitHub atau deployment Vercel Anda. Langkah berikut memasang perubahan ke proyek yang sudah ada.
+1. Ekstrak ZIP. Salin **isi** folder `nadi-otomatis` ke folder lokal repositori `ekonomi`, menggantikan versi lama. Sertakan `.github/workflows/update-data.yml`, `api`, `lib`, `public`, `scripts`, `test`, package files dan `vercel.json`. Di Finder tekan Command–Shift–titik untuk menampilkan folder tersembunyi bila diperlukan. Jangan unggah `node_modules`.
+2. Di GitHub Desktop, periksa Changes, isi Summary, klik Commit lalu Push origin. Mengubah file lokal belum mengubah website sebelum commit tersebut diterbitkan Vercel.
+3. Di Vercel, hubungkan repositori yang sama. Gunakan root repositori, Node 24, Build Command `npm run build`, Output Directory `public`, Framework Preset Other. Pertahankan `vercel.json` dan pastikan deployment produksi berhasil.
+4. Di GitHub, buka Settings → Actions → General. Izinkan workflow dan beri Workflow permissions **Read and write permissions**, agar bot dapat menyimpan snapshot. Kebijakan organisasi atau branch protection mungkin memerlukan penyesuaian oleh pemilik repo.
+5. Untuk data masyarakat BPS: daftar/ajukan kunci melalui layanan resmi https://webapi.bps.go.id/. Simpan kunci sebagai repository secret **BPS_API_KEY** di Settings → Secrets and variables → Actions. Jangan tulis kunci ke kode atau kirim ke chat. Adapter mengikuti dokumentasi resmi, tetapi autentikasi langsung belum diuji tanpa kunci milik Anda.
+6. Buka Actions → Perbarui data ekonomi → Run workflow pada branch utama. Periksa log dan commit snapshot yang dihasilkan. Workflow hijau tidak berarti semua sumber berhasil: periksa juga Sumber & status di website.
+7. Pastikan commit bot memicu deployment Vercel dan periode/sumber di website sesuai hasil snapshot. Jadwal otomatis memerlukan workflow berada pada default branch. GitHub dapat menunda jadwal; pada repo publik tanpa aktivitas, jadwal juga dapat dinonaktifkan GitHub.
 
-1. Di GitHub Desktop pilih repositori **ekonomi**. Klik **Fetch origin**, lalu **Pull origin** bila tersedia. Ini mengambil perubahan snapshot yang mungkin dibuat bot.
-2. Simpan salinan folder repositori sebagai cadangan bila ada perubahan pribadi. Jika GitHub Desktop menunjukkan perubahan pribadi yang belum disimpan, commit perubahan itu terlebih dahulu.
-3. Ekstrak ZIP terbaru dan buka folder `nadi-otomatis`. Tampilkan berkas tersembunyi di Finder dengan **Command + Shift + titik**.
-4. Salin isi proyek ke dalam folder repositori **ekonomi** yang sama. Gabungkan subfolder dan ganti berkas proyek yang namanya sama. Jangan menghapus atau mengganti folder `.git` milik repositori. Berkas `.gitattributes` yang dibuat GitHub Desktop boleh tetap ada.
-5. Pastikan `package-lock.json`, `lib/extensions.mjs`, `lib/forecast.mjs`, `public/content.js`, dan `.github/workflows/update-data.yml` ikut masuk. Mengganti `index.html` saja tidak cukup.
-6. Kembali ke GitHub Desktop. Isi Summary **Perbarui Nadi: ID-EN, deposito, APBN dan prospek**, lalu **Commit to main → Push origin**.
-7. Vercel akan membangun versi baru. Pengaturan tetap **Other**, `npm run build`, output `public`, Node **24.x**. Jangan membuat proyek baru. Tunggu sampai status Ready; jika gagal, baca deployment log.
-8. Buka web dan coba tombol **EN**, menu **Deposito**, **Prospek & sinyal**, serta **Sumber & status**. Pastikan header tidak hanya menggunakan snapshot cadangan tanpa menyadarinya.
-9. GitHub → Actions → **Perbarui data ekonomi → Run workflow**. Versi baru menjalankan `npm ci` sebelum pembaruan. Periksa job hijau dan commit snapshot; jangan hanya mengandalkan jadwal yang belum pernah diuji.
+## Kapan diperbarui?
 
-Setelah terpasang, program mengambil pembaruan sumber dan menghitung ulang tampilan. Tidak perlu mengedit angka tiap hari. Jika penyedia mengubah format atau memblokir akses, konektor tetap dapat memerlukan pemeliharaan; web menunjukkan status gagal dan tanggal data terakhir.
+Workflow dijadwalkan setiap enam jam: sekitar 01.23, 07.23, 13.23 dan 19.23 WIB. Koleksi ini mencakup PDF bank, APBN, kurva obligasi, rilis lembaga dan BPS jika kunci tersedia. API kunjungan memeriksa sumber inti dengan cache normal 15 menit; saat ada kegagalan cache dipersingkat menjadi dua menit. Browser memeriksa kembali sekitar dua menit. Ini pemeriksaan berkala, bukan jaminan angka baru setiap kunjungan.
 
-### Tambahan versi ini
+## Kalau sumber gagal
 
-Salin juga `public/planner.js`, `public/bonds.js`, `lib/fiscal-detail.mjs` dan pengujian barunya. Menu Lab keuangan sekarang memiliki perencana terpadu; menu Obligasi memiliki simulator valuasi dengan angka ilustrasi. Input pribadi tidak dikirim ke server. Baca batas cakupan terbaru di VALIDASI.md sebelum mengumumkan fitur.
+Nilai terakhir dipertahankan bersama periode dan waktu pengambilan aslinya. Status menunjukkan cadangan/kegagalan, bukan mengubah tanggal angka menjadi hari ini. Pemeriksaan berikutnya mencoba kembali; data yang lolos validasi menggantikannya. Sumber diblokir, halaman berubah atau API belum dikonfigurasi memerlukan perbaikan konektor/akses yang sah. Mengganti sumber harus menjaga definisi dan periode pembanding.
 
-### Foto pembuat
+## Mengedit desain
 
-Bagian “Di balik Nadi” ditampilkan di dekat footer, dalam ID/EN. Sertakan folder `public/assets` ketika menyalin pembaruan. Foto asli ada di `public/assets/riyan-al-fajri.png`; tampilan memakai CSS dan pemuatan malas. Kedua tautan pembuat terbuka pada tab yang sama.
+Edit `public/style.css`, `public/story.js`, `public/app.js` dan modul terkait. Commit dan Push; Vercel membangun ulang. Jangan edit snapshot angka dengan tangan untuk menyamarkan data usang. Uji `npm test` dan `npm run build` sebelum Push.
+
+## Pemeriksaan peluncuran
+
+Periksa halaman awal, Prospek, Deposito, Obligasi dan Lab pada ID/EN serta layar ponsel. Cek Sumber & status, periode angka, tautan sumber dan nominal deposito. Jalankan workflow manual dan pastikan commit/deployment berantai berhasil. Paket ini belum di-push atau di-deploy ke akun Anda dari sesi ini.

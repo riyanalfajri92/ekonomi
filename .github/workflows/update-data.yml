@@ -11,7 +11,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,6 +22,8 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: npm test
       - run: npm run update-data
+        env:
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
       - name: Simpan snapshot terbaru
         shell: bash
         run: |

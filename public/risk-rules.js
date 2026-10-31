@@ -1,0 +1,1 @@
+export function healthReading(metric,key){if(!metric)return {state:'missing',delta:null};const delta=metric.previous==null?null:metric.value-metric.previous;if(key==='lcr'||key==='nsfr')return {state:metric.value>=100?'above-reference':'below-reference',delta,reference:100};return {state:delta==null?'observed':Math.abs(delta)<.005?'unchanged':delta>0?'rising':'falling',delta};}
