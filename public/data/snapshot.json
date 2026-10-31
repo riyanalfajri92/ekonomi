@@ -1,0 +1,931 @@
+{
+  "schemaVersion": 1,
+  "snapshotId": "ace52be39a9be860",
+  "dataChangedAt": "2026-10-30T22:20:26.199Z",
+  "checkedAt": "2026-10-30T22:20:26.199Z",
+  "metrics": [
+    {
+      "id": "jisdor",
+      "name": "Rupiah per dolar AS · JISDOR",
+      "unit": "Rp / USD",
+      "frequency": "daily",
+      "source": "Bank Indonesia",
+      "url": "https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx",
+      "maxAgeDays": 7,
+      "meaning": "Angka lebih besar berarti lebih banyak rupiah untuk membeli satu dolar. Biaya impor dapat meningkat; penerima dolar bisa diuntungkan. JISDOR bukan kurs jual/beli bank.",
+      "history": [
+        {
+          "period": "2026-10-30",
+          "value": 18138
+        },
+        {
+          "period": "2026-10-29",
+          "value": 18128
+        },
+        {
+          "period": "2026-10-28",
+          "value": 18183
+        },
+        {
+          "period": "2026-10-27",
+          "value": 18139
+        },
+        {
+          "period": "2026-10-26",
+          "value": 18116
+        },
+        {
+          "period": "2026-10-23",
+          "value": 18069
+        },
+        {
+          "period": "2026-10-22",
+          "value": 18047
+        },
+        {
+          "period": "2026-10-21",
+          "value": 17986
+        },
+        {
+          "period": "2026-10-20",
+          "value": 18006
+        },
+        {
+          "period": "2026-10-19",
+          "value": 18050
+        }
+      ],
+      "period": "2026-10-30",
+      "value": 18138,
+      "delta": 10,
+      "previousPeriod": "2026-10-29",
+      "deltaUnit": "nilai",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "datasetUpdated": null,
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
+    },
+    {
+      "id": "inflation",
+      "name": "Inflasi nasional · yoy",
+      "unit": "%",
+      "frequency": "monthly",
+      "source": "Bank Indonesia · publikasi inflasi",
+      "url": "https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx",
+      "maxAgeDays": 75,
+      "meaning": "Perubahan rata-rata harga dibanding bulan yang sama tahun lalu. Jika positif, harga rata-rata masih naik. Pengalaman belanja keluarga dan harga daerah bisa berbeda.",
+      "history": [
+        {
+          "period": "2026-09",
+          "value": 3.28
+        },
+        {
+          "period": "2026-08",
+          "value": 3.19
+        },
+        {
+          "period": "2026-07",
+          "value": 2.88
+        },
+        {
+          "period": "2026-06",
+          "value": 3.34
+        },
+        {
+          "period": "2026-05",
+          "value": 3.08
+        },
+        {
+          "period": "2026-04",
+          "value": 2.42
+        },
+        {
+          "period": "2026-03",
+          "value": 3.48
+        },
+        {
+          "period": "2026-02",
+          "value": 4.76
+        },
+        {
+          "period": "2026-01",
+          "value": 3.55
+        },
+        {
+          "period": "2025-12",
+          "value": 2.92
+        }
+      ],
+      "period": "2026-09",
+      "value": 3.28,
+      "delta": 0.08999999999999986,
+      "previousPeriod": "2026-08",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "datasetUpdated": null,
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
+    },
+    {
+      "id": "rate",
+      "name": "BI-Rate",
+      "unit": "%",
+      "frequency": "decision",
+      "source": "Bank Indonesia",
+      "url": "https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx",
+      "maxAgeDays": 65,
+      "meaning": "Suku bunga kebijakan memengaruhi biaya dana. Bunga deposito dan cicilan belum tentu langsung mengikuti; lihat kontrak dan keputusan masing-masing bank.",
+      "history": [
+        {
+          "period": "2026-10-21",
+          "value": 5.75
+        },
+        {
+          "period": "2026-09-23",
+          "value": 5.75
+        },
+        {
+          "period": "2026-08-19",
+          "value": 5.75
+        },
+        {
+          "period": "2026-07-22",
+          "value": 5.75
+        },
+        {
+          "period": "2026-06-18",
+          "value": 5.75
+        },
+        {
+          "period": "2026-06-09",
+          "value": 5.5
+        },
+        {
+          "period": "2026-05-20",
+          "value": 5.25
+        },
+        {
+          "period": "2026-04-22",
+          "value": 4.75
+        },
+        {
+          "period": "2026-03-17",
+          "value": 4.75
+        },
+        {
+          "period": "2026-02-19",
+          "value": 4.75
+        }
+      ],
+      "period": "2026-10-21",
+      "value": 5.75,
+      "delta": 0,
+      "previousPeriod": "2026-09-23",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "datasetUpdated": null,
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Tanggal keputusan terakhir yang terbaca; bukan jaminan belum ada keputusan lain."
+    },
+    {
+      "id": "gdp",
+      "code": "NY.GDP.MKTP.KD.ZG",
+      "name": "Pertumbuhan ekonomi riil",
+      "unit": "% / tahun",
+      "meaning": "Produksi ekonomi bertambah atau berkurang secara riil dibanding tahun sebelumnya. Angka nasional tidak memastikan semua sektor atau pendapatan keluarga tumbuh sama.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": 5.10808904438025
+        },
+        {
+          "period": "2024",
+          "value": 5.03257477088519
+        },
+        {
+          "period": "2023",
+          "value": 5.04883117855516
+        },
+        {
+          "period": "2022",
+          "value": 5.30719722664799
+        },
+        {
+          "period": "2021",
+          "value": 3.70288562827751
+        },
+        {
+          "period": "2020",
+          "value": -2.06551182934165
+        },
+        {
+          "period": "2019",
+          "value": 5.01928768046282
+        },
+        {
+          "period": "2018",
+          "value": 5.17429153955024
+        },
+        {
+          "period": "2017",
+          "value": 5.06978590134916
+        },
+        {
+          "period": "2016",
+          "value": 5.03306918280177
+        },
+        {
+          "period": "2015",
+          "value": 4.87632230022123
+        },
+        {
+          "period": "2014",
+          "value": 5.006668425755
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": 5.10808904438025,
+      "delta": 0.07551427349506046,
+      "previousPeriod": "2024",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    },
+    {
+      "id": "income",
+      "code": "NY.GDP.PCAP.CD",
+      "name": "PDB per kapita · dolar berjalan",
+      "unit": "USD / orang",
+      "meaning": "Rata-rata nilai produksi per penduduk, bukan gaji atau uang yang diterima setiap orang. Dipengaruhi kurs, harga dan distribusi pendapatan.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": 5059.62596411213
+        },
+        {
+          "period": "2024",
+          "value": 4925.43644992666
+        },
+        {
+          "period": "2023",
+          "value": 4876.2992959843
+        },
+        {
+          "period": "2022",
+          "value": 4730.83484836107
+        },
+        {
+          "period": "2021",
+          "value": 4287.17313995098
+        },
+        {
+          "period": "2020",
+          "value": 3853.70288774146
+        },
+        {
+          "period": "2019",
+          "value": 4106.94856160358
+        },
+        {
+          "period": "2018",
+          "value": 3860.95353090726
+        },
+        {
+          "period": "2017",
+          "value": 3798.88326174526
+        },
+        {
+          "period": "2016",
+          "value": 3521.46943457574
+        },
+        {
+          "period": "2015",
+          "value": 3288.22269725538
+        },
+        {
+          "period": "2014",
+          "value": 3441.06808464008
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": 5059.62596411213,
+      "delta": 134.1895141854693,
+      "previousPeriod": "2024",
+      "deltaUnit": "nilai",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    },
+    {
+      "id": "unemployment",
+      "code": "SL.UEM.TOTL.ZS",
+      "name": "Pengangguran · estimasi model ILO",
+      "unit": "% angkatan kerja",
+      "meaning": "Bagian angkatan kerja yang menganggur menurut estimasi model ILO. Bukan seri TPT BPS; angka lebih rendah belum menjelaskan upah, informalitas atau kualitas pekerjaan.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": 3.237
+        },
+        {
+          "period": "2024",
+          "value": 3.301
+        },
+        {
+          "period": "2023",
+          "value": 3.308
+        },
+        {
+          "period": "2022",
+          "value": 3.462
+        },
+        {
+          "period": "2021",
+          "value": 3.827
+        },
+        {
+          "period": "2020",
+          "value": 4.255
+        },
+        {
+          "period": "2019",
+          "value": 3.59
+        },
+        {
+          "period": "2018",
+          "value": 4.387
+        },
+        {
+          "period": "2017",
+          "value": 3.783
+        },
+        {
+          "period": "2016",
+          "value": 4.301
+        },
+        {
+          "period": "2015",
+          "value": 4.514
+        },
+        {
+          "period": "2014",
+          "value": 4.049
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": 3.237,
+      "delta": -0.06400000000000006,
+      "previousPeriod": "2024",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    },
+    {
+      "id": "currentaccount",
+      "code": "BN.CAB.XOKA.GD.ZS",
+      "name": "Saldo transaksi berjalan",
+      "unit": "% PDB",
+      "meaning": "Mencakup perdagangan barang/jasa serta pendapatan dan transfer berjalan. Defisit bukan otomatis krisis; periksa pembiayaan, cadangan devisa dan ketahanannya.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": -0.0866434374916221
+        },
+        {
+          "period": "2024",
+          "value": -0.614730078804115
+        },
+        {
+          "period": "2023",
+          "value": -0.148899596516736
+        },
+        {
+          "period": "2022",
+          "value": 1.00182875104005
+        },
+        {
+          "period": "2021",
+          "value": 0.295885914526078
+        },
+        {
+          "period": "2020",
+          "value": -0.418606247736126
+        },
+        {
+          "period": "2019",
+          "value": -2.7056619813955
+        },
+        {
+          "period": "2018",
+          "value": -2.93907291477017
+        },
+        {
+          "period": "2017",
+          "value": -1.59465689989364
+        },
+        {
+          "period": "2016",
+          "value": -1.81915089251384
+        },
+        {
+          "period": "2015",
+          "value": -2.03504192745968
+        },
+        {
+          "period": "2014",
+          "value": -3.08816907525921
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": -0.0866434374916221,
+      "delta": 0.5280866413124929,
+      "previousPeriod": "2024",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    },
+    {
+      "id": "fdi",
+      "code": "BX.KLT.DINV.WD.GD.ZS",
+      "name": "Investasi asing langsung · arus masuk neto",
+      "unit": "% PDB",
+      "meaning": "Investasi langsung dapat mendukung kapasitas produksi. Ini data tahunan FDI, bukan jual/beli asing di saham, SBN atau SRBI.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": 1.57010859073407
+        },
+        {
+          "period": "2024",
+          "value": 1.73855290316368
+        },
+        {
+          "period": "2023",
+          "value": 1.57116966408747
+        },
+        {
+          "period": "2022",
+          "value": 1.87264100861425
+        },
+        {
+          "period": "2021",
+          "value": 1.7878556314554
+        },
+        {
+          "period": "2020",
+          "value": 1.81058402027127
+        },
+        {
+          "period": "2019",
+          "value": 2.23336204282241
+        },
+        {
+          "period": "2018",
+          "value": 1.81428979349441
+        },
+        {
+          "period": "2017",
+          "value": 2.01948919812582
+        },
+        {
+          "period": "2016",
+          "value": 0.487372471368879
+        },
+        {
+          "period": "2015",
+          "value": 2.29761639380441
+        },
+        {
+          "period": "2014",
+          "value": 2.81997260412102
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": 1.57010859073407,
+      "delta": -0.16844431242961,
+      "previousPeriod": "2024",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    },
+    {
+      "id": "reserves",
+      "code": "FI.RES.TOTL.MO",
+      "name": "Cadangan devisa · cakupan impor",
+      "unit": "bulan impor",
+      "meaning": "Menggambarkan cakupan impor oleh cadangan dalam seri tahunan ini. Bukan saldo devisa bulanan terbaru; kecukupan juga bergantung kebutuhan pembiayaan lain.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/FI.RES.TOTL.MO?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": 5.51422229377152
+        },
+        {
+          "period": "2024",
+          "value": 5.72012468838056
+        },
+        {
+          "period": "2023",
+          "value": 5.72806559441344
+        },
+        {
+          "period": "2022",
+          "value": 5.21322077470096
+        },
+        {
+          "period": "2021",
+          "value": 6.78517585393015
+        },
+        {
+          "period": "2020",
+          "value": 8.40697484639791
+        },
+        {
+          "period": "2019",
+          "value": 6.317774344195
+        },
+        {
+          "period": "2018",
+          "value": 5.595607588484
+        },
+        {
+          "period": "2017",
+          "value": 7.08716242011097
+        },
+        {
+          "period": "2016",
+          "value": 7.22588805609526
+        },
+        {
+          "period": "2015",
+          "value": 6.446161057664
+        },
+        {
+          "period": "2014",
+          "value": 5.74432339947261
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": 5.51422229377152,
+      "delta": -0.2059023946090397,
+      "previousPeriod": "2024",
+      "deltaUnit": "nilai",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    },
+    {
+      "id": "trade",
+      "code": "NE.TRD.GNFS.ZS",
+      "name": "Perdagangan barang & jasa",
+      "unit": "% PDB",
+      "meaning": "Ekspor ditambah impor relatif terhadap PDB; mengukur keterbukaan perdagangan, bukan surplus perdagangan atau keuntungan negara.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": 43.3912070511204
+        },
+        {
+          "period": "2024",
+          "value": 42.809937870822
+        },
+        {
+          "period": "2023",
+          "value": 41.4604765447233
+        },
+        {
+          "period": "2022",
+          "value": 45.4646701959453
+        },
+        {
+          "period": "2021",
+          "value": 40.2047582749671
+        },
+        {
+          "period": "2020",
+          "value": 32.9721754002427
+        },
+        {
+          "period": "2019",
+          "value": 37.6277775357108
+        },
+        {
+          "period": "2018",
+          "value": 43.0743089552002
+        },
+        {
+          "period": "2017",
+          "value": 39.3554970704606
+        },
+        {
+          "period": "2016",
+          "value": 37.4213418023318
+        },
+        {
+          "period": "2015",
+          "value": 41.9376402415294
+        },
+        {
+          "period": "2014",
+          "value": 48.0801755855227
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": 43.3912070511204,
+      "delta": 0.5812691802984062,
+      "previousPeriod": "2024",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    },
+    {
+      "id": "annualinflation",
+      "code": "FP.CPI.TOTL.ZG",
+      "name": "Inflasi konsumen · seri tahunan",
+      "unit": "% / tahun",
+      "meaning": "Seri inflasi tahunan World Bank. Definisi periodenya berbeda dari inflasi yoy suatu bulan; jangan menyambung kedua seri sebagai satu grafik.",
+      "frequency": "annual",
+      "maxAgeDays": 1100,
+      "source": "World Bank · World Development Indicators",
+      "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=ID",
+      "history": [
+        {
+          "period": "2025",
+          "value": 1.91333443295079
+        },
+        {
+          "period": "2024",
+          "value": 2.18151273615188
+        },
+        {
+          "period": "2023",
+          "value": 3.66938654859761
+        },
+        {
+          "period": "2022",
+          "value": 4.20946463714784
+        },
+        {
+          "period": "2021",
+          "value": 1.56007882983334
+        },
+        {
+          "period": "2020",
+          "value": 1.91983527270792
+        },
+        {
+          "period": "2019",
+          "value": 3.0305846094166
+        },
+        {
+          "period": "2018",
+          "value": 3.19834755924996
+        },
+        {
+          "period": "2017",
+          "value": 3.80879857691948
+        },
+        {
+          "period": "2016",
+          "value": 3.52580452815451
+        },
+        {
+          "period": "2015",
+          "value": 6.36312061196646
+        },
+        {
+          "period": "2014",
+          "value": 6.39492882396559
+        }
+      ],
+      "datasetUpdated": "2026-10-08",
+      "period": "2025",
+      "value": 1.91333443295079,
+      "delta": -0.26817830320109004,
+      "previousPeriod": "2024",
+      "deltaUnit": "poin persentase",
+      "publishedAt": null,
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "fetchedAt": "2026-10-30T22:20:26.199Z",
+      "status": "ok",
+      "error": null,
+      "observationOld": false,
+      "note": "Data tahunan struktural; bukan kondisi hari ini."
+    }
+  ],
+  "news": [
+    {
+      "title": "Bank Indonesia dan APUVINDO Perkuat Sinergi Akselerasi Pendalaman Pasar Uang dan Pasar Valuta Asing",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823726.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    },
+    {
+      "title": "GPIPS Sulampua 2026: ”Tallukarsa Pangan Sulampua” Fokus Langkah Sinergis Menjaga Inflasi Pangan",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823626.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    },
+    {
+      "title": "Uang Beredar pada September 2026 Tumbuh Lebih Tinggi",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823526.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    },
+    {
+      "title": "Survei Perbankan Triwulan III 2026: Penyaluran Kredit Baru Diprakirakan Meningkat",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823426.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    },
+    {
+      "title": "BI-Rate Tetap 5,75%: Memperkuat Stabilitas, Mendorong Pertumbuhan Ekonomi",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823326.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    },
+    {
+      "title": "ISEF 2026: Kolaborasi Global Sebagai Fondasi Ketahanan Ekonomi Keuangan Syariah Nasional",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823226.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    },
+    {
+      "title": "Prompt Manufacturing Index (PMI) - BI Triwulan III 2026 Kinerja Industri Pengolahan Meningkat",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823126.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    },
+    {
+      "title": "Survei Kegiatan Dunia Usaha Triwulan III 2026: Kegiatan Dunia Usaha Terjaga",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823026.aspx",
+      "publishedAt": null,
+      "source": "Bank Indonesia",
+      "note": "Judul dari daftar siaran pers resmi; tanggal publikasi belum diekstrak. Urutan mengikuti halaman sumber."
+    }
+  ],
+  "publications": [
+    {
+      "title": "APBN Kita · Oktober 2026",
+      "edition": "2026-10",
+      "url": "https://api-djppr.kemenkeu.go.id/web/api/v1/media/841794DF-E28E-4B1E-A795-97246F0A46E8",
+      "source": "DJPPR Kementerian Keuangan",
+      "publishedAt": null,
+      "note": "Periode edisi, bukan periode realisasi. Angka PDF belum diekstrak otomatis."
+    }
+  ],
+  "checks": [
+    {
+      "id": "apbn",
+      "status": "ok",
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "error": null
+    },
+    {
+      "id": "inflation",
+      "status": "ok",
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "error": null
+    },
+    {
+      "id": "jisdor",
+      "status": "ok",
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "error": null
+    },
+    {
+      "id": "news",
+      "status": "ok",
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "error": null
+    },
+    {
+      "id": "rate",
+      "status": "ok",
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "error": null
+    },
+    {
+      "id": "worldbank",
+      "status": "ok",
+      "checkedAt": "2026-10-30T22:20:26.199Z",
+      "error": null
+    }
+  ],
+  "gaps": [
+    {
+      "name": "IHSG & transaksi asing saham",
+      "url": "https://data.idx.co.id/",
+      "reason": "Belum terhubung. Memerlukan sumber dengan hak tampilan/redistribusi yang sesuai. Tidak memakai endpoint pasar tak terdokumentasi."
+    },
+    {
+      "name": "Arus asing SBN dan SRBI",
+      "url": "https://www.djppr.kemenkeu.go.id/",
+      "reason": "Belum ada konektor angka yang terverifikasi. Perubahan posisi kepemilikan tidak diperlakukan sebagai arus neto."
+    },
+    {
+      "name": "Realisasi APBN terstruktur",
+      "url": "https://djppr.kemenkeu.go.id/paparanapbnkita",
+      "reason": "Pemantauan tautan publikasi disediakan; ekstraksi angka PDF belum diaktifkan. Pendapatan, belanja dan defisit belum tampil sebagai angka otomatis."
+    },
+    {
+      "name": "Deposito bank & TBP LPS",
+      "url": "https://lps.go.id/",
+      "reason": "Kalkulator tersedia. Bunga bank nyata, TBP dan rasio bank belum memiliki konektor terverifikasi; tidak ada peringkat keamanan bank."
+    },
+    {
+      "name": "Harga daerah, upah & kemiskinan terkini",
+      "url": "https://webapi.bps.go.id/developer/",
+      "reason": "Belum terhubung ke seri BPS/daerah. Data tahunan World Bank tidak menggantikan indikator bulanan atau semesteran BPS."
+    }
+  ],
+  "newsFetchedAt": "2026-10-30T22:20:26.199Z",
+  "publicationsFetchedAt": "2026-10-30T22:20:26.199Z",
+  "coverage": "BI harian/bulanan/keputusan + indikator tahunan World Bank + tautan publikasi resmi. Bukan seluruh kondisi ekonomi atau terminal pasar real-time."
+}
