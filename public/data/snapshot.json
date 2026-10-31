@@ -1,4 +1,1922 @@
 {
+  "drivers": [
+    {
+      "id": "household",
+      "code": "NE.CON.PRVT.KD.ZG",
+      "label": "Konsumsi rumah tangga & nirlaba",
+      "labelEn": "Household & NPISH consumption",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 4.98264276984605,
+      "history": [
+        {
+          "period": "2025",
+          "value": 4.98264276984605
+        },
+        {
+          "period": "2024",
+          "value": 5.11085982428132
+        },
+        {
+          "period": "2023",
+          "value": 4.94314697203188
+        },
+        {
+          "period": "2022",
+          "value": 4.95554987838472
+        },
+        {
+          "period": "2021",
+          "value": 2.00563849274586
+        },
+        {
+          "period": "2020",
+          "value": -2.66609987603441
+        },
+        {
+          "period": "2019",
+          "value": 5.16069921057434
+        },
+        {
+          "period": "2018",
+          "value": 5.13689124339334
+        },
+        {
+          "period": "2017",
+          "value": 4.98163572725232
+        },
+        {
+          "period": "2016",
+          "value": 5.04453523751019
+        },
+        {
+          "period": "2015",
+          "value": 4.8414945238228
+        },
+        {
+          "period": "2014",
+          "value": 5.28372537320206
+        },
+        {
+          "period": "2013",
+          "value": 5.47790527559351
+        },
+        {
+          "period": "2012",
+          "value": 5.51610677482559
+        },
+        {
+          "period": "2011",
+          "value": 5.06001921355895
+        },
+        {
+          "period": "2010",
+          "value": 4.73974198886131
+        },
+        {
+          "period": "2009",
+          "value": 4.85894451165964
+        },
+        {
+          "period": "2008",
+          "value": 5.33615021871647
+        },
+        {
+          "period": "2007",
+          "value": 5.00674190790194
+        },
+        {
+          "period": "2006",
+          "value": 3.17329260031525
+        }
+      ],
+      "previous": 5.11085982428132,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "investment",
+      "code": "NE.GDI.FTOT.KD.ZG",
+      "label": "Investasi aset tetap (PMTB)",
+      "labelEn": "Gross fixed capital formation",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 5.0904274480978,
+      "history": [
+        {
+          "period": "2025",
+          "value": 5.0904274480978
+        },
+        {
+          "period": "2024",
+          "value": 4.61335996764127
+        },
+        {
+          "period": "2023",
+          "value": 3.76089826010318
+        },
+        {
+          "period": "2022",
+          "value": 3.8700050827909
+        },
+        {
+          "period": "2021",
+          "value": 3.80316724729035
+        },
+        {
+          "period": "2020",
+          "value": -4.96106674566404
+        },
+        {
+          "period": "2019",
+          "value": 4.45238270650623
+        },
+        {
+          "period": "2018",
+          "value": 6.67584594313419
+        },
+        {
+          "period": "2017",
+          "value": 6.15397401621334
+        },
+        {
+          "period": "2016",
+          "value": 4.47312848439128
+        },
+        {
+          "period": "2015",
+          "value": 5.00943841764168
+        },
+        {
+          "period": "2014",
+          "value": 4.44909738798553
+        },
+        {
+          "period": "2013",
+          "value": 5.01027826613591
+        },
+        {
+          "period": "2012",
+          "value": 9.12508280830345
+        },
+        {
+          "period": "2011",
+          "value": 8.85961170366419
+        },
+        {
+          "period": "2010",
+          "value": 8.48127098898996
+        },
+        {
+          "period": "2009",
+          "value": 3.29341121532578
+        },
+        {
+          "period": "2008",
+          "value": 11.8861277894961
+        },
+        {
+          "period": "2007",
+          "value": 9.32387993418602
+        },
+        {
+          "period": "2006",
+          "value": 2.59688033684336
+        }
+      ],
+      "previous": 4.61335996764127,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "government",
+      "code": "NE.CON.GOVT.KD.ZG",
+      "label": "Konsumsi akhir pemerintah",
+      "labelEn": "Government final consumption",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NE.CON.GOVT.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 2.5043824378544,
+      "history": [
+        {
+          "period": "2025",
+          "value": 2.5043824378544
+        },
+        {
+          "period": "2024",
+          "value": 6.76476681288062
+        },
+        {
+          "period": "2023",
+          "value": 3.0162870603391
+        },
+        {
+          "period": "2022",
+          "value": -4.42142602703461
+        },
+        {
+          "period": "2021",
+          "value": 4.25262600945754
+        },
+        {
+          "period": "2020",
+          "value": 2.12422408354396
+        },
+        {
+          "period": "2019",
+          "value": 3.26784474854733
+        },
+        {
+          "period": "2018",
+          "value": 4.82072529712099
+        },
+        {
+          "period": "2017",
+          "value": 2.12472828702803
+        },
+        {
+          "period": "2016",
+          "value": -0.141019031312027
+        },
+        {
+          "period": "2015",
+          "value": 5.31247757295885
+        },
+        {
+          "period": "2014",
+          "value": 1.16390496288918
+        },
+        {
+          "period": "2013",
+          "value": 6.74564308345128
+        },
+        {
+          "period": "2012",
+          "value": 4.52670228373826
+        },
+        {
+          "period": "2011",
+          "value": 5.51842728817171
+        },
+        {
+          "period": "2010",
+          "value": 0.323960658773487
+        },
+        {
+          "period": "2009",
+          "value": 15.6749447747679
+        },
+        {
+          "period": "2008",
+          "value": 10.4282767634418
+        },
+        {
+          "period": "2007",
+          "value": 3.89387342613669
+        },
+        {
+          "period": "2006",
+          "value": 9.61045315941651
+        }
+      ],
+      "previous": 6.76476681288062,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "exports",
+      "code": "NE.EXP.GNFS.KD.ZG",
+      "label": "Ekspor barang & jasa",
+      "labelEn": "Exports of goods & services",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 7.03437864689644,
+      "history": [
+        {
+          "period": "2025",
+          "value": 7.03437864689644
+        },
+        {
+          "period": "2024",
+          "value": 6.85182223090438
+        },
+        {
+          "period": "2023",
+          "value": 1.7255292242817
+        },
+        {
+          "period": "2022",
+          "value": 16.2315353961458
+        },
+        {
+          "period": "2021",
+          "value": 17.990291198846
+        },
+        {
+          "period": "2020",
+          "value": -8.41781579802249
+        },
+        {
+          "period": "2019",
+          "value": -0.477023225590827
+        },
+        {
+          "period": "2018",
+          "value": 6.51414738149725
+        },
+        {
+          "period": "2017",
+          "value": 8.89729217600718
+        },
+        {
+          "period": "2016",
+          "value": -1.66050861328918
+        },
+        {
+          "period": "2015",
+          "value": -2.12023972433835
+        },
+        {
+          "period": "2014",
+          "value": 1.07463959746592
+        },
+        {
+          "period": "2013",
+          "value": 4.16695751315731
+        },
+        {
+          "period": "2012",
+          "value": 1.60874874973331
+        },
+        {
+          "period": "2011",
+          "value": 14.7699192430282
+        },
+        {
+          "period": "2010",
+          "value": 15.2663224108565
+        },
+        {
+          "period": "2009",
+          "value": -9.69013804966123
+        },
+        {
+          "period": "2008",
+          "value": 9.53346069962357
+        },
+        {
+          "period": "2007",
+          "value": 8.54297971549755
+        },
+        {
+          "period": "2006",
+          "value": 9.40552567875197
+        }
+      ],
+      "previous": 6.85182223090438,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "imports",
+      "code": "NE.IMP.GNFS.KD.ZG",
+      "label": "Impor barang & jasa",
+      "labelEn": "Imports of goods & services",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NE.IMP.GNFS.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 4.76906530230752,
+      "history": [
+        {
+          "period": "2025",
+          "value": 4.76906530230752
+        },
+        {
+          "period": "2024",
+          "value": 8.14784909604982
+        },
+        {
+          "period": "2023",
+          "value": -1.24386026028826
+        },
+        {
+          "period": "2022",
+          "value": 14.9956847171524
+        },
+        {
+          "period": "2021",
+          "value": 24.8583825743383
+        },
+        {
+          "period": "2020",
+          "value": -17.6049570121681
+        },
+        {
+          "period": "2019",
+          "value": -7.12694051761916
+        },
+        {
+          "period": "2018",
+          "value": 12.1360161422099
+        },
+        {
+          "period": "2017",
+          "value": 8.06794624897262
+        },
+        {
+          "period": "2016",
+          "value": -2.40511308540454
+        },
+        {
+          "period": "2015",
+          "value": -6.24901105161196
+        },
+        {
+          "period": "2014",
+          "value": 2.11970235031443
+        },
+        {
+          "period": "2013",
+          "value": 1.86189666230503
+        },
+        {
+          "period": "2012",
+          "value": 7.99841121699345
+        },
+        {
+          "period": "2011",
+          "value": 15.0288827139723
+        },
+        {
+          "period": "2010",
+          "value": 17.344322978662
+        },
+        {
+          "period": "2009",
+          "value": -14.9774544546493
+        },
+        {
+          "period": "2008",
+          "value": 10.0025672568361
+        },
+        {
+          "period": "2007",
+          "value": 9.06425835234552
+        },
+        {
+          "period": "2006",
+          "value": 8.5826675436264
+        }
+      ],
+      "previous": 8.14784909604982,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "consumptionPerCapita",
+      "code": "NE.CON.PRVT.PC.KD.ZG",
+      "label": "Konsumsi rumah tangga per kapita",
+      "labelEn": "Household consumption per capita",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.PC.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 4.16205881783239,
+      "history": [
+        {
+          "period": "2025",
+          "value": 4.16205881783239
+        },
+        {
+          "period": "2024",
+          "value": 4.25886425626094
+        },
+        {
+          "period": "2023",
+          "value": 4.06254209945615
+        },
+        {
+          "period": "2022",
+          "value": 4.17544212271727
+        },
+        {
+          "period": "2021",
+          "value": 1.28943158025609
+        },
+        {
+          "period": "2020",
+          "value": -3.48973990695535
+        },
+        {
+          "period": "2019",
+          "value": 4.18139882869522
+        },
+        {
+          "period": "2018",
+          "value": 4.12226077694862
+        },
+        {
+          "period": "2017",
+          "value": 3.91384507196395
+        },
+        {
+          "period": "2016",
+          "value": 3.92188626778727
+        },
+        {
+          "period": "2015",
+          "value": 3.67139521320779
+        },
+        {
+          "period": "2014",
+          "value": 4.05350554253769
+        },
+        {
+          "period": "2013",
+          "value": 4.17765908519536
+        },
+        {
+          "period": "2012",
+          "value": 4.16802604459664
+        },
+        {
+          "period": "2011",
+          "value": 3.72725595241765
+        },
+        {
+          "period": "2010",
+          "value": 3.42774070973432
+        },
+        {
+          "period": "2009",
+          "value": 3.53877693293225
+        },
+        {
+          "period": "2008",
+          "value": 3.97839766877041
+        },
+        {
+          "period": "2007",
+          "value": 3.62886425308162
+        },
+        {
+          "period": "2006",
+          "value": 1.81500363403106
+        }
+      ],
+      "previous": 4.25886425626094,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "agriculture",
+      "code": "NV.AGR.TOTL.KD.ZG",
+      "label": "Pertanian, kehutanan & perikanan",
+      "labelEn": "Agriculture, forestry & fishing",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 5.32629868511422,
+      "history": [
+        {
+          "period": "2025",
+          "value": 5.32629868511422
+        },
+        {
+          "period": "2024",
+          "value": 0.676776097272509
+        },
+        {
+          "period": "2023",
+          "value": 1.30577415574238
+        },
+        {
+          "period": "2022",
+          "value": 2.25484298466824
+        },
+        {
+          "period": "2021",
+          "value": 1.8711564555079
+        },
+        {
+          "period": "2020",
+          "value": 1.77198877347158
+        },
+        {
+          "period": "2019",
+          "value": 3.60650157238116
+        },
+        {
+          "period": "2018",
+          "value": 3.88415796649602
+        },
+        {
+          "period": "2017",
+          "value": 3.91593250123559
+        },
+        {
+          "period": "2016",
+          "value": 3.37272966448809
+        },
+        {
+          "period": "2015",
+          "value": 3.75474944615075
+        },
+        {
+          "period": "2014",
+          "value": 4.23867862915085
+        },
+        {
+          "period": "2013",
+          "value": 4.20428986473208
+        },
+        {
+          "period": "2012",
+          "value": 4.58651357694913
+        },
+        {
+          "period": "2011",
+          "value": 3.94695350383429
+        },
+        {
+          "period": "2010",
+          "value": 3.00567317304426
+        },
+        {
+          "period": "2009",
+          "value": 3.95781590203426
+        },
+        {
+          "period": "2008",
+          "value": 4.82849022114034
+        },
+        {
+          "period": "2007",
+          "value": 3.47042790701578
+        },
+        {
+          "period": "2006",
+          "value": 3.35632698222187
+        }
+      ],
+      "previous": 0.676776097272509,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "industry",
+      "code": "NV.IND.TOTL.KD.ZG",
+      "label": "Industri termasuk konstruksi",
+      "labelEn": "Industry including construction",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 3.71043404542424,
+      "history": [
+        {
+          "period": "2025",
+          "value": 3.71043404542424
+        },
+        {
+          "period": "2024",
+          "value": 5.16585524468196
+        },
+        {
+          "period": "2023",
+          "value": 4.99768093679516
+        },
+        {
+          "period": "2022",
+          "value": 4.10564135506479
+        },
+        {
+          "period": "2021",
+          "value": 3.41715807612779
+        },
+        {
+          "period": "2020",
+          "value": -2.80013598220636
+        },
+        {
+          "period": "2019",
+          "value": 3.8099583719173
+        },
+        {
+          "period": "2018",
+          "value": 4.34326331216906
+        },
+        {
+          "period": "2017",
+          "value": 4.09113145733535
+        },
+        {
+          "period": "2016",
+          "value": 3.82448226083645
+        },
+        {
+          "period": "2015",
+          "value": 2.99183106298801
+        },
+        {
+          "period": "2014",
+          "value": 4.23221148763938
+        },
+        {
+          "period": "2013",
+          "value": 4.34215207989057
+        },
+        {
+          "period": "2012",
+          "value": 5.30528495596056
+        },
+        {
+          "period": "2011",
+          "value": 6.34975419185746
+        },
+        {
+          "period": "2010",
+          "value": 4.91924932654355
+        },
+        {
+          "period": "2009",
+          "value": 3.58828787694286
+        },
+        {
+          "period": "2008",
+          "value": 3.73815732632268
+        },
+        {
+          "period": "2007",
+          "value": 4.71999956361056
+        },
+        {
+          "period": "2006",
+          "value": 4.48854969742733
+        }
+      ],
+      "previous": 5.16585524468196,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "services",
+      "code": "NV.SRV.TOTL.KD.ZG",
+      "label": "Jasa",
+      "labelEn": "Services",
+      "unit": "% pertumbuhan riil/tahun",
+      "min": -100,
+      "max": 200,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.KD.ZG?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 6.34531939964025,
+      "history": [
+        {
+          "period": "2025",
+          "value": 6.34531939964025
+        },
+        {
+          "period": "2024",
+          "value": 6.22953976575968
+        },
+        {
+          "period": "2023",
+          "value": 6.12754526976155
+        },
+        {
+          "period": "2022",
+          "value": 6.45380677532941
+        },
+        {
+          "period": "2021",
+          "value": 3.54476142823418
+        },
+        {
+          "period": "2020",
+          "value": -1.45356908216743
+        },
+        {
+          "period": "2019",
+          "value": 6.39180522966942
+        },
+        {
+          "period": "2018",
+          "value": 5.82134323378074
+        },
+        {
+          "period": "2017",
+          "value": 5.65378085631927
+        },
+        {
+          "period": "2016",
+          "value": 5.66443301856891
+        },
+        {
+          "period": "2015",
+          "value": 5.45188053453838
+        },
+        {
+          "period": "2014",
+          "value": 6.01714186219515
+        },
+        {
+          "period": "2013",
+          "value": 6.39022304582355
+        },
+        {
+          "period": "2012",
+          "value": 6.81992113064037
+        },
+        {
+          "period": "2011",
+          "value": 8.4107801347705
+        },
+        {
+          "period": "2010",
+          "value": 8.41445195583989
+        },
+        {
+          "period": "2009",
+          "value": 5.82555486964804
+        },
+        {
+          "period": "2008",
+          "value": 8.65943639948152
+        },
+        {
+          "period": "2007",
+          "value": 8.99899024209338
+        },
+        {
+          "period": "2006",
+          "value": 7.33003019447767
+        }
+      ],
+      "previous": 6.22953976575968,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    },
+    {
+      "id": "gini",
+      "code": "SI.POV.GINI",
+      "label": "Indeks Gini · World Bank/PIP",
+      "labelEn": "Gini index · World Bank/PIP",
+      "unit": "indeks 0–100",
+      "min": 0,
+      "max": 100,
+      "frequency": "annual",
+      "source": "World Bank · WDI/PIP",
+      "url": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=ID",
+      "role": "historical-drivers",
+      "period": "2025",
+      "value": 34.4,
+      "history": [
+        {
+          "period": "2025",
+          "value": 34.4
+        },
+        {
+          "period": "2024",
+          "value": 34.9
+        },
+        {
+          "period": "2023",
+          "value": 36.1
+        },
+        {
+          "period": "2022",
+          "value": 35.5
+        },
+        {
+          "period": "2021",
+          "value": 35.5
+        },
+        {
+          "period": "2020",
+          "value": 35.3
+        },
+        {
+          "period": "2019",
+          "value": 35.4
+        },
+        {
+          "period": "2018",
+          "value": 36.3
+        },
+        {
+          "period": "2017",
+          "value": 36.4
+        },
+        {
+          "period": "2016",
+          "value": 36.9
+        },
+        {
+          "period": "2015",
+          "value": 38.2
+        },
+        {
+          "period": "2014",
+          "value": 38.8
+        },
+        {
+          "period": "2013",
+          "value": 38.9
+        },
+        {
+          "period": "2012",
+          "value": 37.1
+        },
+        {
+          "period": "2011",
+          "value": 37.9
+        },
+        {
+          "period": "2010",
+          "value": 34.6
+        },
+        {
+          "period": "2009",
+          "value": 33.4
+        },
+        {
+          "period": "2008",
+          "value": 32.6
+        },
+        {
+          "period": "2007",
+          "value": 33.2
+        },
+        {
+          "period": "2006",
+          "value": 31.5
+        }
+      ],
+      "previous": 34.9,
+      "previousPeriod": "2024",
+      "fetchedAt": "2026-10-31T10:09:46.589Z",
+      "checkedAt": "2026-10-31T10:09:46.589Z",
+      "datasetUpdated": "2026-10-08",
+      "status": "ok"
+    }
+  ],
+  "changeLog": [],
+  "fiscalHistory": [
+    {
+      "period": "2026-09",
+      "revenue": 2341.5,
+      "spending": 2660.5,
+      "balance": -319,
+      "primary": 125.5,
+      "url": "https://api-djppr.kemenkeu.go.id/web/api/v1/media/841794DF-E28E-4B1E-A795-97246F0A46E8",
+      "fetchedAt": "2026-10-31T02:41:14.505Z"
+    }
+  ],
+  "structural": [
+    {
+      "id": "water",
+      "code": "SH.H2O.BASW.ZS",
+      "label": "Akses air minum dasar",
+      "labelEn": "Basic drinking-water access",
+      "producer": "WHO/UNICEF JMP",
+      "unit": "% penduduk",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2024",
+      "value": 89.008759557411,
+      "history": [
+        {
+          "period": "2024",
+          "value": 89.008759557411
+        },
+        {
+          "period": "2023",
+          "value": 89.3578482222748
+        },
+        {
+          "period": "2022",
+          "value": 89.7113532580834
+        },
+        {
+          "period": "2021",
+          "value": 89.4041137814594
+        },
+        {
+          "period": "2020",
+          "value": 89.0851606060889
+        },
+        {
+          "period": "2019",
+          "value": 88.7538936468124
+        },
+        {
+          "period": "2018",
+          "value": 88.410420237217
+        },
+        {
+          "period": "2017",
+          "value": 88.0541295680055
+        },
+        {
+          "period": "2016",
+          "value": 87.6849895715078
+        },
+        {
+          "period": "2015",
+          "value": 87.3023728948535
+        },
+        {
+          "period": "2014",
+          "value": 86.9065589204206
+        },
+        {
+          "period": "2013",
+          "value": 86.4972383225177
+        },
+        {
+          "period": "2012",
+          "value": 86.0745858271754
+        },
+        {
+          "period": "2011",
+          "value": 85.6378136701144
+        }
+      ],
+      "previous": 89.3578482222748,
+      "previousPeriod": "2023",
+      "delta": -0.34908866486379964,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "waterUrban",
+      "code": "SH.H2O.BASW.UR.ZS",
+      "label": "Akses air minum dasar · perkotaan",
+      "labelEn": "Basic water · urban",
+      "producer": "WHO/UNICEF JMP",
+      "unit": "% penduduk perkotaan",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.UR.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2024",
+      "value": 94.9595852076774,
+      "history": [
+        {
+          "period": "2024",
+          "value": 94.9595852076774
+        },
+        {
+          "period": "2023",
+          "value": 95.2292505734599
+        },
+        {
+          "period": "2022",
+          "value": 95.4989159392424
+        },
+        {
+          "period": "2021",
+          "value": 95.3609757264632
+        },
+        {
+          "period": "2020",
+          "value": 95.2207400404518
+        },
+        {
+          "period": "2019",
+          "value": 95.078208881208
+        },
+        {
+          "period": "2018",
+          "value": 94.9333822487321
+        },
+        {
+          "period": "2017",
+          "value": 94.7862601430239
+        },
+        {
+          "period": "2016",
+          "value": 94.6368425640835
+        },
+        {
+          "period": "2015",
+          "value": 94.4851295119108
+        },
+        {
+          "period": "2014",
+          "value": 94.3311209865059
+        },
+        {
+          "period": "2013",
+          "value": 94.1748169878686
+        },
+        {
+          "period": "2012",
+          "value": 94.0162175159993
+        },
+        {
+          "period": "2011",
+          "value": 93.8553225708977
+        }
+      ],
+      "previous": 95.2292505734599,
+      "previousPeriod": "2023",
+      "delta": -0.2696653657824868,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "waterRural",
+      "code": "SH.H2O.BASW.RU.ZS",
+      "label": "Akses air minum dasar · perdesaan",
+      "labelEn": "Basic water · rural",
+      "producer": "WHO/UNICEF JMP",
+      "unit": "% penduduk perdesaan",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.RU.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2024",
+      "value": 80.3727925608589,
+      "history": [
+        {
+          "period": "2024",
+          "value": 80.3727925608589
+        },
+        {
+          "period": "2023",
+          "value": 81.056708377575
+        },
+        {
+          "period": "2022",
+          "value": 81.7406241942911
+        },
+        {
+          "period": "2021",
+          "value": 81.4137446615852
+        },
+        {
+          "period": "2020",
+          "value": 81.0700910243029
+        },
+        {
+          "period": "2019",
+          "value": 80.7096632824427
+        },
+        {
+          "period": "2018",
+          "value": 80.3324614360055
+        },
+        {
+          "period": "2017",
+          "value": 79.9384854849916
+        },
+        {
+          "period": "2016",
+          "value": 79.5277354294001
+        },
+        {
+          "period": "2015",
+          "value": 79.1002112692322
+        },
+        {
+          "period": "2014",
+          "value": 78.6559130044865
+        },
+        {
+          "period": "2013",
+          "value": 78.1948406351636
+        },
+        {
+          "period": "2012",
+          "value": 77.7169941612642
+        },
+        {
+          "period": "2011",
+          "value": 77.2223735827873
+        }
+      ],
+      "previous": 81.056708377575,
+      "previousPeriod": "2023",
+      "delta": -0.6839158167161088,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "sanitation",
+      "code": "SH.STA.BASS.ZS",
+      "label": "Akses sanitasi dasar",
+      "labelEn": "Basic sanitation access",
+      "producer": "WHO/UNICEF JMP",
+      "unit": "% penduduk",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SH.STA.BASS.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2024",
+      "value": 88.2031685658499,
+      "history": [
+        {
+          "period": "2024",
+          "value": 88.2031685658499
+        },
+        {
+          "period": "2023",
+          "value": 86.9363345400971
+        },
+        {
+          "period": "2022",
+          "value": 85.6486611717997
+        },
+        {
+          "period": "2021",
+          "value": 84.339850898343
+        },
+        {
+          "period": "2020",
+          "value": 82.2571090356155
+        },
+        {
+          "period": "2019",
+          "value": 80.1767467592482
+        },
+        {
+          "period": "2018",
+          "value": 78.0995418857349
+        },
+        {
+          "period": "2017",
+          "value": 76.0256805835892
+        },
+        {
+          "period": "2016",
+          "value": 73.9559310852412
+        },
+        {
+          "period": "2015",
+          "value": 71.8904398574445
+        },
+        {
+          "period": "2014",
+          "value": 69.8304612551161
+        },
+        {
+          "period": "2013",
+          "value": 67.7766235595933
+        },
+        {
+          "period": "2012",
+          "value": 65.7302519834107
+        },
+        {
+          "period": "2011",
+          "value": 63.6913657210041
+        }
+      ],
+      "previous": 86.9363345400971,
+      "previousPeriod": "2023",
+      "delta": 1.266834025752786,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "healthOOP",
+      "code": "SH.XPD.OOPC.CH.ZS",
+      "label": "Pembayaran langsung dalam belanja kesehatan",
+      "labelEn": "Out-of-pocket share of health expenditure",
+      "producer": "WHO GHED",
+      "unit": "% belanja kesehatan nasional berjalan",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2023",
+      "value": 31.0836544,
+      "history": [
+        {
+          "period": "2023",
+          "value": 31.0836544
+        },
+        {
+          "period": "2022",
+          "value": 32.9629097
+        },
+        {
+          "period": "2021",
+          "value": 27.1673317
+        },
+        {
+          "period": "2020",
+          "value": 31.19621658
+        },
+        {
+          "period": "2019",
+          "value": 34.55001068
+        },
+        {
+          "period": "2018",
+          "value": 35.23954773
+        },
+        {
+          "period": "2017",
+          "value": 36.17775345
+        },
+        {
+          "period": "2016",
+          "value": 38.12414932
+        },
+        {
+          "period": "2015",
+          "value": 42.71576691
+        },
+        {
+          "period": "2014",
+          "value": 45.24729156
+        },
+        {
+          "period": "2013",
+          "value": 50.89988327
+        },
+        {
+          "period": "2012",
+          "value": 53.61792374
+        },
+        {
+          "period": "2011",
+          "value": 56.22341919
+        }
+      ],
+      "previous": 32.9629097,
+      "previousPeriod": "2022",
+      "delta": -1.879255299999997,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "neet",
+      "code": "SL.UEM.NEET.ZS",
+      "label": "Pemuda di luar pendidikan, pekerjaan dan pelatihan",
+      "labelEn": "Youth outside education, employment and training",
+      "producer": "ILO · LFS",
+      "unit": "% penduduk usia 15–24",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SL.UEM.NEET.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2023",
+      "value": 21.569,
+      "history": [
+        {
+          "period": "2023",
+          "value": 21.569
+        },
+        {
+          "period": "2022",
+          "value": 22.336
+        },
+        {
+          "period": "2021",
+          "value": 22.455
+        },
+        {
+          "period": "2020",
+          "value": 21.8
+        },
+        {
+          "period": "2019",
+          "value": 20.547
+        },
+        {
+          "period": "2018",
+          "value": 21.738
+        },
+        {
+          "period": "2017",
+          "value": 21.449
+        },
+        {
+          "period": "2016",
+          "value": 22.479
+        },
+        {
+          "period": "2015",
+          "value": 22.919
+        },
+        {
+          "period": "2014",
+          "value": 22.354
+        },
+        {
+          "period": "2013",
+          "value": 22.888
+        },
+        {
+          "period": "2012",
+          "value": 22.949
+        },
+        {
+          "period": "2011",
+          "value": 25.897
+        }
+      ],
+      "previous": 22.336,
+      "previousPeriod": "2022",
+      "delta": -0.7669999999999995,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "neetFemale",
+      "code": "SL.UEM.NEET.FE.ZS",
+      "label": "NEET · perempuan",
+      "labelEn": "NEET · female",
+      "producer": "ILO · LFS",
+      "unit": "% perempuan usia 15–24",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SL.UEM.NEET.FE.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2023",
+      "value": 26.456,
+      "history": [
+        {
+          "period": "2023",
+          "value": 26.456
+        },
+        {
+          "period": "2022",
+          "value": 27.189
+        },
+        {
+          "period": "2021",
+          "value": 26.096
+        },
+        {
+          "period": "2020",
+          "value": 26.807
+        },
+        {
+          "period": "2019",
+          "value": 26.116
+        },
+        {
+          "period": "2018",
+          "value": 27.859
+        },
+        {
+          "period": "2017",
+          "value": 28.03
+        },
+        {
+          "period": "2016",
+          "value": 29.103
+        },
+        {
+          "period": "2015",
+          "value": 29.412
+        },
+        {
+          "period": "2014",
+          "value": 29.524
+        },
+        {
+          "period": "2013",
+          "value": 30.369
+        },
+        {
+          "period": "2012",
+          "value": 31.006
+        },
+        {
+          "period": "2011",
+          "value": 33.748
+        }
+      ],
+      "previous": 27.189,
+      "previousPeriod": "2022",
+      "delta": -0.7330000000000005,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "neetMale",
+      "code": "SL.UEM.NEET.MA.ZS",
+      "label": "NEET · laki-laki",
+      "labelEn": "NEET · male",
+      "producer": "ILO · LFS",
+      "unit": "% laki-laki usia 15–24",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SL.UEM.NEET.MA.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2023",
+      "value": 16.965,
+      "history": [
+        {
+          "period": "2023",
+          "value": 16.965
+        },
+        {
+          "period": "2022",
+          "value": 17.675
+        },
+        {
+          "period": "2021",
+          "value": 18.889
+        },
+        {
+          "period": "2020",
+          "value": 16.89
+        },
+        {
+          "period": "2019",
+          "value": 15.084
+        },
+        {
+          "period": "2018",
+          "value": 15.8
+        },
+        {
+          "period": "2017",
+          "value": 15.271
+        },
+        {
+          "period": "2016",
+          "value": 16.082
+        },
+        {
+          "period": "2015",
+          "value": 16.629
+        },
+        {
+          "period": "2014",
+          "value": 15.381
+        },
+        {
+          "period": "2013",
+          "value": 15.591
+        },
+        {
+          "period": "2012",
+          "value": 15.079
+        },
+        {
+          "period": "2011",
+          "value": 18.195
+        }
+      ],
+      "previous": 17.675,
+      "previousPeriod": "2022",
+      "delta": -0.7100000000000009,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "vulnerableWork",
+      "code": "SL.EMP.VULN.ZS",
+      "label": "Pekerjaan rentan menurut status · model ILO",
+      "labelEn": "Vulnerable employment by status · ILO model",
+      "producer": "ILO · modelled estimates",
+      "unit": "% penduduk bekerja",
+      "min": 0,
+      "max": 100,
+      "url": "https://data.worldbank.org/indicator/SL.EMP.VULN.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2025",
+      "value": 49.9563947518921,
+      "history": [
+        {
+          "period": "2025",
+          "value": 49.9563947518921
+        },
+        {
+          "period": "2024",
+          "value": 50.3095599926267
+        },
+        {
+          "period": "2023",
+          "value": 50.671641325763
+        },
+        {
+          "period": "2022",
+          "value": 50.2806596863492
+        },
+        {
+          "period": "2021",
+          "value": 49.9031597347253
+        },
+        {
+          "period": "2020",
+          "value": 50.3136526573599
+        },
+        {
+          "period": "2019",
+          "value": 49.138303631225
+        },
+        {
+          "period": "2018",
+          "value": 49.1211021884397
+        },
+        {
+          "period": "2017",
+          "value": 48.4921518603942
+        },
+        {
+          "period": "2016",
+          "value": 48.3329217166956
+        },
+        {
+          "period": "2015",
+          "value": 48.2113835792613
+        },
+        {
+          "period": "2014",
+          "value": 50.4491195071174
+        },
+        {
+          "period": "2013",
+          "value": 50.8849119430324
+        },
+        {
+          "period": "2012",
+          "value": 51.2865487748644
+        },
+        {
+          "period": "2011",
+          "value": 54.1008956470533
+        }
+      ],
+      "previous": 50.3095599926267,
+      "previousPeriod": "2024",
+      "delta": -0.3531652407346044,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    },
+    {
+      "id": "schoolCompletion",
+      "code": "SE.SEC.CMPT.LO.ZS",
+      "label": "Proksi penyelesaian pendidikan menengah pertama",
+      "labelEn": "Lower-secondary completion proxy",
+      "producer": "UNESCO UIS",
+      "unit": "% kelompok umur terkait",
+      "min": 0,
+      "max": 150,
+      "url": "https://data.worldbank.org/indicator/SE.SEC.CMPT.LO.ZS?locations=ID",
+      "frequency": "annual",
+      "role": "structural-context",
+      "period": "2025",
+      "value": 99.6596537255366,
+      "history": [
+        {
+          "period": "2025",
+          "value": 99.6596537255366
+        },
+        {
+          "period": "2024",
+          "value": 101.725245923963
+        },
+        {
+          "period": "2023",
+          "value": 97.6515105231315
+        },
+        {
+          "period": "2022",
+          "value": 100.68547920315
+        },
+        {
+          "period": "2021",
+          "value": 98.3300036590485
+        },
+        {
+          "period": "2020",
+          "value": 99.2865225014332
+        },
+        {
+          "period": "2019",
+          "value": 100.984414424274
+        },
+        {
+          "period": "2018",
+          "value": 100.214514427876
+        },
+        {
+          "period": "2017",
+          "value": 95.1407540800194
+        },
+        {
+          "period": "2016",
+          "value": 99.2077611274975
+        },
+        {
+          "period": "2015",
+          "value": 95.7864737958094
+        },
+        {
+          "period": "2014",
+          "value": 89.6896079138365
+        },
+        {
+          "period": "2013",
+          "value": 81.4525245688744
+        },
+        {
+          "period": "2012",
+          "value": 82.0114847271123
+        },
+        {
+          "period": "2011",
+          "value": 88.3502775803615
+        }
+      ],
+      "previous": 101.725245923963,
+      "previousPeriod": "2024",
+      "delta": -2.065592198426401,
+      "datasetUpdated": "2026-10-08",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "status": "ok"
+    }
+  ],
+  "bondQuotes": {
+    "status": "initial_verified",
+    "source": "BCA",
+    "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
+    "fetchedAt": "2026-10-31T05:16:48.457Z",
+    "rows": [
+      {
+        "id": "FR0078",
+        "maturity": "2029-05-15",
+        "coupon": 8.25,
+        "ask": 102.8,
+        "bid": 101.8,
+        "period": "2026-10-30",
+        "currency": "IDR",
+        "issuer": "Pemerintah Republik Indonesia",
+        "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
+        "source": "BCA · harga indikatif nasabah"
+      },
+      {
+        "id": "FR0082",
+        "maturity": "2030-09-15",
+        "coupon": 7,
+        "ask": 99.3,
+        "bid": 98.3,
+        "period": "2026-10-30",
+        "currency": "IDR",
+        "issuer": "Pemerintah Republik Indonesia",
+        "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
+        "source": "BCA · harga indikatif nasabah"
+      },
+      {
+        "id": "FR0085",
+        "maturity": "2031-04-15",
+        "coupon": 7.75,
+        "ask": 101.4,
+        "bid": 100.4,
+        "period": "2026-10-30",
+        "currency": "IDR",
+        "issuer": "Pemerintah Republik Indonesia",
+        "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
+        "source": "BCA · harga indikatif nasabah"
+      },
+      {
+        "id": "FR0091",
+        "maturity": "2032-04-15",
+        "coupon": 6.375,
+        "ask": 95.15,
+        "bid": 93.65,
+        "period": "2026-10-30",
+        "currency": "IDR",
+        "issuer": "Pemerintah Republik Indonesia",
+        "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
+        "source": "BCA · harga indikatif nasabah"
+      },
+      {
+        "id": "FR0096",
+        "maturity": "2033-02-15",
+        "coupon": 7,
+        "ask": 97.65,
+        "bid": 96.15,
+        "period": "2026-10-30",
+        "currency": "IDR",
+        "issuer": "Pemerintah Republik Indonesia",
+        "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
+        "source": "BCA · harga indikatif nasabah"
+      },
+      {
+        "id": "FR0103",
+        "maturity": "2035-07-15",
+        "coupon": 6.75,
+        "ask": 94.85,
+        "bid": 93.35,
+        "period": "2026-10-30",
+        "currency": "IDR",
+        "issuer": "Pemerintah Republik Indonesia",
+        "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
+        "source": "BCA · harga indikatif nasabah"
+      }
+    ]
+  },
   "bondMarket": {
     "period": "2026-10-29",
     "points": [
@@ -28,7 +1946,7 @@
     "source": "ADB · AsianBondsOnline",
     "basis": "Penutupan pasar; yield pemerintah, bukan harga penawaran seri tertentu",
     "status": "ok",
-    "fetchedAt": "2026-10-31T02:41:14.505Z",
+    "fetchedAt": "2026-10-31T06:32:53.004Z",
     "history": [
       {
         "period": "2026-10-29",
@@ -330,7 +2248,7 @@
       "previous": 4.76,
       "comparison": "same-period-prior-year",
       "source": "BPS · Sakernas",
-      "url": "https://www.bps.go.id/assets/pressrelease/2026/05/05/2574/tingkat-pengangguran-terbuka",
+      "url": "https://www.bps.go.id/id/pressrelease/2026/05/05/2574/tingkat-pengangguran-terbuka--tpt--sebesar-4-68-persen--rata-rata-upah-buruh-sebesar-3-29-juta-rupiah-.html",
       "publishedAt": "2026-05-05",
       "fetchedAt": "2026-10-31T02:38:20.852Z",
       "status": "initial_verified",
@@ -338,15 +2256,27 @@
         {
           "period": "2026-02",
           "value": 4.68
+        },
+        {
+          "period": "2025-02",
+          "value": 4.76
         }
-      ]
+      ],
+      "previousPeriod": "2025-02",
+      "comparisonUrl": "https://www.bps.go.id/id/pressrelease/2026/05/05/2574/tingkat-pengangguran-terbuka--tpt--sebesar-4-68-persen--rata-rata-upah-buruh-sebesar-3-29-juta-rupiah-.html",
+      "comparisonMethod": "derived-from-reported-percentage-point-change",
+      "referenceReview": {
+        "method": "official-release-search-index",
+        "reviewedOn": "2026-10-31",
+        "note": "Manually reviewed release comparison. Direct page retrieval returned HTTP 403; automatic refresh remains unverified."
+      }
     },
     {
       "id": "bpsWage",
       "value": 3.29,
       "period": "2026-02",
       "source": "BPS · rata-rata upah buruh (Rp juta)",
-      "url": "https://www.bps.go.id/assets/pressrelease/2026/05/05/2574/tingkat-pengangguran-terbuka",
+      "url": "https://www.bps.go.id/id/pressrelease/2026/05/05/2574/tingkat-pengangguran-terbuka--tpt--sebesar-4-68-persen--rata-rata-upah-buruh-sebesar-3-29-juta-rupiah-.html",
       "publishedAt": "2026-05-05",
       "fetchedAt": "2026-10-31T02:38:20.852Z",
       "status": "initial_verified",
@@ -381,8 +2311,20 @@
         {
           "period": "2026-03",
           "value": 8.07
+        },
+        {
+          "period": "2025-03",
+          "value": 8.47
         }
-      ]
+      ],
+      "previousPeriod": "2025-03",
+      "comparisonUrl": "https://www.bps.go.id/id/pressrelease/2026/08/05/2594/persentase-penduduk",
+      "comparisonMethod": "derived-from-reported-percentage-point-change",
+      "referenceReview": {
+        "method": "official-release-search-index",
+        "reviewedOn": "2026-10-31",
+        "note": "Manually reviewed release comparison. Direct page retrieval returned HTTP 403; automatic refresh remains unverified."
+      }
     }
   ],
   "agencyNews": [
@@ -499,9 +2441,19 @@
   ],
   "extendedChecks": [
     {
+      "id": "economic-drivers",
+      "status": "ok",
+      "checkedAt": "2026-10-31T10:09:46.589Z"
+    },
+    {
       "id": "bond-market",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z"
+      "checkedAt": "2026-10-31T06:32:53.004Z"
+    },
+    {
+      "id": "social-structural",
+      "status": "ok",
+      "checkedAt": "2026-10-31T06:32:53.004Z"
     },
     {
       "id": "bps-social",
@@ -581,23 +2533,24 @@
     }
   ],
   "schemaVersion": 1,
-  "snapshotId": "e733b50ba0f3554d",
-  "dataChangedAt": "2026-10-31T03:57:09.714Z",
-  "checkedAt": "2026-10-31T02:41:14.505Z",
+  "snapshotId": "e3d4d26183d06c63",
+  "dataChangedAt": "2026-10-31T10:09:53.469Z",
+  "checkedAt": "2026-10-31T10:09:46.589Z",
   "metrics": [
     {
       "id": "jisdor",
       "name": "Rupiah per dolar AS · JISDOR",
       "unit": "Rp / USD",
       "frequency": "daily",
-      "source": "Bank Indonesia",
-      "url": "https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx",
+      "source": "Bank Indonesia · halaman indikator resmi",
+      "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
       "maxAgeDays": 7,
       "meaning": "Angka lebih besar berarti lebih banyak rupiah untuk membeli satu dolar. Biaya impor dapat meningkat; penerima dolar bisa diuntungkan. JISDOR bukan kurs jual/beli bank.",
       "history": [
         {
-          "period": "2026-10-30",
-          "value": 18138
+          "id": "jisdor",
+          "value": 18138,
+          "period": "2026-10-30"
         },
         {
           "period": "2026-10-29",
@@ -645,8 +2598,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "fetchedAt": "2026-10-31T06:34:32.243Z",
       "datasetUpdated": null,
       "status": "ok",
       "error": null,
@@ -658,14 +2611,15 @@
       "name": "Inflasi nasional · yoy",
       "unit": "%",
       "frequency": "monthly",
-      "source": "Bank Indonesia · publikasi inflasi",
-      "url": "https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx",
+      "source": "Bank Indonesia · halaman indikator resmi",
+      "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
       "maxAgeDays": 75,
       "meaning": "Perubahan rata-rata harga dibanding bulan yang sama tahun lalu. Jika positif, harga rata-rata masih naik. Pengalaman belanja keluarga dan harga daerah bisa berbeda.",
       "history": [
         {
-          "period": "2026-09",
-          "value": 3.28
+          "id": "inflation",
+          "value": 3.28,
+          "period": "2026-09"
         },
         {
           "period": "2026-08",
@@ -713,8 +2667,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "fetchedAt": "2026-10-31T06:34:32.243Z",
       "datasetUpdated": null,
       "status": "ok",
       "error": null,
@@ -726,14 +2680,15 @@
       "name": "BI-Rate",
       "unit": "%",
       "frequency": "decision",
-      "source": "Bank Indonesia",
-      "url": "https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx",
+      "source": "Bank Indonesia · halaman indikator resmi",
+      "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
       "maxAgeDays": 65,
       "meaning": "Suku bunga kebijakan memengaruhi biaya dana. Bunga deposito dan cicilan belum tentu langsung mengikuti; lihat kontrak dan keputusan masing-masing bank.",
       "history": [
         {
-          "period": "2026-10-21",
-          "value": 5.75
+          "id": "rate",
+          "value": 5.75,
+          "period": "2026-10-21"
         },
         {
           "period": "2026-09-23",
@@ -781,8 +2736,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "fetchedAt": "2026-10-31T06:34:32.243Z",
       "datasetUpdated": null,
       "status": "ok",
       "error": null,
@@ -814,8 +2769,8 @@
       "publishedAt": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "fetchedAt": "2026-10-31T06:34:32.243Z",
       "datasetUpdated": null,
       "status": "ok",
       "error": null,
@@ -847,11 +2802,11 @@
       "publishedAt": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:34:32.243Z",
       "fetchedAt": "2026-10-31T02:41:14.505Z",
       "datasetUpdated": null,
-      "status": "ok",
-      "error": null,
+      "status": "fallback",
+      "error": "Nilai tidak ditemukan",
       "observationOld": false,
       "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
     },
@@ -882,8 +2837,8 @@
       "publishedAt": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "fetchedAt": "2026-10-31T06:34:32.243Z",
       "datasetUpdated": null,
       "status": "ok",
       "error": null,
@@ -1038,8 +2993,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1115,8 +3070,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1192,8 +3147,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1269,8 +3224,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1346,8 +3301,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1423,8 +3378,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1500,8 +3455,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1577,8 +3532,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "fetchedAt": "2026-10-31T06:32:53.004Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1657,19 +3612,19 @@
     {
       "id": "apbn",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
       "error": null
     },
     {
       "id": "apbn-pdf",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "error": null
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "note": "Dokumen yang sama: menggunakan ekstraksi tersimpan; fetchedAt tidak diubah"
     },
     {
       "id": "bi-extra",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:34:32.243Z",
       "error": null
     },
     {
@@ -1740,15 +3695,27 @@
     },
     {
       "id": "inflation",
+      "status": "error",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "inflation-alternative",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "error": null
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "note": "Sumber alternatif resmi; definisi indikator dan periode yang sama. Histori valid sebelumnya dipertahankan."
     },
     {
       "id": "jisdor",
+      "status": "error",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "jisdor-alternative",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "error": null
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "note": "Sumber alternatif resmi; definisi indikator dan periode yang sama. Histori valid sebelumnya dipertahankan."
     },
     {
       "id": "lps-disclosure",
@@ -1764,14 +3731,20 @@
     },
     {
       "id": "rate",
+      "status": "error",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
+      "error": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "rate-alternative",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z",
-      "error": null
+      "checkedAt": "2026-10-31T06:34:32.243Z",
+      "note": "Sumber alternatif resmi; definisi indikator dan periode yang sama. Histori valid sebelumnya dipertahankan."
     },
     {
       "id": "worldbank",
       "status": "ok",
-      "checkedAt": "2026-10-31T02:41:14.505Z",
+      "checkedAt": "2026-10-31T06:32:53.004Z",
       "error": null
     }
   ],
@@ -2787,7 +4760,8 @@
         "page": 22,
         "comparison": "same-period-prior-year"
       }
-    }
+    },
+    "checkedAt": "2026-10-31T06:32:53.004Z"
   },
   "inflationTarget": {
     "mid": 2.5,
@@ -2796,61 +4770,103 @@
     "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx"
   },
   "forecast": {
-    "status": "experimental",
-    "horizon": "2026-10",
-    "basePeriod": "2026-09",
+    "available": true,
     "point": 3.19,
-    "method": "median3",
+    "base": 3.28,
+    "basePeriod": "2026-09",
+    "horizon": "2026-10",
     "mae": 0.2119999999999999,
     "naiveMAE": 0.356,
-    "medianMAE": 0.2119999999999999,
-    "testCount": 5,
-    "trainCount": 10,
+    "tests": 5,
     "errors": [
       {
         "period": "2026-05",
         "actual": 3.08,
-        "naive": 2.42,
-        "median3": 3.48,
-        "naiveError": 0.6600000000000001,
-        "medianError": 0.3999999999999999
+        "predicted": 3.48,
+        "error": -0.3999999999999999,
+        "naiveError": 0.6600000000000001
       },
       {
         "period": "2026-06",
         "actual": 3.34,
-        "naive": 3.08,
-        "median3": 3.08,
-        "naiveError": 0.2599999999999998,
-        "medianError": 0.2599999999999998
+        "predicted": 3.08,
+        "error": 0.2599999999999998,
+        "naiveError": 0.2599999999999998
       },
       {
         "period": "2026-07",
         "actual": 2.88,
-        "naive": 3.34,
-        "median3": 3.08,
-        "naiveError": 0.45999999999999996,
-        "medianError": 0.20000000000000018
+        "predicted": 3.08,
+        "error": -0.20000000000000018,
+        "naiveError": -0.45999999999999996
       },
       {
         "period": "2026-08",
         "actual": 3.19,
-        "naive": 2.88,
-        "median3": 3.08,
-        "naiveError": 0.31000000000000005,
-        "medianError": 0.10999999999999988
+        "predicted": 3.08,
+        "error": 0.10999999999999988,
+        "naiveError": 0.31000000000000005
       },
       {
         "period": "2026-09",
         "actual": 3.28,
-        "naive": 3.19,
-        "median3": 3.19,
-        "naiveError": 0.08999999999999986,
-        "medianError": 0.08999999999999986
+        "predicted": 3.19,
+        "error": 0.08999999999999986,
+        "naiveError": 0.08999999999999986
       }
     ],
+    "history": [
+      {
+        "period": "2025-12",
+        "value": 2.92
+      },
+      {
+        "period": "2026-01",
+        "value": 3.55
+      },
+      {
+        "period": "2026-02",
+        "value": 4.76
+      },
+      {
+        "period": "2026-03",
+        "value": 3.48
+      },
+      {
+        "period": "2026-04",
+        "value": 2.42
+      },
+      {
+        "period": "2026-05",
+        "value": 3.08
+      },
+      {
+        "period": "2026-06",
+        "value": 3.34
+      },
+      {
+        "period": "2026-07",
+        "value": 2.88
+      },
+      {
+        "period": "2026-08",
+        "value": 3.19
+      },
+      {
+        "id": "inflation",
+        "value": 3.28,
+        "period": "2026-09"
+      }
+    ],
+    "weak": true,
+    "sourceStatus": "ok",
+    "status": "experimental",
+    "method": "median3",
+    "testCount": 5,
+    "trainCount": 10,
     "unit": "poin persentase",
-    "note": "Eksperimen satu bulan ke depan atas inflasi yoy. Model dipilih dari hasil uji bergulir yang sama; ini bukan evaluasi independen setelah pemilihan model. Data revisi terkini, bukan vintage waktu nyata. Galat historis bukan interval probabilitas. Tidak dipakai sebagai rekomendasi investasi.",
-    "noteEn": "An experimental one-month-ahead projection of year-on-year inflation. Selection uses the same rolling tests, so this is not independent post-selection evaluation. It uses currently revised data, not real-time vintages. Historical error is not a probability interval or investment recommendation."
+    "asOf": "2026-10-31T10:09:53.469Z",
+    "note": "Median tiga observasi ditetapkan sebelum evaluasi. Uji bergulir memakai data revisi terkini, bukan vintage. Sampel kecil dan galat historis bukan interval probabilitas."
   },
   "gaps": [
     {
@@ -2859,9 +4875,9 @@
       "reason": "Belum terhubung. Memerlukan sumber dengan hak tampilan/redistribusi yang sesuai. Tidak memakai endpoint pasar tak terdokumentasi."
     },
     {
-      "name": "Arus asing SBN dan SRBI",
+      "name": "Arus asing SBN lengkap",
       "url": "https://www.djppr.kemenkeu.go.id/",
-      "reason": "Belum ada konektor angka yang terverifikasi. Perubahan posisi kepemilikan tidak diperlakukan sebagai arus neto."
+      "reason": "SRBI tersedia pada jendela transaksi tersendiri; arus SBN lengkap belum tersambung. Perubahan posisi kepemilikan tidak diperlakukan sebagai transaksi neto."
     },
     {
       "name": "Harga daerah, upah & kemiskinan terkini",
@@ -2870,6 +4886,28 @@
     }
   ],
   "newsFetchedAt": "2026-10-31T01:25:27.946Z",
-  "publicationsFetchedAt": "2026-10-31T02:41:14.505Z",
-  "coverage": "BI + indikator tahunan World Bank + angka ringkasan APBN + dua bank deposito reguler dan pengungkapan TBP pada bank. Bukan seluruh kondisi ekonomi atau terminal pasar real-time."
+  "publicationsFetchedAt": "2026-10-31T10:09:46.589Z",
+  "coverage": "BI, APBN Kita, sepuluh bank pembanding, laporan kondisi bank, kurva yield ADB, statistik BPS awal, penggerak ekonomi/distribusi historis dan seri struktural World Bank. Cakupan dan keberhasilan koneksi berbeda; lihat checks dan extendedChecks. Bukan terminal pasar real-time.",
+  "rejections": [],
+  "pipeline": {
+    "environment": "local-verification",
+    "runId": "2026-10-31T10:09:46.589Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "economic-drivers"
+    ],
+    "status": "partial",
+    "startedAt": "2026-10-31T10:09:46.589Z",
+    "finishedAt": "2026-10-31T10:09:53.469Z"
+  },
+  "forecastArchive": [
+    {
+      "model": "median3-v1",
+      "basePeriod": "2026-09",
+      "horizon": "2026-10",
+      "point": 3.19,
+      "issuedAt": "2026-10-31T06:33:14.512Z",
+      "origin": "local-verification"
+    }
+  ]
 }

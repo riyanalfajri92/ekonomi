@@ -1,31 +1,31 @@
-# Nadi — ekonomi kita, artinya bagi kita
+> Revisi 5.1: lihat `ASESMEN_5_1.md`. Ringkasan perubahan, gerbang prediksi dan asumsi simulator diperbaiki.
 
-Dashboard ID/EN berpusat pada daya beli dan ketahanan keuangan: kehidupan masyarakat → jalur ekonomi/fiskal → keputusan pribadi. Angka, periode pengamatan, sumber dan status pembaruan ditampilkan terpisah. Analisis berbasis aturan berubah mengikuti data; penjelasan konsep tetap tersedia.
+# Nadi 5 — ekonomi kita, artinya untuk kita
 
-## Jalankan
+Rombakan antarmuka dan struktur bacaan, bukan lapisan tambahan pada halaman lama. Empat pintu: **Baca ekonomi → Prospek → Pilihanmu → Sumber**.
 
-Node.js 24. Jalankan `npm ci`, `npm test`, lalu `npm run dev`. Untuk validasi produksi: `npm run build`. Vercel memakai konfigurasi `vercel.json` dalam paket ini.
+## Satu laporan
 
-## Pasang dan perbarui
+Halaman utama menelusuri kegiatan ekonomi → penghasilan/pekerjaan/distribusi → dukungan APBN → ketahanan pembiayaan → pilihan pribadi. Grafik penggerak ekonomi dapat diklik untuk histori, sumber dan CSV. Data tahunan dibedakan dari triwulan dan pengamatan terbaru.
 
-Ikuti **PANDUAN_UPDATE.md**. Unggah seluruh isi folder ini, termasuk `.github`, ke akar repositori. Jangan hanya HTML. GitHub Actions mengambil data berkala dan menyimpan snapshot; integrasi GitHub–Vercel menerbitkan commit tersebut. API Vercel memeriksa sumber inti ketika dikunjungi, dengan cache.
+Sepuluh seri baru World Bank/WDI-PIP: konsumsi rumah tangga, investasi tetap, konsumsi pemerintah, ekspor, impor, konsumsi per kapita, pertanian, industri termasuk konstruksi, jasa, dan Gini. Pengambilan langsung berhasil; semuanya merupakan konteks tahunan, bukan data hari ini. Sepuluh seri struktural sosial versi sebelumnya tetap dipakai dalam alur kehidupan masyarakat.
 
-**Penting:** koneksi BPS memerlukan `BPS_API_KEY` resmi di GitHub Actions. Tanpa itu, data BPS awal tetap diberi status belum terverifikasi otomatis. Beberapa halaman bank memblokir pengambilan otomatis; paket tidak mengakali blokir tersebut. Lihat **VALIDASI.md** untuk batas setiap kelompok sumber.
+Prospek membedakan observasi, ekspektasi survei, model eksperimental dan skenario. Pilihanmu menyatukan 17 kalkulator, rencana terpadu, sepuluh bank pembanding dan enam kuotasi FR awal. Input pribadi tetap di perangkat.
 
-## Materi
+## Satu mesin data
 
-- Narasi ekonomi dan rumah tangga, grafik inflasi, fiskal APBN dengan referensi halaman dan pembanding yang tersedia.
-- Sepuluh bank pembanding: tenor, nominal, kanal bunga, simulasi hasil bersih, pembanding LPS dan rasio bank yang tersedia.
-- Kurva imbal hasil obligasi pemerintah dari ADB; kalkulator PV, YTM, durasi dan skenario. Bukan harga transaksi per seri.
-- Perencanaan arus kas, dana darurat, utang, tujuan, pensiun dan uji tekanan. Ambang dapat diubah; bukan standar universal atau layanan CFP bersertifikat.
-- Rilis resmi, sumber/status, ID/EN dan tautan profil pembuat.
+GitHub Actions setiap enam jam → konektor resmi → validasi per seri → snapshot/histori/health → commit → Vercel. API hanya menyajikan snapshot. Pembaruan tanpa perubahan tidak merender ulang bacaan; respons API lama tidak boleh mengganti snapshot lebih baru.
 
-Data yang tidak tersedia tidak direkayasa. Tidak ada klaim semua bank aman, harga obligasi real-time, atau rekomendasi beli berbasis harga yang belum tersedia.
+Cadangan resmi BI sudah berhasil diuji untuk inflasi, JISDOR dan BI-Rate. Status pengambilan, usia observasi dan kesiapan produksi dipisahkan. BPS membutuhkan konfigurasi/akses pemilik; harga seri obligasi dan sebagian bank belum lulus refresh. Konektor yang menerima penyaringan keamanan dijeda.
 
-## Pembaruan desain dan analisis
+## Jalankan/pasang
 
-Beranda memisahkan perhitungan daya beli pribadi dari estimasi perubahan upah riil rata-rata buruh. Upah tahun sebelumnya dibandingkan dengan inflasi yoy pada bulan yang sama; tidak menggunakan inflasi terbaru yang berbeda bulan. Pembanding awal Februari 2025 berasal dari rilis resmi BPS; pencarian histori pembanding diterapkan pada adapter API BPS.
+Node 24: `npm ci`, `npm test`, `npm run build`, `npm run dev`.
 
-Prospek & Sinyal memuat model median tiga observasi inflasi yoy untuk satu bulan ke depan, hasil uji bergulir dan patokan last-value. Metode ini tetap dan eksperimental, dengan sampel uji pendek; bukan interval probabilitas. Proyeksi ditahan setelah bulan target berlalu atau jika seri berlubang. Panel lain merupakan sinyal, sensitivitas atau skenario, dengan label berbeda.
+Salin seluruh isi folder ke akar repositori GitHub, termasuk `.github`. Ikuti **PANDUAN_UPDATE.md** untuk Actions, BPS_API_KEY, verifikasi produksi dan Vercel. Belum ada push/deployment ke akun pengguna dari lingkungan ini.
 
-Skenario penghasilan, harga, pinjaman, USD dan durasi obligasi berubah ketika input diedit. Default hanya contoh, bukan profil pengunjung. Rasio bunga fiskal serta kebutuhan laju penyerapan dihitung dari periode kumulatif dan pagu yang sesuai; bukan ramalan pemotongan bantuan.
+- **KONSEP_EKSEKUSI.md**: struktur yang diterapkan dan batas analisis.
+- **PERUBAHAN.md**: bagian yang diganti, dipertahankan dan diuji.
+- **VALIDASI.md**: bukti serta keterbatasan material.
+
+Tidak ada klaim kualitas 10/10, semua data live, prediksi terkalibrasi, bank pasti aman atau rekomendasi investasi personal.

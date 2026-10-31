@@ -1,0 +1,142 @@
+.tool-index{font:24px Georgia;color:#829572}
+.bond-market{display:grid;grid-template-columns:1.1fr 1fr;gap:35px;border:1px solid var(--line);background:#fffef9;padding:28px;border-radius:5px}
+.bond-market p{font-size:13px;line-height:1.8}
+@media(max-width:620px){.society-band,.bond-market{grid-template-columns:1fr}
+.bond-market{padding:20px}}
+.prospect-intro{padding:55px 0 45px;max-width:1050px}
+.prospect-intro h1{font-size:clamp(40px,5.4vw,78px);line-height:1.07;margin:20px 0}
+.prospect-intro h1 em{font-weight:normal;color:#106954}
+.prospect-legend{display:flex;flex-wrap:wrap;gap:12px 24px;margin:25px 0;font-size:13px;color:#52695f}
+.prospect-forecast{display:grid;grid-template-columns:1.05fr 1fr;background:#193c32;color:#f5f3e9;border-radius:18px;overflow:hidden;margin-bottom:35px}
+.prospect-forecast>div{padding:40px}
+.prospect-forecast h2{font-size:36px;margin:14px 0}
+.prospect-number{font-size:clamp(64px,7vw,105px);font-weight:750;line-height:1.1;margin:28px 0 10px;letter-spacing:-4px}
+.prospect-number small{font-size:18px;letter-spacing:0;margin-left:12px}
+.prospect-verdict{font-size:21px;color:#e4e9b0}
+.prospect-forecast .story-overline,.prospect-forecast a{color:#d4d99b}
+.prospect-validation{background:#234a3d}
+.prospect-chart{margin:0}
+.prospect-chart svg{width:100%;max-height:260px;color:#f5f3e9}
+.prospect-chart text{fill:currentColor;font-size:11px}
+.prospect-chart figcaption{font-size:13px;opacity:.85}
+.prospect-accuracy{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0}
+.prospect-accuracy strong{display:block;font-size:34px;color:#e4e9b0}
+.prospect-accuracy span{font-size:13px;display:block}
+.prospect-caution{border-left:3px solid #d4d99b;padding-left:15px;font-size:14px}
+.prospect-section-head{max-width:850px;margin:30px 0}
+.prospect-section-head h2,.prospect-personal h2{font-size:clamp(30px,3.6vw,49px);line-height:1.12}
+.prospect-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.prospect-card{background:#fffef9;border:1px solid #d0d8ce;border-radius:10px;padding:28px;display:flex;flex-direction:column}
+.prospect-card-top{display:flex;justify-content:space-between;gap:14px;font-size:11px;letter-spacing:1px;color:#106954}
+.prospect-type{background:#e9eddf;border-radius:20px;padding:4px 8px;font-size:10px;letter-spacing:0;white-space:nowrap}
+.prospect-card h2{font-family:inherit;font-size:24px;line-height:1.2;margin:23px 0}
+.prospect-reading{font-size:36px;font-weight:750;letter-spacing:-1px;color:#106954}
+.prospect-reading small{display:block;font-size:13px;letter-spacing:0;color:#607266;font-weight:500}
+.prospect-evidence{font-size:11px;opacity:.8;border-top:1px solid #c9d0c5;padding-top:13px;margin-top:auto;overflow-wrap:anywhere}
+.prospect-personal{padding:25px 0 50px;scroll-margin-top:110px}
+.prospect-personal-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px;align-items:start}
+.prospect-inputs{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.prospect-inputs label{display:block;font-size:13px;font-weight:600}
+.prospect-inputs input{display:block;width:100%;margin-top:6px;background:#fffef9;border:1px solid #bccabd;border-radius:6px;padding:12px;color:#173a2f;font-size:16px;box-sizing:border-box}
+.prospect-impact{padding:30px;background:#e6ebdc;border-radius:12px;position:sticky;top:110px}
+.prospect-impact h3{font-size:27px;line-height:1.2;margin:20px 0}
+.prospect-impact-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.prospect-impact-stats span{font-size:12px;display:block}
+.prospect-impact-stats strong{display:block;font-size:21px;color:#106954;margin-top:7px;overflow-wrap:anywhere}
+.prospect-extra{border-top:1px solid #c4cfbd;font-size:13px}
+.prospect-boundaries{padding:25px 0 45px;border-top:1px solid #c4cfbd}
+.prospect-boundaries p{max-width:950px;font-size:14px}
+.prospect-forecast td,.prospect-forecast th{color:inherit}
+@media(max-width:850px){.prospect-forecast,.prospect-personal-layout{grid-template-columns:1fr}
+.prospect-impact{position:static}
+.prospect-forecast>div{padding:26px}
+.prospect-grid{gap:14px}
+.prospect-card{padding:22px}}
+@media(max-width:620px){.prospect-grid{grid-template-columns:1fr}
+.prospect-intro{padding-top:30px}
+.prospect-intro h1{font-size:40px}
+.prospect-impact{padding:22px}
+.prospect-reading{font-size:32px}
+.prospect-card-top{letter-spacing:.5px}
+.prospect-inputs{gap:13px}
+.prospect-impact-stats strong{font-size:18px}}
+@media print{.prospect-impact{position:static}
+.prospect-forecast,.prospect-validation{background:white;color:#173a2f}
+.prospect-card{break-inside:avoid}}
+@media(max-width:390px){.prospect-inputs{grid-template-columns:1fr}}
+.prospect-at-glance{margin-top:30px;padding-top:20px;border-top:1px solid #cbd4c5}
+.prospect-at-glance>p{font-size:10px;letter-spacing:1px;color:#607266}
+.prospect-at-glance>div{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.prospect-at-glance article{padding-right:16px;border-right:1px solid #cbd4c5}
+.prospect-at-glance article:last-child{border:0}
+.prospect-at-glance span{display:block;font-size:12px}
+.prospect-at-glance strong{display:block;font-size:31px;color:#106954;margin:9px 0}
+.prospect-at-glance small{font-size:11px;color:#607266}
+@media(max-width:620px){.prospect-at-glance>div{grid-template-columns:1fr}
+.prospect-at-glance article{border-right:0;border-bottom:1px solid #cbd4c5;padding-bottom:15px}}
+.plain-signal .prospect-evidence{border-top:0}
+.plain-method .prospect-forecast{margin-top:25px}
+.plain-next .prospect-personal h2{font-size:32px}
+.series-analysis{margin:30px 0 45px}
+.series-analysis>h2{font-size:38px;max-width:900px}
+.series-status{background:#e6ebdc;border-left:3px solid #106954;padding:15px;font-size:12px}
+.series-table{min-width:1100px;font-size:14px}
+.series-table th{background:#1b493a;color:#fff}
+.series-table td{vertical-align:top;min-width:140px;padding:20px 14px}
+.series-table td:nth-child(4){min-width:245px}
+.series-table small{font-size:11px;line-height:1.6}
+.series-table p{font-size:13px;margin:12px 0}
+.series-verdict{display:inline-block;font-size:12px;font-weight:700;padding:7px 10px;border-radius:5px;background:#e5eadb;color:#28523e}
+.series-verdict.expensive{background:#f1e2d8;color:#80512a}
+.series-verdict.cheap{background:#d7eada;color:#155f3c}
+.series-analysis details{font-size:13px;margin:20px 0;max-width:1000px}
+.ed-prospect-preview{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;background:#e7ecdd;padding:32px;border-radius:8px;margin:30px 0}
+.ed-prospect-preview span{font-size:10px;letter-spacing:1px;color:var(--ed-green);font-weight:700}
+.ed-prospect-preview h3{font-size:27px;margin:17px 0}
+.ed-prospect-preview p{font-size:14px}
+.ed-prospect-rule{border-left:1px solid #bfcbb3;padding-left:28px}
+.ed-prospect-rule b{font-size:20px}
+.tool-search{display:block;font-size:12px;font-weight:650;max-width:450px;margin:25px 0}
+.tool-search input{display:block;width:100%;padding:13px;border:1px solid var(--ed-rule);border-radius:6px;background:#fffef9;margin-top:8px;font-size:15px}
+.tool-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:25px 0 35px}
+.tool-choice{background:#fffef9;border:1px solid var(--ed-rule);padding:17px 20px;border-radius:6px;text-align:left;color:var(--ed-ink);cursor:pointer}
+.tool-choice b{display:block;font-size:14px;margin-bottom:9px}
+.tool-choice span{display:block;font-size:11px;line-height:1.6;color:var(--ed-muted)}
+.tool-choice.active{background:#e0e9d4;border-color:#7e9a62}
+.tool-choice[hidden]{display:none}
+.tool-workspace{display:grid;grid-template-columns:1.05fr 1fr;gap:35px;padding:30px;background:#fffef9;border:1px solid var(--ed-rule);border-radius:10px;scroll-margin-top:120px}
+.tool-workspace h2{font-size:30px;margin:15px 0}
+.tool-workspace p{font-size:13px;line-height:1.8}
+.tool-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:25px 0}
+.tool-fields label{font-size:11px;font-weight:650}
+.tool-fields input{display:block;width:100%;box-sizing:border-box;padding:12px;color:var(--ed-ink);font-size:16px;margin-top:8px;background:#f7f7ee;border:1px solid #c5d1bc;border-radius:5px}
+.tool-workspace>aside{padding:25px;background:#e6eddb;border-radius:8px;position:sticky;top:125px}
+.tool-workspace>aside h3{font-size:26px;line-height:1.2;margin:20px 0}
+.tool-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.tool-stats>div{padding:12px 0;border-bottom:1px solid #c6d2b9}
+.tool-stats span{font-size:11px;display:block}
+.tool-stats strong{display:block;font-size:21px;color:var(--ed-green);margin-top:8px;overflow-wrap:anywhere}
+.tool-full-plan{padding:22px;border:1px solid var(--ed-rule);border-radius:8px;margin:30px 0}
+.tool-full-plan>summary{font-weight:650;color:var(--ed-green)}
+.tool-workspace details{font-size:12px}
+@media(max-width:850px){.ed-spread,.ed-fiscal-layout,.soc-reading,.soc-comparison,.tool-workspace{grid-template-columns:1fr}
+.tool-workspace>aside{position:static}
+.tool-menu{grid-template-columns:1fr 1fr}
+.ed-prospect-preview{grid-template-columns:1fr}
+.ed-prospect-rule{border-left:0;border-top:1px solid #bfcbb3;padding:20px 0 0}}
+@media(max-width:620px){.tool-workspace{padding:20px}
+.tool-workspace>aside{padding:20px}
+.tool-fields{gap:14px}
+.tool-menu{gap:10px}
+.tool-choice{padding:15px 13px}
+.tool-choice b{font-size:12px}
+.tool-choice span{font-size:10px}
+.tool-stats strong{font-size:19px}}
+@media(max-width:390px){.tool-fields,.tool-menu,.tool-stats{grid-template-columns:1fr}}
+@media print{header,.statusbar,.tool-menu,.tool-search,.author-section,.ed-route{display:none!important}
+.ed-front,.ed-spread,.tool-workspace{display:block}
+.tool-workspace>aside{position:static}
+.tool-fields{grid-template-columns:1fr 1fr}}
+.tool-categories{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}
+.tool-categories button{border:1px solid var(--ed-rule);border-radius:20px;background:transparent;color:var(--ed-green);padding:10px 15px;font-size:12px;cursor:pointer}
+.tool-categories button.active{background:var(--ed-green);border-color:var(--ed-green);color:white}

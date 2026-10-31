@@ -5,8 +5,12 @@
   "outputDirectory": "public",
   "functions": {
     "api/economy.js": {
-      "maxDuration": 60,
-      "includeFiles": "{public/data/snapshot.json,node_modules/pdf-parse/dist/pdf-parse/esm/pdf.worker.mjs}"
+      "maxDuration": 10,
+      "includeFiles": "public/data/snapshot.json"
+    },
+    "api/health.js": {
+      "maxDuration": 10,
+      "includeFiles": "public/data/snapshot.json"
     }
   },
   "headers": [
@@ -24,6 +28,15 @@
         {
           "key": "X-Frame-Options",
           "value": "DENY"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
         }
       ]
     }

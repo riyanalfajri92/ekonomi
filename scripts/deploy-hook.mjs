@@ -1,0 +1,3 @@
+// Optional Vercel deploy hook; its secret URL is never printed or stored in public files.
+const raw=process.env.VERCEL_DEPLOY_HOOK;if(!raw){console.log('Using existing Git integration; no deploy hook configured.');process.exit(0);}
+try{const url=new URL(raw);if(url.protocol!=='https:'||url.hostname!=='api.vercel.com'||!url.pathname.startsWith('/v1/integrations/deploy/'))throw Error();const response=await fetch(url,{method:'POST',signal:AbortSignal.timeout(12000)});if(!response.ok)throw Error();console.log('Deploy hook accepted. Production verification still required.');}catch{console.error('Deploy hook failed. Check the secret configuration.');process.exitCode=1;}

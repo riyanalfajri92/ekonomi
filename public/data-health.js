@@ -1,0 +1,14 @@
+import {sourceInventory,pipelineHealth} from './source-policy.js';
+const G=[
+ ['drivers','Penggerak & distribusi historis','Historical drivers & distribution','World Bank · WDI/PIP','annual','drivers',[]],
+ ['prices','Harga & bunga','Prices & rates','BI · indikator resmi','daily/monthly','metrics',['inflation','rate','jisdor']],
+ ['society','Penghasilan & pekerjaan','Income & jobs','BPS · Web API','semester/quarter','social',['bpsGrowth','bpsJobs','bpsWage','bpsPoverty']],
+ ['fiscal','Keuangan negara','Public finances','Kemenkeu · APBN Kita','monthly','fiscal',[]],
+ ['structural','Layanan & kesempatan','Services & opportunities','WHO/UNICEF/ILO/UNESCO melalui World Bank','annual','structural',[]],
+ ['deposits','Bunga deposito','Deposit offers','Halaman resmi bank','product','deposits',[]],
+ ['bankHealth','Kondisi bank','Bank conditions','Laporan resmi bank','quarterly','bankHealth',[]],
+ ['curve','Kurva obligasi','Bond curve','ADB · AsianBondsOnline','daily','bondMarket',[]],
+ ['quotes','Harga obligasi per seri','Issue-level bond prices','BCA · tabel harga publik','daily','bondQuotes',[]]
+];
+export function healthGroups(data){return G.map(([id,label,labelEn,source,frequency,key,ids])=>{const raw=data?.[key],rows=Array.isArray(raw)?raw.filter(x=>!ids.length||ids.includes(x.id)):raw?.rows||raw?.period?[...(raw?.rows||[raw])]:[];const valid=rows.filter(x=>key==='bankHealth'?['car','npl'].some(k=>Number.isFinite(x.metrics?.[k]?.value)):key==='deposits'?x.tiers?.some(t=>Object.values(t.rates||{}).some(Number.isFinite)):Number.isFinite(x.value)||Number.isFinite(x.rate)||x.points?.length||Number.isFinite(x.revenue)||Number.isFinite(x.ask));const states=valid.map(x=>x.status||raw?.status);const checkId={drivers:'economic-drivers',structural:'social-structural',society:'bps-social',curve:'bond-market',quotes:'bond-quotes'}[id],check=[...(data?.checks||[]),...(data?.extendedChecks||[])].find(x=>x.id===checkId);const status=!valid.length?'missing':states.every(x=>x==='ok')&&check?.status!=='error'?'retrieved':states.some(x=>x==='initial_verified')?'initial':'delayed';return {id,label,labelEn,source,frequency,key,ids,status,available:valid.length,expected:ids.length||rows.length,periods:[...new Set(valid.map(x=>x.period).filter(Boolean))],checkedAt:check?.checkedAt||null};});}
+export function monitoringReport(snapshot,stamp=new Date().toISOString()){const checks=[...(snapshot.checks||[]),...(snapshot.extendedChecks||[])];return {checkedAt:stamp,snapshotId:snapshot.snapshotId||null,dataChangedAt:snapshot.dataChangedAt||null,sources:checks.map(x=>({id:x.id,status:x.status,checkedAt:x.checkedAt,error:x.error||null})),pipeline:pipelineHealth(snapshot,new Date(stamp)),inventory:sourceInventory(snapshot,new Date(stamp)),groups:healthGroups(snapshot),note:'Retrieval success is not a guarantee that every observation was released today.'};}

@@ -1,25 +1,48 @@
-# Memasang pembaruan otomatis
+# Memasang Nadi 5 pada GitHub → Vercel
 
-1. Ekstrak ZIP. Salin **isi** folder `nadi-otomatis` ke folder lokal repositori `ekonomi`, menggantikan versi lama. Sertakan `.github/workflows/update-data.yml`, `api`, `lib`, `public`, `scripts`, `test`, package files dan `vercel.json`. Di Finder tekan Command–Shift–titik untuk menampilkan folder tersembunyi bila diperlukan. Jangan unggah `node_modules`.
-2. Di GitHub Desktop, periksa Changes, isi Summary, klik Commit lalu Push origin. Mengubah file lokal belum mengubah website sebelum commit tersebut diterbitkan Vercel.
-3. Di Vercel, hubungkan repositori yang sama. Gunakan root repositori, Node 24, Build Command `npm run build`, Output Directory `public`, Framework Preset Other. Pertahankan `vercel.json` dan pastikan deployment produksi berhasil.
-4. Di GitHub, buka Settings → Actions → General. Izinkan workflow dan beri Workflow permissions **Read and write permissions**, agar bot dapat menyimpan snapshot. Kebijakan organisasi atau branch protection mungkin memerlukan penyesuaian oleh pemilik repo.
-5. Untuk data masyarakat BPS: daftar/ajukan kunci melalui layanan resmi https://webapi.bps.go.id/. Simpan kunci sebagai repository secret **BPS_API_KEY** di Settings → Secrets and variables → Actions. Jangan tulis kunci ke kode atau kirim ke chat. Adapter mengikuti dokumentasi resmi, tetapi autentikasi langsung belum diuji tanpa kunci milik Anda.
-6. Buka Actions → Perbarui data ekonomi → Run workflow pada branch utama. Periksa log dan commit snapshot yang dihasilkan. Workflow hijau tidak berarti semua sumber berhasil: periksa juga Sumber & status di website.
-7. Pastikan commit bot memicu deployment Vercel dan periode/sumber di website sesuai hasil snapshot. Jadwal otomatis memerlukan workflow berada pada default branch. GitHub dapat menunda jadwal; pada repo publik tanpa aktivitas, jadwal juga dapat dinonaktifkan GitHub.
+## Berkas
 
-## Kapan diperbarui?
+Ekstrak ZIP. Salin **seluruh isi** folder `nadi-otomatis` ke akar repo `ekonomi`, termasuk `.github`. Cadangkan versi lama. Jangan menaruh folder berlapis `ekonomi/nadi-otomatis/public`. Pada GitHub Desktop: periksa perubahan → Commit → Push origin.
 
-Workflow dijadwalkan setiap enam jam: sekitar 01.23, 07.23, 13.23 dan 19.23 WIB. Koleksi ini mencakup PDF bank, APBN, kurva obligasi, rilis lembaga dan BPS jika kunci tersedia. API kunjungan memeriksa sumber inti dengan cache normal 15 menit; saat ada kegagalan cache dipersingkat menjadi dua menit. Browser memeriksa kembali sekitar dua menit. Ini pemeriksaan berkala, bukan jaminan angka baru setiap kunjungan.
+Vercel: Node.js 24, Framework Other, Root Directory akar repo, Build Command `npm run build`, Output Directory `public`. `vercel.json` sudah mengatur dua API. Website pengguna belum dipush atau diubah dari sini.
 
-## Kalau sumber gagal
+## Konfigurasi sekali
 
-Nilai terakhir dipertahankan bersama periode dan waktu pengambilan aslinya. Status menunjukkan cadangan/kegagalan, bukan mengubah tanggal angka menjadi hari ini. Pemeriksaan berikutnya mencoba kembali; data yang lolos validasi menggantikannya. Sumber diblokir, halaman berubah atau API belum dikonfigurasi memerlukan perbaikan konektor/akses yang sah. Mengganti sumber harus menjaga definisi dan periode pembanding.
+| Pengaturan GitHub | Nama | Fungsi |
+|---|---|---|
+| Actions secret | `BPS_API_KEY` | Kunci resmi Web API BPS; jangan taruh pada HTML atau commit |
+| Actions repository variable | `PUBLIC_SITE_URL` | Alamat HTTPS website produksi, untuk verifikasi versi setelah deploy |
+| Actions secret, opsional | `VERCEL_DEPLOY_HOOK` | Hook Vercel jika integrasi Git tidak menerbitkan commit bot |
 
-## Mengedit desain
+Aktifkan Actions dan izin workflow menulis repo. Hook dibuat di pengaturan proyek Vercel dan diperlakukan sebagai rahasia. Gunakan integrasi Git yang sudah ada jika berfungsi; hook dapat menyebabkan deployment tambahan.
 
-Edit `public/style.css`, `public/story.js`, `public/app.js` dan modul terkait. Commit dan Push; Vercel membangun ulang. Jangan edit snapshot angka dengan tangan untuk menyamarkan data usang. Uji `npm test` dan `npm run build` sebelum Push.
+## Buktikan otomasi
 
-## Pemeriksaan peluncuran
+1. Actions → Perbarui data ekonomi → Run workflow pada default branch.
+2. Periksa tabel setiap sumber dan artefak `nadi-data-…`. Jangan menyimpulkan semua sumber berhasil dari satu status hijau.
+3. Commit bot menyimpan snapshot/health/runs. Integrasi Git atau hook opsional menerbitkan versi.
+4. Jika `PUBLIC_SITE_URL` diatur, workflow memeriksa apakah `/api/health` menyajikan snapshotId **dan runId** yang sama. HTTP 200 dari versi lama tidak cukup.
+5. Gerbang kesiapan data inti berada di langkah terakhir. Workflow dapat merah ketika data awal BPS/usia data belum layak, sementara pembaruan valid sumber lain tetap tersimpan dan diterbitkan. Baca blocker yang dicetak.
+6. Lakukan tiga siklus penuh serta uji satu rilis data baru. Belum ada bukti siklus produksi milikmu dari lingkungan ini.
+7. Aktifkan notifikasi GitHub Actions. Untuk jadwal yang tidak pernah berjalan, gunakan monitor HTTP independen pada `https://DOMAINMU/api/health`. HTTP 503 meminta perhatian; JSON menjelaskan penyebab. Monitor eksternal belum dikonfigurasi oleh paket.
 
-Periksa halaman awal, Prospek, Deposito, Obligasi dan Lab pada ID/EN serta layar ponsel. Cek Sumber & status, periode angka, tautan sumber dan nominal deposito. Jalankan workflow manual dan pastikan commit/deployment berantai berhasil. Paket ini belum di-push atau di-deploy ke akun Anda dari sesi ini.
+Jadwal enam jam: **01.23, 07.23, 13.23, 19.23 WIB**. GitHub dapat menunda jadwal. Peringatan internal setelah 9 jam, lewat toleransi setelah 18 jam. Sumber tahunan tidak diwajibkan berubah setiap pemeriksaan.
+
+## Saat ada masalah
+
+- Angka valid terakhir tetap bertanggal asli; tidak menjadi nol atau diberi tanggal hari ini.
+- Data rusak/periode mundur ditolak per seri. Sumber lain dapat tetap diperbarui.
+- Tiga indikator BI mempunyai cadangan pada halaman indikator resmi; jalur itu sudah diuji langsung.
+- Alternatif fiskal HTML belum lulus pengambilan native (HTTP 500). PDF tetap jalur utama.
+- Konektor BNI/BTN yang menerima penyaringan keamanan dijeda. Perlu kanal resmi yang diizinkan. Harga seri obligasi dan sejumlah bank belum otomatis terverifikasi.
+- Tidak ada sistem tanpa pemeliharaan: perubahan format atau akses bisa membutuhkan perbaikan konektor.
+
+## Mengedit dan menjalankan
+
+Node 24: `npm ci`, `npm test`, `npm run build`, `npm run dev`.
+
+`npm run update-data` menjalankan seluruh sumber yang diizinkan. Untuk pemeriksaan terbatas: `npm run update-data -- --sources=bi-extra,worldbank,social-structural`. Pemeriksaan lokal/terbatas **tidak** dianggap bukti pipeline produksi penuh.
+
+`npm run check-readiness` memeriksa gerbang data. Exit nonzero saat blocker tersisa memang disengaja. `npm run build` memeriksa integritas kode/snapshot, bukan menjamin semua sumber hidup.
+
+Desain/narasi: `public/report.js`, `report-model.js`, `governance.js`, `app.js`, `style.css`. Alat: `toolkit.js`/`toolkit-math.js`, `planner.js`, `scenario.js`, `deposits.js`, `bonds.js`. Gaya alat: `tool-ui.css`. Konektor penggerak historis: `lib/drivers.mjs`. Kolektor: `lib`. Setelah edit, tes/build lalu Commit/Push. Baca KONSEP_EKSEKUSI.md dan VALIDASI.md.

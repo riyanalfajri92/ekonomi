@@ -1,0 +1,69 @@
+[
+  {
+    "environment": "local-verification",
+    "runId": "2026-10-31T10:09:46.589Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "economic-drivers"
+    ],
+    "status": "partial",
+    "startedAt": "2026-10-31T10:09:46.589Z",
+    "finishedAt": "2026-10-31T10:09:53.469Z",
+    "snapshotId": "9215d2ba7822c321",
+    "succeeded": 25,
+    "failed": 15,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-10-31T09:49:31.320Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "economic-drivers"
+    ],
+    "status": "partial",
+    "startedAt": "2026-10-31T09:49:31.320Z",
+    "finishedAt": "2026-10-31T09:49:38.651Z",
+    "snapshotId": "d694d92106f26eb2",
+    "succeeded": 25,
+    "failed": 15,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-10-31T06:34:32.243Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "bi-extra"
+    ],
+    "status": "partial",
+    "startedAt": "2026-10-31T06:34:32.243Z",
+    "finishedAt": "2026-10-31T06:34:40.569Z",
+    "snapshotId": "c91767777ae27a77",
+    "succeeded": 24,
+    "failed": 15,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-10-31T06:32:53.003Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "inflation",
+      "jisdor",
+      "rate",
+      "bi-extra",
+      "worldbank",
+      "social-structural",
+      "bond-market",
+      "apbn"
+    ],
+    "status": "partial",
+    "startedAt": "2026-10-31T06:32:53.003Z",
+    "finishedAt": "2026-10-31T06:33:14.512Z",
+    "snapshotId": "c91767777ae27a77",
+    "succeeded": 21,
+    "failed": 15,
+    "rejected": 0
+  }
+]

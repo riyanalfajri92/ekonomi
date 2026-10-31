@@ -1,5 +1,5 @@
-import {access} from 'node:fs/promises';
-await access(new URL('../public/index.html',import.meta.url));
-await access(new URL('../public/app.js',import.meta.url));
-await access(new URL('../public/data/snapshot.json',import.meta.url));
-console.log('Aset statis siap. Vercel menjalankan /api/economy sebagai fungsi Node.js.');
+import {access,readFile,readdir} from 'node:fs/promises';import {resolve,dirname} from 'node:path';import {fileURLToPath} from 'node:url';import {spawnSync} from 'node:child_process';import {validateSnapshot} from '../lib/validate.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url));for(const f of ['public/index.html','public/app.js','public/data/snapshot.json','vercel.json','.github/workflows/update-data.yml'])await access(resolve(root,f));
+let count=0;for(const folder of ['public','lib','api','scripts']){const paths=await readdir(resolve(root,folder),{recursive:true});for(const rel of paths.filter(x=>/\.(m?js)$/.test(x))){const path=resolve(root,folder,rel),r=spawnSync(process.execPath,['--check',path],{encoding:'utf8'});if(r.status!==0)throw Error(r.stderr);const text=await readFile(path,'utf8');for(const match of text.matchAll(/(?:from\s*|import\s*)['"](\.[^'"]+)['"]/g))await access(resolve(dirname(path),match[1]));count++;}}
+const snapshot=JSON.parse(await readFile(resolve(root,'public/data/snapshot.json'),'utf8')),errors=validateSnapshot(snapshot);if(errors.length)throw Error(errors.join('\n'));
+console.log(`${count} modul lolos pemeriksaan sintaks/import; snapshot lolos validasi. Aset public siap untuk Vercel Node 24.`);
