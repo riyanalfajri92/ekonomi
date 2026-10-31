@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotId": "9c0d2c10930930d1",
-  "dataChangedAt": "2026-10-31T01:25:27.946Z",
-  "checkedAt": "2026-10-31T01:25:27.946Z",
+  "snapshotId": "bb5d1ab1d6a29111",
+  "dataChangedAt": "2026-10-31T01:58:34.652Z",
+  "checkedAt": "2026-10-31T01:58:34.652Z",
   "metrics": [
     {
       "id": "jisdor",
@@ -64,7 +64,7 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:22:15.411Z",
       "datasetUpdated": null,
       "status": "fallback",
@@ -132,11 +132,11 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:25:27.946Z",
       "datasetUpdated": null,
-      "status": "ok",
-      "error": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
       "observationOld": false,
       "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
     },
@@ -200,7 +200,7 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:22:15.411Z",
       "datasetUpdated": null,
       "status": "fallback",
@@ -233,7 +233,7 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:22:15.411Z",
       "datasetUpdated": null,
       "status": "fallback",
@@ -266,7 +266,7 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:22:15.411Z",
       "datasetUpdated": null,
       "status": "fallback",
@@ -301,7 +301,7 @@
       "rangeStart": "2026-10-26",
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:22:15.411Z",
       "datasetUpdated": null,
       "status": "fallback",
@@ -318,8 +318,6 @@
       "meaning": "Di atas 100 menunjukkan optimisme responden menurut metodologi survei BI. Ini persepsi konsumen, bukan bukti semua keluarga memiliki pendapatan lebih tinggi.",
       "source": "Bank Indonesia",
       "url": "https://www.bi.go.id/id/publikasi/laporan/Pages/SK-September-2026.aspx",
-      "publishedAt": "2026-10-08",
-      "pdfUrl": "https://www.bi.go.id/id/publikasi/laporan/Documents/SK-September-2026.pdf",
       "history": [
         {
           "id": "confidence",
@@ -332,13 +330,15 @@
       "delta": null,
       "previousPeriod": null,
       "deltaUnit": "nilai",
+      "publishedAt": "2026-10-08",
       "rangeStart": null,
       "officialForecast": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "pdfUrl": "https://www.bi.go.id/id/publikasi/laporan/Documents/SK-September-2026.pdf",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:25:27.946Z",
       "datasetUpdated": null,
-      "status": "ok",
-      "error": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
       "observationOld": false,
       "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
     },
@@ -351,13 +351,6 @@
       "meaning": "Di atas 50 menunjukkan fase ekspansi menurut survei PMI-BI. Ini indeks kegiatan manufaktur, bukan persentase pertumbuhan PDB dan bukan PMI penyedia lain.",
       "source": "Bank Indonesia",
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823126.aspx",
-      "officialForecast": {
-        "quarter": 4,
-        "year": 2026,
-        "value": 52.37,
-        "publishedAt": "2026-10-19"
-      },
-      "publishedAt": "2026-10-19",
       "history": [
         {
           "id": "manufacturing",
@@ -377,13 +370,20 @@
       "delta": null,
       "previousPeriod": null,
       "deltaUnit": "poin persentase",
+      "publishedAt": "2026-10-19",
       "rangeStart": null,
+      "officialForecast": {
+        "quarter": 4,
+        "year": 2026,
+        "value": 52.37,
+        "publishedAt": "2026-10-19"
+      },
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "fetchedAt": "2026-10-31T01:25:27.946Z",
       "datasetUpdated": null,
-      "status": "ok",
-      "error": null,
+      "status": "fallback",
+      "error": "Daftar berita tidak tersedia",
       "observationOld": false,
       "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
     },
@@ -457,8 +457,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -534,8 +534,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -611,8 +611,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -688,8 +688,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -765,8 +765,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -842,8 +842,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -919,8 +919,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -996,8 +996,8 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok",
       "error": null,
       "observationOld": false,
@@ -1075,68 +1075,68 @@
   "checks": [
     {
       "id": "apbn",
-      "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "error": null
+      "status": "error",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "bi-extra",
       "status": "error",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "error": "The operation was aborted due to timeout"
     },
     {
       "id": "consumer-survey",
-      "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "error": null
+      "status": "error",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "deposit-bca",
       "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "error": null
     },
     {
       "id": "deposit-mandiri",
       "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "error": null
     },
     {
       "id": "inflation",
-      "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "error": null
+      "status": "error",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "jisdor",
       "status": "error",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "error": "The operation was aborted due to timeout"
     },
     {
       "id": "lps-disclosure",
       "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "error": null
     },
     {
       "id": "news",
-      "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
-      "error": null
+      "status": "error",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "rate",
       "status": "error",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "error": "The operation was aborted due to timeout"
     },
     {
       "id": "worldbank",
       "status": "ok",
-      "checkedAt": "2026-10-31T01:25:27.946Z",
+      "checkedAt": "2026-10-31T01:58:34.652Z",
       "error": null
     }
   ],
@@ -1270,7 +1270,7 @@
       ],
       "conditions": "Tarif reguler Rupiah. Promo, negosiasi, kanal khusus, penalti dan biaya tidak tercakup. Verifikasi syarat pembukaan langsung ke bank.",
       "conditionsEn": "Regular IDR rates only. Promotions, negotiated rates, special channels, penalties and fees are excluded. Confirm opening requirements with the bank.",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok"
     },
     {
@@ -1360,7 +1360,7 @@
       ],
       "conditions": "Tarif reguler Rupiah. Promo, negosiasi, kanal khusus, penalti dan biaya tidak tercakup. Verifikasi syarat pembukaan langsung ke bank.",
       "conditionsEn": "Regular IDR rates only. Promotions, negotiated rates, special channels, penalties and fees are excluded. Confirm opening requirements with the bank.",
-      "fetchedAt": "2026-10-31T01:25:27.946Z",
+      "fetchedAt": "2026-10-31T01:58:34.652Z",
       "status": "ok"
     }
   ],
@@ -1375,7 +1375,7 @@
     "sourceEn": "Bank Mandiri disclosure of LPS coverage rates",
     "url": "https://www.bankmandiri.co.id/en/tingkat-bunga-penjamin",
     "scope": "Bukan verifikasi seluruh syarat penjaminan.",
-    "fetchedAt": "2026-10-31T01:25:27.946Z",
+    "fetchedAt": "2026-10-31T01:58:34.652Z",
     "status": "ok"
   },
   "fiscal": {
@@ -1395,7 +1395,132 @@
     "edition": "2026-10",
     "fetchedAt": "2026-10-31T01:15:00.348Z",
     "status": "fallback",
-    "error": "The operation was aborted due to timeout"
+    "error": "The operation was aborted due to timeout",
+    "details": [
+      {
+        "id": "ministries",
+        "label": "Belanja kementerian/lembaga",
+        "labelEn": "Ministry and agency spending",
+        "previous": 800.9,
+        "budget": 1510.5,
+        "value": 1069.4,
+        "page": 22,
+        "period": "2026-09",
+        "group": "aggregate",
+        "impact": "Bandingkan dengan periode sama tahun sebelumnya dan pagu; belanja tidak selalu merata tiap bulan.",
+        "impactEn": "Compare with the same prior-year period and budget; spending is not evenly distributed across months."
+      },
+      {
+        "id": "personnel",
+        "label": "Belanja pegawai",
+        "labelEn": "Personnel spending",
+        "value": 287.7,
+        "page": 23,
+        "period": "2026-09",
+        "group": "components",
+        "impact": "Membiayai pegawai dan layanan pemerintah; kenaikannya tidak sama dengan kenaikan upah seluruh pekerja.",
+        "impactEn": "Funds public employees and services; growth does not mean all workers receive higher pay."
+      },
+      {
+        "id": "goods",
+        "label": "Belanja barang",
+        "labelEn": "Goods and services",
+        "value": 463.9,
+        "page": 24,
+        "period": "2026-09",
+        "group": "components",
+        "impact": "Mendukung operasional dan program; nilai belanja belum membuktikan mutu layanan atau manfaat yang diterima setiap keluarga.",
+        "impactEn": "Supports operations and programmes; spending alone does not establish service quality or benefits for every family."
+      },
+      {
+        "id": "capital",
+        "label": "Belanja modal K/L",
+        "labelEn": "Ministry capital spending",
+        "value": 202,
+        "page": 25,
+        "period": "2026-09",
+        "group": "components",
+        "impact": "Mendanai aset dan sarana; manfaat bergantung penyelesaian, pemakaian dan perawatan.",
+        "impactEn": "Funds assets and facilities; benefits depend on completion, use and maintenance."
+      },
+      {
+        "id": "social",
+        "label": "Bantuan sosial",
+        "labelEn": "Social assistance",
+        "value": 115.8,
+        "page": 26,
+        "period": "2026-09",
+        "group": "components",
+        "impact": "Bantuan dapat menopang belanja penerima. Realisasi anggaran tidak menunjukkan berapa banyak kemiskinan yang berhasil dikurangi.",
+        "impactEn": "Assistance can support recipients’ spending. Budget execution does not measure how much poverty was reduced."
+      },
+      {
+        "id": "subsidy",
+        "label": "Subsidi dan kompensasi",
+        "labelEn": "Subsidies and compensation",
+        "value": 376.8,
+        "page": 27,
+        "period": "2026-09",
+        "group": "components",
+        "impact": "Menahan sebagian biaya energi dan kebutuhan tertentu; meningkatnya biaya juga dapat menyerap ruang anggaran program lain.",
+        "impactEn": "Cushions some energy and other costs; larger costs may also absorb room for other budget programmes."
+      },
+      {
+        "id": "education",
+        "label": "Belanja tematik pendidikan",
+        "labelEn": "Education thematic spending",
+        "value": 574.2,
+        "page": 29,
+        "period": "2026-09",
+        "group": "thematic",
+        "impact": "Mencakup beberapa jalur anggaran pendidikan; baca bersama jangkauan penerima dan hasil belajar.",
+        "impactEn": "Covers several education funding channels; assess recipient coverage and learning outcomes."
+      },
+      {
+        "id": "health",
+        "label": "Belanja tematik kesehatan",
+        "labelEn": "Health thematic spending",
+        "value": 161.8,
+        "page": 30,
+        "period": "2026-09",
+        "group": "thematic",
+        "impact": "Mendukung akses kesehatan; nilai anggaran tidak langsung menggambarkan waktu tunggu, ketersediaan obat atau kualitas layanan.",
+        "impactEn": "Supports healthcare access; spending does not directly measure waiting times, medicine availability or service quality."
+      },
+      {
+        "id": "infrastructure",
+        "label": "Belanja tematik infrastruktur",
+        "labelEn": "Infrastructure thematic spending",
+        "value": 196,
+        "page": 31,
+        "period": "2026-09",
+        "group": "thematic",
+        "impact": "Berpotensi memperbaiki akses dan menurunkan biaya logistik; dampak berbeda menurut lokasi dan penyelesaian proyek.",
+        "impactEn": "May improve access and logistics costs; impacts vary by location and project completion."
+      },
+      {
+        "id": "food",
+        "label": "Belanja tematik ketahanan pangan",
+        "labelEn": "Food-security thematic spending",
+        "value": 113.3,
+        "page": 31,
+        "period": "2026-09",
+        "group": "thematic",
+        "impact": "Mendukung produksi dan akses pangan; cuaca, distribusi dan harga pasar tetap menentukan biaya belanja.",
+        "impactEn": "Supports food production and access; weather, distribution and market prices still shape household costs."
+      },
+      {
+        "id": "transfers",
+        "label": "Transfer ke daerah",
+        "labelEn": "Transfers to regions",
+        "value": 599.2,
+        "page": 32,
+        "period": "2026-09",
+        "group": "components",
+        "impact": "Mendukung layanan daerah. Transfer dari pusat belum sama dengan seluruh dana sudah dibelanjakan atau layanan sudah diterima.",
+        "impactEn": "Supports local services. A central transfer does not mean all funds have been spent or services delivered."
+      }
+    ]
   },
   "inflationTarget": {
     "mid": 2.5,
@@ -1404,61 +1529,9 @@
     "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx"
   },
   "forecast": {
-    "status": "experimental",
-    "horizon": "2026-10",
-    "basePeriod": "2026-09",
-    "point": 3.19,
-    "method": "median3",
-    "mae": 0.2119999999999999,
-    "naiveMAE": 0.356,
-    "medianMAE": 0.2119999999999999,
-    "testCount": 5,
-    "trainCount": 10,
-    "errors": [
-      {
-        "period": "2026-05",
-        "actual": 3.08,
-        "naive": 2.42,
-        "median3": 3.48,
-        "naiveError": 0.6600000000000001,
-        "medianError": 0.3999999999999999
-      },
-      {
-        "period": "2026-06",
-        "actual": 3.34,
-        "naive": 3.08,
-        "median3": 3.08,
-        "naiveError": 0.2599999999999998,
-        "medianError": 0.2599999999999998
-      },
-      {
-        "period": "2026-07",
-        "actual": 2.88,
-        "naive": 3.34,
-        "median3": 3.08,
-        "naiveError": 0.45999999999999996,
-        "medianError": 0.20000000000000018
-      },
-      {
-        "period": "2026-08",
-        "actual": 3.19,
-        "naive": 2.88,
-        "median3": 3.08,
-        "naiveError": 0.31000000000000005,
-        "medianError": 0.10999999999999988
-      },
-      {
-        "period": "2026-09",
-        "actual": 3.28,
-        "naive": 3.19,
-        "median3": 3.19,
-        "naiveError": 0.08999999999999986,
-        "medianError": 0.08999999999999986
-      }
-    ],
-    "unit": "poin persentase",
-    "note": "Eksperimen satu bulan ke depan atas inflasi yoy. Model dipilih dari hasil uji bergulir yang sama; ini bukan evaluasi independen setelah pemilihan model. Data revisi terkini, bukan vintage waktu nyata. Galat historis bukan interval probabilitas. Tidak dipakai sebagai rekomendasi investasi.",
-    "noteEn": "An experimental one-month-ahead projection of year-on-year inflation. Selection uses the same rolling tests, so this is not independent post-selection evaluation. It uses currently revised data, not real-time vintages. Historical error is not a probability interval or investment recommendation."
+    "status": "unavailable",
+    "reason": "Memerlukan seri inflasi bulanan yang baru diperiksa dan cukup panjang.",
+    "reasonEn": "A recently checked monthly inflation series with sufficient history is required."
   },
   "gaps": [
     {

@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {fiscalDetails} from '../lib/fiscal-detail.mjs';
+test('fiscal labels preserve thematic overlap and source pages',()=>{const rows=fiscalDetails([{num:23,text:'Belanja Pegawai Rp287,7 T s.d. September 2026'},{num:30,text:'ANGGARAN KESEHATAN 2026 Rp161,8 T'}],'2026-09');assert.equal(rows.length,2);assert.equal(rows[0].value,287.7);assert.equal(rows[1].group,'thematic');assert.equal(rows[1].page,30);assert.deepEqual(fiscalDetails([{num:1,text:'Anggaran Kesehatan 2025 Rp1 T'}],'2026-09'),[]);});

@@ -13,3 +13,11 @@ Paket ini belum mengubah repositori GitHub atau deployment Vercel Anda. Langkah 
 9. GitHub → Actions → **Perbarui data ekonomi → Run workflow**. Versi baru menjalankan `npm ci` sebelum pembaruan. Periksa job hijau dan commit snapshot; jangan hanya mengandalkan jadwal yang belum pernah diuji.
 
 Setelah terpasang, program mengambil pembaruan sumber dan menghitung ulang tampilan. Tidak perlu mengedit angka tiap hari. Jika penyedia mengubah format atau memblokir akses, konektor tetap dapat memerlukan pemeliharaan; web menunjukkan status gagal dan tanggal data terakhir.
+
+### Tambahan versi ini
+
+Salin juga `public/planner.js`, `public/bonds.js`, `lib/fiscal-detail.mjs` dan pengujian barunya. Menu Lab keuangan sekarang memiliki perencana terpadu; menu Obligasi memiliki simulator valuasi dengan angka ilustrasi. Input pribadi tidak dikirim ke server. Baca batas cakupan terbaru di VALIDASI.md sebelum mengumumkan fitur.
+
+### Foto pembuat
+
+Bagian “Di balik Nadi” ditampilkan di dekat footer, dalam ID/EN. Sertakan folder `public/assets` ketika menyalin pembaruan. Foto asli ada di `public/assets/riyan-al-fajri.png`; tampilan memakai CSS dan pemuatan malas. Kedua tautan pembuat terbuka pada tab yang sama.

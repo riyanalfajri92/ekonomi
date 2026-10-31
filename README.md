@@ -93,3 +93,5 @@ Bank: https://www.bca.co.id/individu/produk/simpanan/deposito-berjangka ; https:
 World Bank: https://data.worldbank.org/country/indonesia ; ketentuan https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets . Identitas seri ada di katalog dan tautan tiap kartu. Periksa pengecualian sumber pihak ketiga bila memperluas redistribusi.
 
 Vercel: https://vercel.com/docs/functions/runtimes/node-js ; GitHub schedules: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule . Parser PDF: https://github.com/mehmet-kozan/pdf-parse .
+
+Tambahan: perencana pribadi terpadu, simulator obligasi dan rincian belanja APBN. Baca VALIDASI.md: koneksi yang timeout belum seluruhnya teratasi; sepuluh bank dan rasio individual belum tersedia. Paket ini tidak memperbarui GitHub/Vercel Anda sampai di-commit dan di-push.
