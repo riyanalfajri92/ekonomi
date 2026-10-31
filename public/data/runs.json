@@ -1,6 +1,63 @@
 [
   {
     "environment": "local-verification",
+    "runId": "2026-10-31T11:58:07.578Z",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-10-31T11:58:07.578Z",
+    "finishedAt": "2026-10-31T11:59:25.719Z",
+    "snapshotId": "9708fa29340c0030",
+    "succeeded": 30,
+    "failed": 11,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-10-31T11:46:07.276Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "inflation-history",
+      "bi-extra"
+    ],
+    "status": "partial",
+    "startedAt": "2026-10-31T11:46:07.276Z",
+    "finishedAt": "2026-10-31T11:46:24.246Z",
+    "snapshotId": "81b7009fe9764295",
+    "succeeded": 30,
+    "failed": 14,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-10-31T11:36:45.383Z",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-10-31T11:36:45.383Z",
+    "finishedAt": "2026-10-31T11:38:55.295Z",
+    "snapshotId": "e7d70333c4985544",
+    "succeeded": 25,
+    "failed": 15,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-10-31T11:36:10.993Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "labour-public"
+    ],
+    "status": "failed",
+    "startedAt": "2026-10-31T11:36:10.993Z",
+    "finishedAt": "2026-10-31T11:36:31.016Z",
+    "snapshotId": "e3d4d26183d06c63",
+    "succeeded": 25,
+    "failed": 16,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
     "runId": "2026-10-31T10:09:46.589Z",
     "scope": "selected-sources",
     "sourceIds": [

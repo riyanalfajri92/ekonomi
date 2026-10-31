@@ -24,3 +24,7 @@ Hal yang tidak diklaim selesai: autentikasi BPS pemilik, seluruh refresh bank/ku
 ## 5.1 — revisi setelah asesmen
 
 Ringkasan tujuh perubahan dengan pembanding, gerbang prediksi dan laboratorium evaluasi. Observasi tidak disebut ramalan. Default simulator memakai inflasi teramati, tombol rencana lengkap menuju planner. Konflik snapshot/cache dengan timestamp sama ditolak. Bukti dan kekurangan tercatat di ASESMEN_5_1.md.
+
+## 6 — perbaikan berbasis bukti menuju target 9
+
+Kemnaker tanpa kunci, arsip CPI World Bank, 193 observasi dan evaluasi AR(1) multi-horizon tanpa kebocoran waktu, rentang galat, ledger multi-horizon, matriks 15 tekanan anggaran, visual APBN per Rp100, histori kuotasi, validasi historis lebih ketat, push trigger/CI/doctor, perbaikan cache dan luapan layar sempit. Dua siklus seluruh sumber diuji lokal; status operasi belum disertifikasi sebagai produksi.

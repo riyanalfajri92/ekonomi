@@ -1,5 +1,10 @@
 name: Perbarui data ekonomi
 on:
+  push:
+    branches: [main, master]
+    paths-ignore:
+      - 'public/data/**'
+      - '**/*.md'
   schedule:
     - cron: '23 */6 * * *'
   workflow_dispatch:

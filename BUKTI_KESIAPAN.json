@@ -1,0 +1,63 @@
+{
+  "checks": [
+    {
+      "id": "snapshot-valid",
+      "passed": true,
+      "note": "Valid"
+    },
+    {
+      "id": "bps-key-present",
+      "passed": false,
+      "note": "BPS_API_KEY required for remaining authenticated BPS series; no value printed"
+    },
+    {
+      "id": "public-url-present",
+      "passed": false,
+      "note": "PUBLIC_SITE_URL is required for end-to-end verification"
+    },
+    {
+      "id": "scheduled-production-proven",
+      "passed": false,
+      "note": "Local runs do not establish production"
+    },
+    {
+      "id": "core-story",
+      "passed": false,
+      "note": "Data capability gate; not investment certification"
+    },
+    {
+      "id": "deposit-offers",
+      "passed": false,
+      "note": "Data capability gate; not investment certification"
+    },
+    {
+      "id": "bank-reports",
+      "passed": false,
+      "note": "Data capability gate; not investment certification"
+    },
+    {
+      "id": "bond-quotes",
+      "passed": true,
+      "note": "Data capability gate; not investment certification"
+    }
+  ],
+  "ready": false,
+  "blockers": [
+    {
+      "id": "bpsWage",
+      "reason": "initial"
+    },
+    {
+      "id": "bpsPoverty",
+      "reason": "initial"
+    },
+    {
+      "id": "bpsGrowth",
+      "reason": "initial"
+    },
+    {
+      "id": "production-pipeline",
+      "reason": "not-verified"
+    }
+  ]
+}

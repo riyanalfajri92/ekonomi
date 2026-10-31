@@ -5,13 +5,13 @@ export function monthlyProjection(metric,now=new Date()){
  if(!metric||!finite(metric.value))return fail('missing');
  const series=[...new Map((metric.history||[]).filter(p=>/^\d{4}-\d{2}$/.test(p.period)&&finite(p.value)).map(p=>[p.period,p])).values()].sort((a,b)=>a.period.localeCompare(b.period));
  if(series.length<8)return fail('short');
- for(let i=1;i<series.length;i++){const ix=p=>Number(p.slice(0,4))*12+Number(p.slice(5));if(ix(series[i].period)-ix(series[i-1].period)!==1)return fail('gap');}
+ const ix=p=>Number(p.slice(0,4))*12+Number(p.slice(5)),gaps=[];let tail=1;for(let i=1;i<series.length;i++){if(ix(series[i].period)-ix(series[i-1].period)!==1){gaps.push({after:series[i-1].period,before:series[i].period});tail=1;}else tail++;}if(tail<8)return fail('gap');
  const last=series.at(-1);if(last.period>new Date(now.getTime()+7*3600000).toISOString().slice(0,7))return fail('future');if(last.period!==metric.period||last.value!==metric.value)return fail('mismatch');
  const target=new Date(last.period+'-01T00:00:00Z');target.setUTCMonth(target.getUTCMonth()+1);const horizon=target.toISOString().slice(0,7);
  if(horizon<new Date(now.getTime()+7*3600000).toISOString().slice(0,7))return fail('expired');
- const errors=[];for(let i=5;i<series.length;i++){const p=median(series.slice(i-3,i).map(x=>x.value));errors.push({period:series[i].period,actual:series[i].value,predicted:p,error:series[i].value-p,naiveError:series[i].value-series[i-1].value});}
+ const errors=[];for(let i=5;i<series.length;i++){if(ix(series[i].period)-ix(series[i-3].period)!==3)continue;const p=median(series.slice(i-3,i).map(x=>x.value));errors.push({period:series[i].period,actual:series[i].value,predicted:p,error:series[i].value-p,naiveError:series[i].value-series[i-1].value});}
  const mae=key=>errors.reduce((a,e)=>a+Math.abs(e[key]),0)/errors.length;
- return {available:true,point:median(series.slice(-3).map(p=>p.value)),base:last.value,basePeriod:last.period,horizon,mae:mae('error'),naiveMAE:mae('naiveError'),tests:errors.length,errors,history:series,weak:errors.length<12,sourceStatus:metric.status};
+ return {available:true,gaps,point:median(series.slice(-3).map(p=>p.value)),base:last.value,basePeriod:last.period,horizon,mae:mae('error'),naiveMAE:mae('naiveError'),tests:errors.length,errors,history:series,weak:errors.length<12,sourceStatus:metric.status};
 }
 export function prospectModel(data,now=new Date()){
  const get=id=>data?.metrics?.find(x=>x.id===id),inf=get('inflation'),fx=get('jisdor'),f=data?.fiscal,rate=get('rate'),pmi=get('manufacturing');

@@ -1,0 +1,770 @@
+{
+  "note": "Pengujian lokal, bukan bukti produksi GitHub/Vercel pemilik. Tidak menyimpan rahasia.",
+  "runs": [
+    {
+      "file": "full-run.json",
+      "pipeline": {
+        "environment": "local-verification",
+        "runId": "2026-10-31T11:36:45.383Z",
+        "scope": "all-sources",
+        "sourceIds": null,
+        "status": "partial",
+        "startedAt": "2026-10-31T11:36:45.383Z",
+        "finishedAt": "2026-10-31T11:38:55.295Z"
+      },
+      "snapshotId": "e7d70333c4985544",
+      "checks": [
+        {
+          "id": "apbn",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "apbn-pdf",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "note": "Dokumen yang sama: menggunakan ekstraksi tersimpan; fetchedAt tidak diubah"
+        },
+        {
+          "id": "bi-extra",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "consumer-survey",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "deposit-bca",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-bni",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+        },
+        {
+          "id": "deposit-btn",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+        },
+        {
+          "id": "deposit-cimb",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-danamon",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-mandiri",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-maybank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-mega",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-ocbc",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-panin",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "inflation",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "jisdor",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "lps-disclosure",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "rate",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "worldbank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "labour-public",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "economic-drivers",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "social-structural",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "bond-quotes",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "bond-market",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "kemenkeu-news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Sumber merespons HTTP 500"
+        },
+        {
+          "id": "bps-social",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Indikator utama BPS belum terbaca"
+        },
+        {
+          "id": "bappebti-news",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "ojk-news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-bca",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-cimb",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-mega",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-ocbc",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-mandiri",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-bni",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+        },
+        {
+          "id": "health-panin",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-danamon",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Tidak menemukan rilis rasio yang lebih baru atau setara"
+        },
+        {
+          "id": "health-btn",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+        },
+        {
+          "id": "health-maybank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "kemendag-news",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        }
+      ],
+      "rejections": []
+    },
+    {
+      "file": "history-run.json",
+      "pipeline": {
+        "environment": "local-verification",
+        "runId": "2026-10-31T11:46:07.276Z",
+        "scope": "selected-sources",
+        "sourceIds": [
+          "inflation-history",
+          "bi-extra"
+        ],
+        "status": "partial",
+        "startedAt": "2026-10-31T11:46:07.276Z",
+        "finishedAt": "2026-10-31T11:46:24.246Z"
+      },
+      "snapshotId": "81b7009fe9764295",
+      "checks": [
+        {
+          "id": "apbn",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "apbn-pdf",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "note": "Dokumen yang sama: menggunakan ekstraksi tersimpan; fetchedAt tidak diubah"
+        },
+        {
+          "id": "bi-extra",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:46:07.277Z",
+          "error": null
+        },
+        {
+          "id": "consumer-survey",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "deposit-bca",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-bni",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+        },
+        {
+          "id": "deposit-btn",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+        },
+        {
+          "id": "deposit-cimb",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-danamon",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-mandiri",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-maybank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-mega",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-ocbc",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "deposit-panin",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "inflation",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "inflation-alternative",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:46:07.277Z",
+          "note": "Sumber alternatif resmi; definisi indikator dan periode yang sama. Histori valid sebelumnya dipertahankan."
+        },
+        {
+          "id": "inflation-history",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:46:07.277Z",
+          "error": null
+        },
+        {
+          "id": "jisdor",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "jisdor-alternative",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:46:07.277Z",
+          "note": "Sumber alternatif resmi; definisi indikator dan periode yang sama. Histori valid sebelumnya dipertahankan."
+        },
+        {
+          "id": "lps-disclosure",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "rate",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "rate-alternative",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:46:07.277Z",
+          "note": "Sumber alternatif resmi; definisi indikator dan periode yang sama. Histori valid sebelumnya dipertahankan."
+        },
+        {
+          "id": "worldbank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": null
+        },
+        {
+          "id": "labour-public",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "economic-drivers",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "social-structural",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "bond-quotes",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "bond-market",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "kemenkeu-news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Sumber merespons HTTP 500"
+        },
+        {
+          "id": "bps-social",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Indikator utama BPS belum terbaca"
+        },
+        {
+          "id": "bappebti-news",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "ojk-news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-bca",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-cimb",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-mega",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-ocbc",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-mandiri",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "health-bni",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+        },
+        {
+          "id": "health-panin",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-danamon",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Tidak menemukan rilis rasio yang lebih baru atau setara"
+        },
+        {
+          "id": "health-btn",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:36:45.384Z",
+          "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+        },
+        {
+          "id": "health-maybank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        },
+        {
+          "id": "kemendag-news",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:36:45.384Z"
+        }
+      ],
+      "rejections": []
+    },
+    {
+      "file": "final-full-run.json",
+      "pipeline": {
+        "environment": "local-verification",
+        "runId": "2026-10-31T11:58:07.578Z",
+        "scope": "all-sources",
+        "sourceIds": null,
+        "status": "partial",
+        "startedAt": "2026-10-31T11:58:07.578Z",
+        "finishedAt": "2026-10-31T11:59:25.719Z"
+      },
+      "snapshotId": "9708fa29340c0030",
+      "checks": [
+        {
+          "id": "apbn",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "apbn-pdf",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "note": "Dokumen yang sama: menggunakan ekstraksi tersimpan; fetchedAt tidak diubah"
+        },
+        {
+          "id": "bi-extra",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "consumer-survey",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-bca",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-bni",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+        },
+        {
+          "id": "deposit-btn",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+        },
+        {
+          "id": "deposit-cimb",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-danamon",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-mandiri",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-maybank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-mega",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-ocbc",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "deposit-panin",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Sumber merespons HTTP 503"
+        },
+        {
+          "id": "inflation",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "inflation-history",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "jisdor",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "lps-disclosure",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "news",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "rate",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "worldbank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": null
+        },
+        {
+          "id": "economic-drivers",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "social-structural",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "bond-quotes",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "labour-public",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "bond-market",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "kemenkeu-news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Sumber merespons HTTP 500"
+        },
+        {
+          "id": "bps-social",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Indikator utama BPS belum terbaca"
+        },
+        {
+          "id": "ojk-news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "bappebti-news",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "kemendag-news",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-ocbc",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "id": "health-cimb",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "health-bca",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "health-mega",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "health-bni",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+        },
+        {
+          "id": "health-panin",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "health-mandiri",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        },
+        {
+          "id": "health-btn",
+          "status": "blocked",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+        },
+        {
+          "id": "health-danamon",
+          "status": "error",
+          "checkedAt": "2026-10-31T11:58:07.578Z",
+          "error": "Tidak menemukan rilis rasio yang lebih baru atau setara"
+        },
+        {
+          "id": "health-maybank",
+          "status": "ok",
+          "checkedAt": "2026-10-31T11:58:07.578Z"
+        }
+      ],
+      "rejections": []
+    }
+  ]
+}

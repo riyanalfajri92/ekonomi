@@ -1,3 +1,5 @@
+> ARSIP VERSI 5.1, BUKAN PENILAIAN PAKET VERSI 6. Baca `MENUJU_9_DAN_BUKTI.md` dan `VALIDASI.md` untuk hasil terkini.
+
 # Asesmen Nadi 5 → 5.1
 31 Oktober 2026 · penilaian pengembang terhadap paket, bukan audit profesor independen atau sertifikasi.
 

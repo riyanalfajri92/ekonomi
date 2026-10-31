@@ -1,4 +1,6 @@
-# Nadi 5 — konsep yang diterapkan
+> Versi terkini dan status terperinci: `MENUJU_9_DAN_BUKTI.md`.
+
+# Nadi 6 — konsep yang diterapkan
 
 Tujuan: memahami kondisi ekonomi Indonesia, perbedaan pengalaman masyarakat dan pilihan keuangan pribadi dalam bahasa sederhana. Kedalaman ditempatkan pada bukti dan metode, bukan istilah sulit di pembuka.
 
@@ -12,7 +14,7 @@ Tujuan: memahami kondisi ekonomi Indonesia, perbedaan pengalaman masyarakat dan 
 4. Ketahanan: bunga, kurs, yield dan konteks eksternal. Stok dan arus tidak ditukar; SRBI bukan seluruh dana asing. Belum ada vonis stabilitas sistem keuangan tanpa data industri lengkap.
 5. Langkah: apa yang perlu dipantau dan alat yang relevan. Tidak ada rekomendasi seragam bagi semua pembaca.
 
-**Prospek** menata lima pertanyaan: penghasilan, kegiatan usaha, ruang APBN, tekanan harga dan biaya uang. Jenis bukti ditulis: observasi, ekspektasi survei, eksperimen model atau sensitivitas. Ekspektasi survei yang periodenya lewat kembali dibaca sebagai konteks observasi, bukan ramalan masa depan.
+**Prospek** menata empat bacaan kondisi, laboratorium harga dan matriks skenario. Laboratorium versi 6 memakai AR(1) horizon 1/3/6 bulan dengan benchmark dan evaluasi galat. Uraian arsitektur sebelumnya berikut merupakan konteks perkembangan: penghasilan, kegiatan usaha, ruang APBN, tekanan harga dan biaya uang. Jenis bukti ditulis: observasi, ekspektasi survei, eksperimen model atau sensitivitas. Ekspektasi survei yang periodenya lewat kembali dibaca sebagai konteks observasi, bukan ramalan masa depan.
 
 **Pilihanmu** menghubungkan arus kas, cadangan, utang dan tujuan dengan 17 kalkulator, rencana terpadu, deposito dan obligasi. Satu kerangka visual, empat tab. Nilai awal adalah contoh; input tidak dikirim ke server. Bunga dan kupon bukan ukuran keamanan/kecocokan tunggal.
 

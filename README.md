@@ -1,31 +1,27 @@
-> Revisi 5.1: lihat `ASESMEN_5_1.md`. Ringkasan perubahan, gerbang prediksi dan asumsi simulator diperbaiki.
+# Nadi 6 — ekonomi kita, artinya untuk kita
 
-# Nadi 5 — ekonomi kita, artinya untuk kita
+Website ID/EN untuk memahami kegiatan ekonomi, kehidupan masyarakat, APBN dan pilihan keuangan pribadi. Empat navigasi: **Baca ekonomi, Prospek, Pilihanmu, Sumber**.
 
-Rombakan antarmuka dan struktur bacaan, bukan lapisan tambahan pada halaman lama. Empat pintu: **Baca ekonomi → Prospek → Pilihanmu → Sumber**.
+Mulai dari `MENUJU_9_DAN_BUKTI.md` untuk tabel seluruh permintaan dan bukti perbaikannya. `VALIDASI.md` mencatat pengujian; `PANDUAN_UPDATE.md` menjelaskan GitHub → Vercel.
 
-## Satu laporan
+## Hasil versi ini
 
-Halaman utama menelusuri kegiatan ekonomi → penghasilan/pekerjaan/distribusi → dukungan APBN → ketahanan pembiayaan → pilihan pribadi. Grafik penggerak ekonomi dapat diklik untuk histori, sumber dan CSV. Data tahunan dibedakan dari triwulan dan pengamatan terbaru.
+- Laporan beralur dengan tujuh ringkasan perubahan, pembanding dan makna; bukan satu skor ekonomi.
+- Konektor publik Kemnaker tanpa kunci API: TPT, partisipasi serta jumlah angkatan kerja, bekerja dan menganggur. Upah/kemiskinan/PDB BPS tetap memiliki batas pembaruan tersendiri.
+- Histori inflasi 193 observasi pada paket saat ini; arsip World Bank CPI → yoy dan publikasi domestik, dengan celah tidak diisi.
+- Laboratorium model tetap AR(1) untuk 1/3/6 bulan, benchmark nilai terakhir/median3, galat bergulir, cakupan rentang dan ledger sebelum hasil diketahui. Model tidak mengalahkan benchmark satu bulan dalam arsip ini; bukan sistem prediksi seluruh ekonomi.
+- Matriks 15 kombinasi tekanan anggaran, pendapatan impas, kekurangan bulanan dan masa cadangan menutup defisit; 17 kalkulator dan planner terpadu.
+- Sepuluh bank pembanding, keterkaitan bunga/hasil/LPS/rasio; 38 seri obligasi dari pengambilan langsung tabel BCA. Keberhasilan sumber berubah antar siklus.
+- Visual APBN per Rp100 belanja, rekonsiliasi pusat/TKD serta perbedaan uang dibelanjakan dengan layanan diterima.
 
-Sepuluh seri baru World Bank/WDI-PIP: konsumsi rumah tangga, investasi tetap, konsumsi pemerintah, ekspor, impor, konsumsi per kapita, pertanian, industri termasuk konstruksi, jasa, dan Gini. Pengambilan langsung berhasil; semuanya merupakan konteks tahunan, bukan data hari ini. Sepuluh seri struktural sosial versi sebelumnya tetap dipakai dalam alur kehidupan masyarakat.
+## Otomasi
 
-Prospek membedakan observasi, ekspektasi survei, model eksperimental dan skenario. Pilihanmu menyatukan 17 kalkulator, rencana terpadu, sepuluh bank pembanding dan enam kuotasi FR awal. Input pribadi tetap di perangkat.
+GitHub Actions berjalan enam jam sekali dan saat kode di-push ke main/master; commit data tidak memicu loop. Kolektor memvalidasi dan menyimpan snapshot. Pengunjung tidak melakukan scraping. Vercel menyajikan snapshot tervalidasi; browser memeriksa versi tiap dua menit saat halaman terlihat.
 
-## Satu mesin data
+Mengunggah kode tidak membuktikan seluruh sumber telah berhasil. Konfigurasi produksi dan kunci BPS perlu tersedia pada akun pemilik. Website mempertahankan angka valid terakhir dan tanggalnya ketika pengambilan gagal. `/api/health` tetap 503 bila gerbang data inti/produksi belum lolos.
 
-GitHub Actions setiap enam jam → konektor resmi → validasi per seri → snapshot/histori/health → commit → Vercel. API hanya menyajikan snapshot. Pembaruan tanpa perubahan tidak merender ulang bacaan; respons API lama tidak boleh mengganti snapshot lebih baru.
+## Menjalankan
 
-Cadangan resmi BI sudah berhasil diuji untuk inflasi, JISDOR dan BI-Rate. Status pengambilan, usia observasi dan kesiapan produksi dipisahkan. BPS membutuhkan konfigurasi/akses pemilik; harga seri obligasi dan sebagian bank belum lulus refresh. Konektor yang menerima penyaringan keamanan dijeda.
+Node.js 24. `npm ci --ignore-scripts`, `npm test`, `npm run build`, `npm run dev`. `npm run update-data` mencoba seluruh sumber; `npm run doctor` memeriksa kesiapan dan kehadiran konfigurasi tanpa mencetak nilai rahasia. Doctor keluar nonzero ketika syarat belum lolos.
 
-## Jalankan/pasang
-
-Node 24: `npm ci`, `npm test`, `npm run build`, `npm run dev`.
-
-Salin seluruh isi folder ke akar repositori GitHub, termasuk `.github`. Ikuti **PANDUAN_UPDATE.md** untuk Actions, BPS_API_KEY, verifikasi produksi dan Vercel. Belum ada push/deployment ke akun pengguna dari lingkungan ini.
-
-- **KONSEP_EKSEKUSI.md**: struktur yang diterapkan dan batas analisis.
-- **PERUBAHAN.md**: bagian yang diganti, dipertahankan dan diuji.
-- **VALIDASI.md**: bukti serta keterbatasan material.
-
-Tidak ada klaim kualitas 10/10, semua data live, prediksi terkalibrasi, bank pasti aman atau rekomendasi investasi personal.
+Paket ini belum di-push atau dideploy ke akun GitHub/Vercel pemilik dari sesi pengembangan. Tidak mengklaim seluruh data real-time, seluruh cakupan lengkap, sertifikasi CFP, rekomendasi beli personal atau penilaian akademik 9/10.

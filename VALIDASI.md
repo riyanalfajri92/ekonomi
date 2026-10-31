@@ -1,59 +1,43 @@
-# Validasi Nadi 5.1 — 31 Oktober 2026
+# Validasi Nadi 6 — 31 Oktober 2026
 
-## Hasil yang terbukti
+## Pemeriksaan kode
 
-- **87 pengujian otomatis lulus.** Mencakup rumus finansial, pembanding seperiode, perubahan interpretasi, tanggal mustahil, histori/revisi, validasi fiskal, kurva yield rusak, rollback per sumber, readiness lewat waktu, ledger proyeksi, loading tanpa data dan render ID/EN.
-- **57 modul lolos pemeriksaan build** atas sintaks, impor dan snapshot. Ini bukan audit keamanan independen atau sertifikasi kualitas analisis.
-- API pengunjung diuji dengan jaringan eksternal yang sengaja dibuat gagal: API tetap menyajikan snapshot dan tidak mengubah waktu pengambilan sumber.
-- Pengujian langsung terbatas pada sumber yang diizinkan: indeks APBN terbaca (PDF sama menggunakan ekstraksi tersimpan; waktu pengambilan PDF tidak diganti), indikator tambahan BI terbaca, WDI dan 10 seri struktural terbaca, kurva ADB terbaca.
-- Tabel utama inflasi/JISDOR/BI-Rate mengalami timeout. **Alternatif halaman indikator resmi BI berhasil** mengambil ketiga indikator tersebut dengan definisi dan tanggal aslinya; histori lama dipertahankan.
-- Pemeriksaan browser versi 5: navigasi empat halaman, grafik komponen permintaan dan dialog histori/CSV, kalkulator arus kas berubah menjadi defisit ketika pendapatan diturunkan, pergantian ID/EN mempertahankan input, tabel 10 bank, harga/YTM/PV obligasi dan prospek triwulan tampil.
-- Pengambilan langsung versi 5: **10 seri tambahan WDI berhasil**, periode terbaru 2025: konsumsi rumah tangga/nirlaba, PMTB, konsumsi pemerintah, ekspor, impor, konsumsi per kapita riil, pertanian, industri termasuk konstruksi, jasa dan Gini. Angka terbaru tidak disamakan dengan kondisi harian.
-- Bukti browser versi 4 sebelumnya: beranda dan pendalaman fiskal terbaca, Data & metode serta ledger tampil dalam ID/EN, panel terbuka tetap bertahan setelah tombol pembaruan diklik. Pengujian versi sebelumnya juga memverifikasi perubahan input arus kas mengubah kesimpulan surplus/defisit.
+**98 pengujian otomatis lulus; 64 modul lolos build.** Pemeriksaan meliputi rumus finansial, pembanding periode, perubahan narasi, data kosong ID/EN, isolasi sumber gagal, rollback, tanggal/angka historis rusak, validasi fiskal, kurva/harga obligasi, cache, ledger serta kebocoran masa depan dalam model.
 
-## Keterbatasan material
+Tes baru menguji parser Kemnaker, transformasi CPI → yoy dari fixture berkas resmi World Bank, konflik arsip terhadap publikasi domestik, AR(1) multi-horizon, rentang yang tidak memakai galat masa depan, celah yang tidak diinterpolasi, ledger multi-horizon, titik impas anggaran, rekonsiliasi visual APBN dan ekspor CSV seluruh histori.
 
-| Kelompok | Bukti dan batas |
-|---|---|
-| BI | Cadangan resmi tiga indikator lulus pengambilan langsung. Timeout tabel utama tetap tercatat; keberhasilan alternatif tidak disamakan keberhasilan semua sumber. |
-| BPS | Data awal merujuk rilis resmi. API membutuhkan BPS_API_KEY pemilik. Pembaruan BPS berautentikasi belum diuji; homepage tidak menghasilkan seri lengkap dalam pengujian sebelumnya. |
-| Fiskal | Jalur PDF dan data ekstraksi tersedia; identitas pendapatan − belanja = saldo diuji. Alternatif HTML ditemukan dari indeks resmi dan parser diuji, tetapi pengambilan native halaman Kemenkeu mendapat HTTP 500: belum lulus live. |
-| Struktural | Sepuluh seri tahunan berhasil diambil; observasi 2023–2025. Definisi tetap terpisah dari BPS dan data hari ini. |
-| Deposito | Sepuluh bank pembanding tampil; keberhasilan dan periode berbeda. Tidak mengklaim semuanya terbarui otomatis atau merupakan peringkat sepuluh terbesar berdasarkan aset. |
-| Bank | Rasio tersedia berbeda per bank; tabel kelengkapan hanya menghitung laporan dengan CAR/NPL yang terbaca. Capability kesiapan lebih ketat daripada keberadaan nama bank. |
-| Akses terlindungi | Konektor BNI/BTN yang sebelumnya menerima penyaringan keamanan dijeda. Tidak mengakali kontrol akses atau melakukan retry tanpa batas. |
-| Obligasi | Kurva ADB terbaca. Enam kuotasi FR awal 30 Oktober 2026 dari sumber resmi BCA; refresh harga per seri belum lulus server. Harga indikatif bukan tawaran transaksi executable. |
-| Berita | BI, OJK, Kemendag, Bappebti dan konektor Kemenkeu tersedia dalam kode; hanya hasil yang benar-benar diperoleh ditampilkan. Kemenkeu baru belum lulus pengambilan native. Tidak mengklaim BEI/all-agency feed aktif. |
-| Belum tersambung | IHSG, arus saham/SBN lengkap, komponen PDB triwulanan domestik, sewa/biaya lokal/distribusi sosial lengkap, rating obligasi korporasi. |
+`npm audit --omit=dev` melaporkan 0 kerentanan yang diketahui saat diperiksa. Tidak berarti audit keamanan independen telah dilakukan.
 
-## Operasi produksi belum dibuktikan
+## Dua siklus sumber nyata
 
-Run pada paket berlabel **local-verification / selected-sources**, bukan GitHub Actions produksi. Belum ada konfigurasi kunci BPS, hook Vercel, PUBLIC_SITE_URL atau monitor independen milik pengguna yang dilakukan dari sini. Belum ada tiga siklus penuh dan satu rilis baru yang melewati produksi.
+Ringkasan disimpan dalam `BUKTI_SUMBER.json`. Kedua siklus berlabel **local-verification / all-sources**, bukan GitHub produksi. Tidak ada identitas produksi yang direka.
 
-Readiness memang **belum lolos**. `/api/health` merespons 503 saat blocker data inti/produksi tersisa. Website tetap dapat membaca observasi valid terakhir. Build lulus tidak diartikan seluruh sumber hidup; workflow dapat merah pada gerbang terakhir sambil tetap menyimpan pembaruan valid.
+- Siklus pertama: delapan tabel deposito berhasil, 38 kuotasi FR terbaca, Kemnaker berhasil, APBN/ADB/WDI/seri struktural berhasil. Sejumlah sumber BI dan berita mengalami timeout.
+- Setelah timeout sumber BI disesuaikan dan implementasi baru diperiksa, siklus terakhir: inflasi, JISDOR, BI-Rate, indikator tambahan BI, survei konsumen dan berita BI berhasil. APBN, WDI, kurva ADB dan 38 kuotasi FR berhasil. Lima indikator ketenagakerjaan Kemnaker berhasil.
+- Siklus terakhir: tujuh tabel deposito berhasil. Panin HTTP 503; data terakhir dipertahankan. BNI/BTN tetap dijeda setelah penyaringan keamanan terdahulu; tidak diakali atau dicoba terus-menerus.
+- Enam konektor laporan bank berhasil pada siklus terakhir; kelengkapan rasio dan basis laporan berbeda. OCBC timeout, Danamon tidak menemukan laporan setara/lebih baru, BNI/BTN dijeda.
+- Bappebti berhasil; Kemenkeu/OJK/Kemendag berita belum lolos siklus terakhir. Kemendag pernah berhasil pada siklus pertama. APBN Kemenkeu adalah konektor terpisah yang berhasil.
+- API BPS belum berhasil tanpa kunci. Keberhasilan Kemnaker tidak mengubah status upah/kemiskinan/PDB yang masih data awal.
+- OECD API dicoba untuk histori dan menerima HTTP 500. Arsip World Bank berhasil diunduh. Workbook Dallas Fed berhasil dibaca tetapi berisi agregat, sehingga tidak dipakai sebagai data Indonesia. PDF APBN tambahan untuk perluasan indikator timeout; tidak dibuatkan angka tambahan.
 
-Bukti tiap run: snapshot/health/runs dan artifact Actions. Ini bukan arsip lengkap respons mentah atau data vintage independen. Fingerprint dan histori tidak membuktikan seluruh revisi intrahari tersimpan. Monitor eksternal diperlukan untuk mendeteksi jadwal yang berhenti.
+## Prediksi dan statistik
 
-## Analisis dan prediksi
+Pada snapshot paket, terdapat 193 observasi inflasi gabungan. CPI bulanan World Bank Indonesia dikonversi menjadi yoy dengan pembanding 12 bulan. Publikasi domestik dipertahankan saat periode bertumpuk; konflik material ditolak. Ada celah April–November 2025 yang tidak diisi. Sumber historis ditulis terpisah dari pengambilan angka terkini.
 
-Upah riil memakai pertumbuhan upah dan inflasi yoy bulan sama, bukan inflasi terbaru yang berbeda bulan. Rata-rata buruh tidak mewakili semua orang. Mekanisme ekonomi tidak disebut sebagai bukti sebab-akibat.
+AR(1) berprotokol tetap memakai maksimal 60 pasangan berurutan, minimal 24, phi dibatasi untuk kestabilan. Uji bergulir 1/3/6 bulan masing-masing 156/152/146 dalam snapshot ini; jendela yang melintasi celah dilewati. MAE satu bulan sekitar 0,38 pp versus benchmark 0,37 pp. Tidak mengklaim model unggul. Rentang galat hanya memakai hasil target lama yang sudah tercapai pada asal ramalan; cakupan historis ditampilkan, bukan jaminan peluang mendatang.
 
-Perbandingan belanja pusat/bansos memakai periode tahun sebelumnya yang sama. Belanja nominal bukan volume layanan. Realisasi/pagu bukan skor keberhasilan. Kebutuhan rata-rata sisa bulan merupakan hitungan bersyarat, bukan ramalan defisit atau manfaat bantuan.
+Backtest memakai revisi data terkini, bukan vintage. Catatan prospektif lokal tidak dihitung sebagai rekam produksi. Tidak ada model tervalidasi untuk seluruh PDB, pekerjaan, kemiskinan, kurs atau harga obligasi. Skenario pribadi merupakan hitungan bersyarat, tidak memiliki peluang kejadian yang direka.
 
-Model inflasi fixed median3 identik di server/UI. Sepuluh observasi masih sampel pendek, tanpa interval terkalibrasi. Ledger menyimpan penerbitan dan hasil pertama; catatan lokal awal tidak dianggap rekam akurasi produksi. Skenario pribadi bukan ramalan.
+## Browser dan tampilan
 
-PV obligasi memakai interpolasi yield pemerintah dan model flat-yield, bukan kurva diskonto spot. Sensitivitas ±25 bps adalah asumsi, bukan interval statistik. Tanggal tidak sebanding, tenor di luar kurva dan harga usang membatasi klasifikasi. Pajak, biaya, settlement dan likuiditas belum lengkap. Tidak ada rating pemerintah idAAA rekaan atau rekomendasi beli personal.
+Model multi-horizon, matriks anggaran dan perubahan angka saat pendapatan diturunkan diperiksa di browser. Kesimpulan berubah; pendapatan impas dan kekurangan bulanan ikut berubah.
 
-Rasio bank merupakan laporan berkala, bukan kas real-time. Bunga tinggi tidak membuktikan masalah. LPS terpisah dari penilaian bank. Belum dilakukan studi pemahaman pembaca, audit aksesibilitas atau pemeriksaan perangkat fisik seluler. Karena itu belum ada klaim 10/10.
+Viewport isi 375 piksel diperiksa untuk beranda, prospek, kalkulator, deposito, obligasi, sumber dan planner. Luapan prospek semula 714 piksel ditemukan, diperbaiki; hasil akhirnya lebar konten sama dengan viewport 375 piksel. Tabel lebar menggulir pada wadahnya, bukan seluruh halaman. Ini uji browser dengan iframe sempit, bukan perangkat fisik atau audit pembaca layar.
 
-## Perombakan versi 5
+Versi sebelumnya telah memeriksa pergantian ID/EN, input tetap bertahan, tombol menuju planner dan histori/CSV. Garis histori kini terputus pada celah periode; ekspor CSV memakai semua observasi tersimpan.
 
-Enam komposisi halaman lama dihapus. Beranda memakai satu model pembacaan yang menyambungkan produksi, masyarakat, APBN dan ketahanan. Diagram pertumbuhan memiliki titik nol; komponen tidak dijumlahkan sebagai kontribusi PDB. Indeks produksi sejak 2019 hanya merantai observasi tahunan berurutan. Gini bukan persentase penduduk. Konsumsi per kapita tidak dianggap median daya beli.
+## Yang belum dibuktikan
 
-Pengujian tambahan mencakup sumber inflasi tepat bulan upah, periode bersama seri tahunan, data kosong, batas kedaluwarsa survei, data mundur dari cache, serta parser sumber dengan negara dan rentang yang salah. Ini melengkapi pengujian rumus keuangan yang dipertahankan.
+Belum ada push/deployment akun pemilik, BPS API berautentikasi, PUBLIC_SITE_URL, beberapa siklus GitHub terjadwal, pemulihan produksi atau monitor eksternal yang diuji dari sini. `/api/health` tetap memerlukan perhatian ketika data inti/produksi belum siap. Kode baru tidak mengubah fakta ini.
 
-## Revisi asesmen 5.1
-
-Sembilan tes tambahan mencakup pembanding bulan sama, perubahan fiskal, kelayakan eksperimen, rekam prediksi prospektif, perubahan narasi upah, render kosong, parser BPS perubahan pp, cache dengan identitas berbeda pada timestamp sama dan default simulator yang tidak memakai model lemah.
-
-Pembanding TPT/kemiskinan ditinjau lewat indeks rilis resmi; pembukaan langsung menerima HTTP 403. Status data awal dan waktu pengambilan lama tidak diubah menjadi sukses otomatis. Ringkasan kini tujuh bacaan; tabel pada layar sempit disusun vertikal melalui CSS, belum diuji pada perangkat fisik.
+Cakupan rinci, bank, pajak/settlement obligasi, feed pasar modal, hasil layanan pemerintah serta studi pemahaman pembaca masih memiliki batas sebagaimana tabel `MENUJU_9_DAN_BUKTI.md`. Tidak ada klaim mutu keseluruhan 9/10 dari jumlah tes atau tampilan saja.

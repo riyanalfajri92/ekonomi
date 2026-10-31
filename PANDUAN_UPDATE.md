@@ -1,8 +1,8 @@
-# Memasang Nadi 5 pada GitHub → Vercel
+# Memasang Nadi 6 pada GitHub → Vercel
 
 ## Berkas
 
-Ekstrak ZIP. Salin **seluruh isi** folder `nadi-otomatis` ke akar repo `ekonomi`, termasuk `.github`. Cadangkan versi lama. Jangan menaruh folder berlapis `ekonomi/nadi-otomatis/public`. Pada GitHub Desktop: periksa perubahan → Commit → Push origin.
+Ekstrak ZIP. Cari tingkat folder hasil ekstraksi yang langsung berisi `package.json`, `vercel.json`, `public` dan `.github`. Salin **seluruh isi tingkat folder itu** ke akar repo `ekonomi`, termasuk `.github`. Cadangkan versi lama. Jangan menaruh folder berlapis `ekonomi/nadi-otomatis/public`. Pada GitHub Desktop: periksa perubahan → Commit → Push origin.
 
 Vercel: Node.js 24, Framework Other, Root Directory akar repo, Build Command `npm run build`, Output Directory `public`. `vercel.json` sudah mengatur dua API. Website pengguna belum dipush atau diubah dari sini.
 
@@ -26,6 +26,8 @@ Aktifkan Actions dan izin workflow menulis repo. Hook dibuat di pengaturan proye
 6. Lakukan tiga siklus penuh serta uji satu rilis data baru. Belum ada bukti siklus produksi milikmu dari lingkungan ini.
 7. Aktifkan notifikasi GitHub Actions. Untuk jadwal yang tidak pernah berjalan, gunakan monitor HTTP independen pada `https://DOMAINMU/api/health`. HTTP 503 meminta perhatian; JSON menjelaskan penyebab. Monitor eksternal belum dikonfigurasi oleh paket.
 
+Push kode ke main/master juga memicu pengambilan awal; commit hanya pada public/data tidak membuat loop. Pull request menjalankan pemeriksaan kode terpisah.
+
 Jadwal enam jam: **01.23, 07.23, 13.23, 19.23 WIB**. GitHub dapat menunda jadwal. Peringatan internal setelah 9 jam, lewat toleransi setelah 18 jam. Sumber tahunan tidak diwajibkan berubah setiap pemeriksaan.
 
 ## Saat ada masalah
@@ -34,7 +36,7 @@ Jadwal enam jam: **01.23, 07.23, 13.23, 19.23 WIB**. GitHub dapat menunda jadwal
 - Data rusak/periode mundur ditolak per seri. Sumber lain dapat tetap diperbarui.
 - Tiga indikator BI mempunyai cadangan pada halaman indikator resmi; jalur itu sudah diuji langsung.
 - Alternatif fiskal HTML belum lulus pengambilan native (HTTP 500). PDF tetap jalur utama.
-- Konektor BNI/BTN yang menerima penyaringan keamanan dijeda. Perlu kanal resmi yang diizinkan. Harga seri obligasi dan sejumlah bank belum otomatis terverifikasi.
+- Konektor BNI/BTN yang menerima penyaringan keamanan dijeda. Perlu kanal resmi yang diizinkan. Tabel harga obligasi dan sejumlah bank sudah berhasil diuji langsung; sebagian bank lain tetap belum lolos atau dijeda. Periksa hasil tiap sumber, bukan satu status keseluruhan.
 - Tidak ada sistem tanpa pemeliharaan: perubahan format atau akses bisa membutuhkan perbaikan konektor.
 
 ## Mengedit dan menjalankan
@@ -46,3 +48,7 @@ Node 24: `npm ci`, `npm test`, `npm run build`, `npm run dev`.
 `npm run check-readiness` memeriksa gerbang data. Exit nonzero saat blocker tersisa memang disengaja. `npm run build` memeriksa integritas kode/snapshot, bukan menjamin semua sumber hidup.
 
 Desain/narasi: `public/report.js`, `report-model.js`, `governance.js`, `app.js`, `style.css`. Alat: `toolkit.js`/`toolkit-math.js`, `planner.js`, `scenario.js`, `deposits.js`, `bonds.js`. Gaya alat: `tool-ui.css`. Konektor penggerak historis: `lib/drivers.mjs`. Kolektor: `lib`. Setelah edit, tes/build lalu Commit/Push. Baca KONSEP_EKSEKUSI.md dan VALIDASI.md.
+
+## Pemeriksaan kesiapan
+
+Jalankan `npm run doctor`. Perintah ini hanya mencetak keberadaan konfigurasi, bukan nilainya. Jika PUBLIC_SITE_URL tersedia, perintah memeriksa identitas versi produksi. Exit nonzero berarti masih ada syarat yang belum lolos; baca daftar blocker. Pengujian lokal tidak mengetahui konfigurasi yang sudah disimpan di akun GitHub milikmu.

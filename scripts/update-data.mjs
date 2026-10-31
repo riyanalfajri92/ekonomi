@@ -1,5 +1,5 @@
 import {readFile,writeFile,mkdir,appendFile,rename} from 'node:fs/promises';
-import {collect} from '../lib/collect.mjs';import {inflationForecast,forecastLedger} from '../lib/forecast.mjs';import {validateSnapshot} from '../lib/validate.mjs';import {admitSnapshot} from '../lib/admission.mjs';import {contentFingerprint} from '../lib/integrity.mjs';import {changeLog,fiscalHistory} from '../lib/change-log.mjs';import {monitoringReport} from '../public/data-health.js';
+import {collect} from '../lib/collect.mjs';import {inflationForecast,forecastLedger,forecastSuite,suiteLedger} from '../lib/forecast.mjs';import {validateSnapshot} from '../lib/validate.mjs';import {admitSnapshot} from '../lib/admission.mjs';import {contentFingerprint} from '../lib/integrity.mjs';import {changeLog,fiscalHistory} from '../lib/change-log.mjs';import {monitoringReport} from '../public/data-health.js';
 const base=new URL('../public/data/',import.meta.url),path=new URL('snapshot.json',base);let prior={};try{prior=JSON.parse(await readFile(path,'utf8'));}catch{}
 const selector=process.argv.find(x=>x.startsWith('--sources=')),sourceIds=selector?selector.slice(10).split(',').filter(Boolean):null;if(sourceIds?.some(x=>!/^[-a-z]+$/.test(x)))throw Error('Invalid source selector');
 const startedAt=new Date().toISOString();let result,failed=false;
@@ -9,6 +9,7 @@ failed=failed||!hasSuccess;
 result.pipeline={environment:process.env.GITHUB_ACTIONS==='true'?'github-actions':'local-verification',runId:process.env.GITHUB_RUN_ID?`${process.env.GITHUB_RUN_ID}-${process.env.GITHUB_RUN_ATTEMPT||1}`:startedAt,scope:sourceIds?'selected-sources':'all-sources',sourceIds,status:failed?'failed':checks.some(x=>x.status!=='ok')||result.rejections?.length?'partial':'ok',startedAt,finishedAt};
 result.snapshotId=contentFingerprint(result);result.dataChangedAt=result.snapshotId!==prior.snapshotId?finishedAt:prior.dataChangedAt||finishedAt;result.changeLog=changeLog(prior,result,finishedAt);result.fiscalHistory=fiscalHistory(prior,result.fiscal);
 result.forecast=inflationForecast(result.metrics?.find(x=>x.id==='inflation'),new Date(finishedAt));result.forecastArchive=forecastLedger(prior.forecastArchive,result.forecast,result.metrics?.find(x=>x.id==='inflation'),finishedAt,result.pipeline.environment);
+result.forecastSuite=forecastSuite(result.metrics?.find(x=>x.id==='inflation'),new Date(finishedAt));result.forecastArchive=suiteLedger(result.forecastArchive,result.forecastSuite,result.metrics?.find(x=>x.id==='inflation'),finishedAt,result.pipeline.environment);
 const report=monitoringReport(result,finishedAt);await mkdir(base,{recursive:true});
 const atomic=async(name,value)=>{const dest=new URL(name,base),temp=new URL(name+'.tmp',base);await writeFile(temp,JSON.stringify(value,null,2)+'\n');await rename(temp,dest);};
 // Write only validated data. A failed run still records operational evidence without inventing observations.

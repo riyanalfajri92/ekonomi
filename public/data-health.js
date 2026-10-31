@@ -2,7 +2,7 @@ import {sourceInventory,pipelineHealth} from './source-policy.js';
 const G=[
  ['drivers','Penggerak & distribusi historis','Historical drivers & distribution','World Bank · WDI/PIP','annual','drivers',[]],
  ['prices','Harga & bunga','Prices & rates','BI · indikator resmi','daily/monthly','metrics',['inflation','rate','jisdor']],
- ['society','Penghasilan & pekerjaan','Income & jobs','BPS · Web API','semester/quarter','social',['bpsGrowth','bpsJobs','bpsWage','bpsPoverty']],
+ ['society','Penghasilan & pekerjaan','Income & jobs','BPS / Kemnaker · sumber tiap seri','semester/quarter','social',['bpsGrowth','bpsJobs','bpsWage','bpsPoverty']],
  ['fiscal','Keuangan negara','Public finances','Kemenkeu · APBN Kita','monthly','fiscal',[]],
  ['structural','Layanan & kesempatan','Services & opportunities','WHO/UNICEF/ILO/UNESCO melalui World Bank','annual','structural',[]],
  ['deposits','Bunga deposito','Deposit offers','Halaman resmi bank','product','deposits',[]],

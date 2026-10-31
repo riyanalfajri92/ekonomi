@@ -4,6 +4,7 @@ const POLICIES={
  jisdor:{cadence:'business-daily',observationDays:5,checkHours:18},indonia:{cadence:'business-daily',observationDays:5,checkHours:18},
  inflation:{cadence:'monthly',observationDays:70,checkHours:18},rate:{cadence:'decision',observationDays:55,checkHours:18},
  fxreserves:{cadence:'monthly',observationDays:70,checkHours:18},srbiflow:{cadence:'weekly-window',observationDays:15,checkHours:18},confidence:{cadence:'monthly',observationDays:70,checkHours:18},manufacturing:{cadence:'quarterly',observationDays:140,checkHours:18},
+ labourForce:{cadence:'semester',observationDays:280,checkHours:18},labourParticipation:{cadence:'semester',observationDays:280,checkHours:18},employedPeople:{cadence:'semester',observationDays:280,checkHours:18},unemployedPeople:{cadence:'semester',observationDays:280,checkHours:18},
  bpsGrowth:{cadence:'quarterly',observationDays:170,checkHours:18},bpsWage:{cadence:'semester',observationDays:280,checkHours:18},bpsJobs:{cadence:'semester',observationDays:280,checkHours:18},bpsPoverty:{cadence:'semester',observationDays:310,checkHours:18},bpsGini:{cadence:'semester',observationDays:310,checkHours:18},
  fiscal:{cadence:'monthly',observationDays:80,checkHours:18},bondMarket:{cadence:'business-daily',observationDays:5,checkHours:18},bondQuotes:{cadence:'business-daily',observationDays:5,checkHours:18},deposits:{cadence:'product',observationDays:null,checkHours:18},bankHealth:{cadence:'quarterly',observationDays:190,checkHours:18}
 };
