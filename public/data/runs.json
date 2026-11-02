@@ -1,18 +1,5 @@
 [
   {
-    "environment": "github-actions",
-    "runId": "41212339066-1",
-    "scope": "all-sources",
-    "sourceIds": null,
-    "status": "partial",
-    "startedAt": "2026-10-31T14:55:15.060Z",
-    "finishedAt": "2026-10-31T14:56:30.801Z",
-    "snapshotId": "be098728b1c51957",
-    "succeeded": 32,
-    "failed": 9,
-    "rejected": 0
-  },
-  {
     "environment": "local-verification",
     "runId": "2026-11-02T04:52:21.893Z",
     "scope": "all-sources",

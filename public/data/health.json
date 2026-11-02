@@ -1,27 +1,16 @@
 {
-<<<<<<< HEAD
   "checkedAt": "2026-11-02T04:55:10.328Z",
   "snapshotId": "b87a87354ccb0e86",
   "dataChangedAt": "2026-11-02T04:55:10.328Z",
-=======
-  "checkedAt": "2026-10-31T14:56:30.801Z",
-  "snapshotId": "be098728b1c51957",
-  "dataChangedAt": "2026-10-31T14:56:30.801Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
   "sources": [
     {
       "id": "apbn",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "apbn-pdf",
-<<<<<<< HEAD
       "status": "error",
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": "The operation was aborted due to timeout"
@@ -31,138 +20,82 @@
       "status": "error",
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": "Sumber merespons HTTP 500"
-=======
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     },
     {
       "id": "bi-extra",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "consumer-survey",
-<<<<<<< HEAD
       "status": "error",
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": "The operation was aborted due to timeout"
-=======
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     },
     {
       "id": "deposit-bca",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "deposit-bni",
       "status": "blocked",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
     },
     {
       "id": "deposit-btn",
       "status": "blocked",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
     },
     {
       "id": "deposit-cimb",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "deposit-danamon",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "deposit-mandiri",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "deposit-maybank",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "deposit-mega",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "deposit-ocbc",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "deposit-panin",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "inflation",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": null
     },
@@ -170,35 +103,23 @@
       "id": "inflation-components",
       "status": "ok",
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "inflation-history",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "jisdor",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "lps-disclosure",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": null
     },
@@ -206,45 +127,29 @@
       "id": "money-supply",
       "status": "ok",
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "news",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "rate",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "worldbank",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "social-structural",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": null
     },
@@ -252,41 +157,23 @@
       "id": "labour-public",
       "status": "ok",
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "economic-drivers",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "bond-market",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
-    },
-    {
-      "id": "bond-quotes",
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "bps-social",
       "status": "error",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": "Indikator utama BPS belum terbaca"
     },
@@ -294,32 +181,17 @@
       "id": "bond-quotes",
       "status": "ok",
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": "Sumber merespons HTTP 403"
-    },
-    {
-      "id": "labour-public",
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     },
     {
       "id": "kemenkeu-news",
       "status": "error",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": "Sumber merespons HTTP 500"
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": "Daftar rilis Kementerian Keuangan belum terbaca"
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     },
     {
       "id": "bappebti-news",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": null
     },
@@ -333,39 +205,11 @@
       "id": "health-bca",
       "status": "ok",
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
       "error": null
     },
     {
       "id": "health-ocbc",
       "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
-    },
-    {
-      "id": "ojk-news",
-      "status": "error",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "health-cimb",
-      "status": "error",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": "Dokumen rasio terbaru belum ditemukan"
-    },
-    {
-      "id": "health-bca",
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
-      "error": null
-    },
-    {
-      "id": "health-ocbc",
-      "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
       "error": null
     },
@@ -403,43 +247,12 @@
       "id": "health-danamon",
       "status": "error",
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
-    },
-    {
-      "id": "health-panin",
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
-    },
-    {
-      "id": "health-bni",
-      "status": "blocked",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
-    },
-    {
-      "id": "health-mandiri",
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
-    },
-    {
-      "id": "health-danamon",
-      "status": "error",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": "Tidak menemukan rilis rasio yang lebih baru atau setara"
     },
     {
       "id": "health-btn",
       "status": "blocked",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
     },
     {
@@ -451,34 +264,18 @@
     {
       "id": "kemendag-news",
       "status": "ok",
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z",
-      "error": null
-    },
-    {
-      "id": "kemendag-news",
-      "status": "ok",
-      "checkedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "error": null
     }
   ],
   "pipeline": {
-    "state": "on-time",
+    "state": "unverified",
     "ageHours": 0,
     "warningHours": 9,
     "overdueHours": 18,
-<<<<<<< HEAD
     "lastRun": "2026-11-02T04:52:21.893Z",
     "finishedAt": "2026-11-02T04:55:10.328Z",
     "nextExpectedAt": "2026-11-02T10:55:10.328Z"
-=======
-    "lastRun": "41212339066-1",
-    "finishedAt": "2026-10-31T14:56:30.801Z",
-    "nextExpectedAt": "2026-10-31T20:56:30.801Z"
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
   },
   "inventory": [
     {
@@ -552,22 +349,13 @@
       "id": "jisdor",
       "period": "2026-10-30",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bi.go.id/id/statistik/informasi-kurs/jisdor/default.aspx",
       "available": true,
       "quality": {
         "cadence": "business-daily",
-<<<<<<< HEAD
         "ageDays": 2.204980659722222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 0.6225787268518519,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 5,
         "checkLimitHours": 18,
         "initial": false,
@@ -583,22 +371,13 @@
       "id": "inflation",
       "period": "2026-09",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bi.go.id/id/statistik/indikator/data-inflasi.aspx",
       "available": true,
       "quality": {
         "cadence": "monthly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 70,
         "checkLimitHours": 18,
         "initial": false,
@@ -614,22 +393,13 @@
       "id": "rate",
       "period": "2026-10-21",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bi.go.id/id/statistik/indikator/bi-rate.aspx",
       "available": true,
       "quality": {
         "cadence": "decision",
-<<<<<<< HEAD
         "ageDays": 11.204980659722223,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 9.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 55,
         "checkLimitHours": 18,
         "initial": false,
@@ -645,22 +415,13 @@
       "id": "fxreserves",
       "period": "2026-09",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
       "available": true,
       "quality": {
         "cadence": "monthly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 70,
         "checkLimitHours": 18,
         "initial": false,
@@ -681,13 +442,8 @@
       "available": true,
       "quality": {
         "cadence": "business-daily",
-<<<<<<< HEAD
         "ageDays": 2.204980659722222,
         "retrievalHours": 50.232173055555556,
-=======
-        "ageDays": 0.6225787268518519,
-        "retrievalHours": 12.254526666666667,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 5,
         "checkLimitHours": 18,
         "initial": false,
@@ -703,22 +459,13 @@
       "id": "srbiflow",
       "period": "2026-10-29",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bi.go.id/id/statistik/indikator/default.aspx",
       "available": true,
       "quality": {
         "cadence": "weekly-window",
-<<<<<<< HEAD
         "ageDays": 3.204980659722222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 1.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 15,
         "checkLimitHours": 18,
         "initial": false,
@@ -733,24 +480,14 @@
       "key": "confidence",
       "id": "confidence",
       "period": "2026-09",
-<<<<<<< HEAD
       "status": "fallback",
       "fetchedAt": "2026-10-31T11:58:07.578Z",
-=======
-      "status": "ok",
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bi.go.id/id/publikasi/laporan/Pages/SK-September-2026.aspx",
       "available": true,
       "quality": {
         "cadence": "monthly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 40.950763888888886,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 70,
         "checkLimitHours": 18,
         "initial": false,
@@ -766,22 +503,13 @@
       "id": "manufacturing",
       "period": "2026-09",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2823126.aspx",
       "available": true,
       "quality": {
         "cadence": "quarterly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 140,
         "checkLimitHours": 18,
         "initial": false,
@@ -797,22 +525,13 @@
       "id": "gdp",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -828,22 +547,13 @@
       "id": "income",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -859,22 +569,13 @@
       "id": "unemployment",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -890,22 +591,13 @@
       "id": "currentaccount",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -921,22 +613,13 @@
       "id": "fdi",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -952,22 +635,13 @@
       "id": "reserves",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/FI.RES.TOTL.MO?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -983,22 +657,13 @@
       "id": "trade",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1014,22 +679,13 @@
       "id": "annualinflation",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1050,13 +706,8 @@
       "available": true,
       "quality": {
         "cadence": "quarterly",
-<<<<<<< HEAD
         "ageDays": 124.20498065972222,
         "retrievalHours": 50.28041,
-=======
-        "ageDays": 122.62257872685186,
-        "retrievalHours": 12.30276361111111,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 170,
         "checkLimitHours": 18,
         "initial": true,
@@ -1077,13 +728,8 @@
       "available": true,
       "quality": {
         "cadence": "semester",
-<<<<<<< HEAD
         "ageDays": 246.20498065972222,
         "retrievalHours": 50.28041,
-=======
-        "ageDays": 244.62257872685186,
-        "retrievalHours": 12.30276361111111,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 280,
         "checkLimitHours": 18,
         "initial": true,
@@ -1104,13 +750,8 @@
       "available": true,
       "quality": {
         "cadence": "semester",
-<<<<<<< HEAD
         "ageDays": 215.20498065972222,
         "retrievalHours": 50.28041,
-=======
-        "ageDays": 213.62257872685186,
-        "retrievalHours": 12.30276361111111,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 310,
         "checkLimitHours": 18,
         "initial": true,
@@ -1126,22 +767,13 @@
       "id": "labourForce",
       "period": "2026-02",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://paskerid.kemnaker.go.id/",
       "available": true,
       "quality": {
         "cadence": "semester",
-<<<<<<< HEAD
         "ageDays": 246.20498065972222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 244.62257872685186,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 280,
         "checkLimitHours": 18,
         "initial": false,
@@ -1157,22 +789,13 @@
       "id": "bpsJobs",
       "period": "2026-02",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://paskerid.kemnaker.go.id/",
       "available": true,
       "quality": {
         "cadence": "semester",
-<<<<<<< HEAD
         "ageDays": 246.20498065972222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 244.62257872685186,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 280,
         "checkLimitHours": 18,
         "initial": false,
@@ -1188,22 +811,13 @@
       "id": "labourParticipation",
       "period": "2026-02",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://paskerid.kemnaker.go.id/",
       "available": true,
       "quality": {
         "cadence": "semester",
-<<<<<<< HEAD
         "ageDays": 246.20498065972222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 244.62257872685186,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 280,
         "checkLimitHours": 18,
         "initial": false,
@@ -1219,22 +833,13 @@
       "id": "employedPeople",
       "period": "2026-02",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://paskerid.kemnaker.go.id/",
       "available": true,
       "quality": {
         "cadence": "semester",
-<<<<<<< HEAD
         "ageDays": 246.20498065972222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 244.62257872685186,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 280,
         "checkLimitHours": 18,
         "initial": false,
@@ -1250,22 +855,13 @@
       "id": "unemployedPeople",
       "period": "2026-02",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://paskerid.kemnaker.go.id/",
       "available": true,
       "quality": {
         "cadence": "semester",
-<<<<<<< HEAD
         "ageDays": 246.20498065972222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 244.62257872685186,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 280,
         "checkLimitHours": 18,
         "initial": false,
@@ -1281,22 +877,13 @@
       "id": "water",
       "period": "2024",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 670.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 668.6225787268519,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1312,22 +899,13 @@
       "id": "waterUrban",
       "period": "2024",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.UR.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 670.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 668.6225787268519,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1343,22 +921,13 @@
       "id": "waterRural",
       "period": "2024",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.RU.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 670.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 668.6225787268519,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1374,22 +943,13 @@
       "id": "sanitation",
       "period": "2024",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SH.STA.BASS.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 670.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 668.6225787268519,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1405,22 +965,13 @@
       "id": "healthOOP",
       "period": "2023",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 1036.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 1034.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1436,22 +987,13 @@
       "id": "neet",
       "period": "2023",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SL.UEM.NEET.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 1036.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 1034.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1467,22 +1009,13 @@
       "id": "neetFemale",
       "period": "2023",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SL.UEM.NEET.FE.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 1036.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 1034.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1498,22 +1031,13 @@
       "id": "neetMale",
       "period": "2023",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SL.UEM.NEET.MA.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 1036.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 1034.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1529,22 +1053,13 @@
       "id": "vulnerableWork",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SL.EMP.VULN.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1560,22 +1075,13 @@
       "id": "schoolCompletion",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SE.SEC.CMPT.LO.ZS?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1591,22 +1097,13 @@
       "id": "household",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1622,22 +1119,13 @@
       "id": "investment",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1653,22 +1141,13 @@
       "id": "government",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NE.CON.GOVT.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1684,22 +1163,13 @@
       "id": "exports",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NE.EXP.GNFS.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1715,22 +1185,13 @@
       "id": "imports",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NE.IMP.GNFS.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1746,22 +1207,13 @@
       "id": "consumptionPerCapita",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NE.CON.PRVT.PC.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1777,22 +1229,13 @@
       "id": "agriculture",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NV.AGR.TOTL.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1808,22 +1251,13 @@
       "id": "industry",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NV.IND.TOTL.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1839,22 +1273,13 @@
       "id": "services",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/NV.SRV.TOTL.KD.ZG?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1870,22 +1295,13 @@
       "id": "gini",
       "period": "2025",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=ID",
       "available": true,
       "quality": {
         "cadence": "annual",
-<<<<<<< HEAD
         "ageDays": 305.2049806597222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 303.6225787268518,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 1100,
         "checkLimitHours": 18,
         "initial": false,
@@ -1901,21 +1317,13 @@
       "id": "bca",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bca.co.id/individu/produk/simpanan/deposito-berjangka",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -1937,11 +1345,7 @@
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 50.34594694444444,
-=======
-        "retrievalHours": 12.368300555555555,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -1963,11 +1367,7 @@
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 50.34594694444444,
-=======
-        "retrievalHours": 12.368300555555555,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -1983,21 +1383,13 @@
       "id": "cimb",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.cimbniaga.co.id/id/personal/tabungan/deposito-berjangka",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -2013,21 +1405,13 @@
       "id": "danamon",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.danamon.co.id/Personal/Lainnya/Suku-Bunga",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -2043,21 +1427,13 @@
       "id": "mandiri",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bankmandiri.co.id/web/guest/suku-bunga-dana",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -2073,21 +1449,13 @@
       "id": "maybank",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.maybank.co.id/savings/Rates/suku-bunga-deposito",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -2103,21 +1471,13 @@
       "id": "mega",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://bankmega.com/id/personal/simpanan-individual/mega-depo/",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -2133,21 +1493,13 @@
       "id": "ocbc",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.ocbc.id/id/suku-bunga-dasar",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -2163,21 +1515,13 @@
       "id": "panin",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.panin.co.id/sites/default/files/interest/interest-deposito.json",
       "available": true,
       "quality": {
         "cadence": "product",
         "ageDays": null,
-<<<<<<< HEAD
         "retrievalHours": 0.04678722222222222,
-=======
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": null,
         "checkLimitHours": 18,
         "initial": false,
@@ -2198,13 +1542,8 @@
       "available": true,
       "quality": {
         "cadence": "quarterly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 50.28041,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 12.30276361111111,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 190,
         "checkLimitHours": 18,
         "initial": false,
@@ -2225,13 +1564,8 @@
       "available": true,
       "quality": {
         "cadence": "quarterly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 50.28041,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 12.30276361111111,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 190,
         "checkLimitHours": 18,
         "initial": false,
@@ -2252,13 +1586,8 @@
       "available": true,
       "quality": {
         "cadence": "quarterly",
-<<<<<<< HEAD
         "ageDays": 124.20498065972222,
         "retrievalHours": 50.28041,
-=======
-        "ageDays": 122.62257872685186,
-        "retrievalHours": 12.30276361111111,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 190,
         "checkLimitHours": 18,
         "initial": false,
@@ -2271,7 +1600,6 @@
     },
     {
       "key": "bankHealth",
-<<<<<<< HEAD
       "id": "bca",
       "period": "2026-09",
       "status": "ok",
@@ -2298,67 +1626,12 @@
       "period": "2026-09",
       "status": "ok",
       "fetchedAt": "2026-11-02T04:37:38.244Z",
-=======
-      "id": "cimb",
-      "period": "2026-09",
-      "status": "fallback",
-      "fetchedAt": "2026-10-31T02:41:14.505Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://investor.cimbniaga.co.id/misc/QR/2026/Published-Sep-2026-ID.pdf",
       "available": true,
       "quality": {
         "cadence": "quarterly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.29224555555555554,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 12.254526666666667,
-        "observationLimitDays": 190,
-        "checkLimitHours": 18,
-        "initial": false,
-        "aged": false,
-        "unchecked": false,
-        "failed": true,
-        "state": "retained",
-        "note": "Operational tolerance, not confirmation that a newer official release does not exist."
-      }
-    },
-    {
-      "key": "bankHealth",
-      "id": "ocbc",
-      "period": "2026-09",
-      "status": "ok",
-      "fetchedAt": "2026-10-31T03:15:18.892Z",
-      "url": "https://cdn1.ocbc.id/asset/media/Feature/AboutOCBC/Hubungan-Investor/Informasi-Keuangan/Laporan-Publikasi-Triwulan/2026/2026-Q3-laporan-publikasi-triwulan.pdf?rev=-1",
-      "available": true,
-      "quality": {
-        "cadence": "quarterly",
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 11.686641388888889,
-        "observationLimitDays": 190,
-        "checkLimitHours": 18,
-        "initial": false,
-        "aged": false,
-        "unchecked": false,
-        "failed": false,
-        "state": "within-window",
-        "note": "Operational tolerance, not confirmation that a newer official release does not exist."
-      }
-    },
-    {
-      "key": "bankHealth",
-      "id": "bca",
-      "period": "2026-09",
-      "status": "ok",
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
-      "url": "https://www.bca.co.id/-/media/Feature/Report/File/S8/Laporan-Triwulan/2026/20261027-financial-report-september-2026.pdf",
-      "available": true,
-      "quality": {
-        "cadence": "quarterly",
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 190,
         "checkLimitHours": 18,
         "initial": false,
@@ -2373,18 +1646,12 @@
       "key": "bankHealth",
       "id": "mega",
       "period": "2026-09",
-<<<<<<< HEAD
       "status": "fallback",
       "fetchedAt": "2026-11-02T04:37:38.244Z",
-=======
-      "status": "ok",
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://cdn.bankmega.com/prod.mega.cms.media/filer_public/a8/c8/a8c8464b-b85e-4929-888b-70c37120e35e/publikasi_triwulanan_30_september_2026_web_a-1.pdf",
       "available": true,
       "quality": {
         "cadence": "quarterly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.29224555555555554,
         "observationLimitDays": 190,
@@ -2431,10 +1698,6 @@
         "cadence": "quarterly",
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.29224555555555554,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 190,
         "checkLimitHours": 18,
         "initial": false,
@@ -2447,10 +1710,9 @@
     },
     {
       "key": "bankHealth",
-      "id": "panin",
+      "id": "ocbc",
       "period": "2026-09",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
       "url": "https://cdn1.ocbc.id/asset/media/Feature/AboutOCBC/Hubungan-Investor/Informasi-Keuangan/Laporan-Publikasi-Triwulan/2026/2026-Q3-laporan-publikasi-triwulan.pdf?rev=-1",
       "available": true,
@@ -2458,14 +1720,6 @@
         "cadence": "quarterly",
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.04678722222222222,
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
-      "url": "https://www.panin.co.id/sites/default/files/2026-10/Buku%20Lapkeu%20Panin%20Bank%2030%20Sep%2026.pdf",
-      "available": true,
-      "quality": {
-        "cadence": "quarterly",
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
         "observationLimitDays": 190,
         "checkLimitHours": 18,
         "initial": false,
@@ -2481,30 +1735,6 @@
       "id": "mandiri",
       "period": "2026-09",
       "status": "ok",
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
-      "url": "https://www.bankmandiri.co.id/web/guest/press-detail?primaryKey=617891077&backUrl=/press",
-      "available": true,
-      "quality": {
-        "cadence": "quarterly",
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
-        "observationLimitDays": 190,
-        "checkLimitHours": 18,
-        "initial": false,
-        "aged": false,
-        "unchecked": false,
-        "failed": false,
-        "state": "within-window",
-        "note": "Operational tolerance, not confirmation that a newer official release does not exist."
-      }
-    },
-    {
-      "key": "bankHealth",
-      "id": "mandiri",
-      "period": "2026-09",
-      "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
       "url": "https://www.bankmandiri.co.id/web/guest/press-detail?primaryKey=617891077&backUrl=/press",
       "available": true,
@@ -2512,15 +1742,6 @@
         "cadence": "quarterly",
         "ageDays": 32.204980659722224,
         "retrievalHours": 0.04678722222222222,
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
-      "url": "https://www.maybank.co.id/id/NewsAndAnnouncement/NewsAndAnnouncements/2026/10/30/08/13/Maybank-Indonesia-Catat-Laba-Sebelum-Pajak-pada-Sembilan-Bulan-2026",
-      "available": true,
-      "quality": {
-        "cadence": "quarterly",
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 190,
         "checkLimitHours": 18,
         "initial": false,
@@ -2541,13 +1762,8 @@
       "available": true,
       "quality": {
         "cadence": "monthly",
-<<<<<<< HEAD
         "ageDays": 32.204980659722224,
         "retrievalHours": 50.232173055555556,
-=======
-        "ageDays": 30.622578726851852,
-        "retrievalHours": 12.254526666666667,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 80,
         "checkLimitHours": 18,
         "initial": false,
@@ -2563,22 +1779,13 @@
       "id": "bondMarket",
       "period": "2026-10-29",
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://asianbondsonline.adb.org/indonesia/",
       "available": true,
       "quality": {
         "cadence": "business-daily",
-<<<<<<< HEAD
         "ageDays": 3.204980659722222,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 1.622578726851852,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 5,
         "checkLimitHours": 18,
         "initial": false,
@@ -2594,22 +1801,13 @@
       "id": "bondQuotes",
       "period": null,
       "status": "ok",
-<<<<<<< HEAD
       "fetchedAt": "2026-11-02T04:52:21.894Z",
-=======
-      "fetchedAt": "2026-10-31T14:55:15.063Z",
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
       "url": "https://www.bca.co.id/en/individu/produk/investasi-dan-asuransi/obligasi/pilihan-produk-obligasi",
       "available": true,
       "quality": {
         "cadence": "business-daily",
-<<<<<<< HEAD
         "ageDays": 0,
         "retrievalHours": 0.04678722222222222,
-=======
-        "ageDays": 0.6225787268518519,
-        "retrievalHours": 0.021038333333333332,
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
         "observationLimitDays": 5,
         "checkLimitHours": 18,
         "initial": false,
@@ -2636,11 +1834,7 @@
       "periods": [
         "2025"
       ],
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z"
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z"
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     },
     {
       "id": "prices",
@@ -2685,11 +1879,7 @@
         "2026-02",
         "2026-03"
       ],
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z"
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z"
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     },
     {
       "id": "fiscal",
@@ -2723,11 +1913,7 @@
         "2023",
         "2025"
       ],
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z"
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z"
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     },
     {
       "id": "deposits",
@@ -2774,11 +1960,7 @@
       "periods": [
         "2026-10-29"
       ],
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z"
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z"
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     },
     {
       "id": "quotes",
@@ -2794,11 +1976,7 @@
       "periods": [
         "2026-11-02"
       ],
-<<<<<<< HEAD
       "checkedAt": "2026-11-02T04:52:21.894Z"
-=======
-      "checkedAt": "2026-10-31T14:55:15.063Z"
->>>>>>> 28ff7325ae826515af1aec1c1ff5f0396e6383e6
     }
   ],
   "note": "Retrieval success is not a guarantee that every observation was released today."
