@@ -1,5 +1,75 @@
 [
   {
+    "environment": "github-actions",
+    "runId": "41212339066-1",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-10-31T14:55:15.060Z",
+    "finishedAt": "2026-10-31T14:56:30.801Z",
+    "snapshotId": "be098728b1c51957",
+    "succeeded": 32,
+    "failed": 9,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-11-02T04:52:21.893Z",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-11-02T04:52:21.893Z",
+    "finishedAt": "2026-11-02T04:55:10.328Z",
+    "snapshotId": "b87a87354ccb0e86",
+    "succeeded": 31,
+    "failed": 13,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-11-02T04:49:21.906Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "inflation-components"
+    ],
+    "status": "partial",
+    "startedAt": "2026-11-02T04:49:21.906Z",
+    "finishedAt": "2026-11-02T04:49:35.522Z",
+    "snapshotId": "cbc6290bdd71044c",
+    "succeeded": 30,
+    "failed": 14,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-11-02T04:47:07.914Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "inflation-components",
+      "money-supply"
+    ],
+    "status": "partial",
+    "startedAt": "2026-11-02T04:47:07.914Z",
+    "finishedAt": "2026-11-02T04:47:25.586Z",
+    "snapshotId": "5f89d1e2548565a5",
+    "succeeded": 29,
+    "failed": 15,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-11-02T04:37:38.243Z",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-11-02T04:37:38.243Z",
+    "finishedAt": "2026-11-02T04:39:44.933Z",
+    "snapshotId": "6c6abafa3bea173a",
+    "succeeded": 28,
+    "failed": 14,
+    "rejected": 0
+  },
+  {
     "environment": "local-verification",
     "runId": "2026-10-31T11:58:07.578Z",
     "scope": "all-sources",

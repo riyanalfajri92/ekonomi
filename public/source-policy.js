@@ -2,6 +2,7 @@
 const DAY=86400000;
 const POLICIES={
  jisdor:{cadence:'business-daily',observationDays:5,checkHours:18},indonia:{cadence:'business-daily',observationDays:5,checkHours:18},
+ coreInflation:{cadence:'monthly',observationDays:70,checkHours:18},foodInflation:{cadence:'monthly',observationDays:70,checkHours:18},m2Growth:{cadence:'monthly',observationDays:70,checkHours:18},
  inflation:{cadence:'monthly',observationDays:70,checkHours:18},rate:{cadence:'decision',observationDays:55,checkHours:18},
  fxreserves:{cadence:'monthly',observationDays:70,checkHours:18},srbiflow:{cadence:'weekly-window',observationDays:15,checkHours:18},confidence:{cadence:'monthly',observationDays:70,checkHours:18},manufacturing:{cadence:'quarterly',observationDays:140,checkHours:18},
  labourForce:{cadence:'semester',observationDays:280,checkHours:18},labourParticipation:{cadence:'semester',observationDays:280,checkHours:18},employedPeople:{cadence:'semester',observationDays:280,checkHours:18},unemployedPeople:{cadence:'semester',observationDays:280,checkHours:18},

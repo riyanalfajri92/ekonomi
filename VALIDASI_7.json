@@ -1,0 +1,112 @@
+{
+  "version": "7.0.0",
+  "verifiedAt": "2026-11-02T04:55:49.164Z",
+  "tests": {
+    "passed": 105,
+    "failed": 0
+  },
+  "build": {
+    "modules": 67,
+    "syntaxAndImports": "passed"
+  },
+  "snapshotValidation": [],
+  "registry": {
+    "total": 60,
+    "availableOrPartial": 41,
+    "claim": "Availability includes partial or historical data, not 60 live feeds."
+  },
+  "collection": {
+    "environment": "local-verification",
+    "runId": "2026-11-02T04:52:21.893Z",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-11-02T04:52:21.893Z",
+    "finishedAt": "2026-11-02T04:55:10.328Z",
+    "successful": 31,
+    "failedOrBlocked": [
+      {
+        "id": "apbn-pdf",
+        "status": "error",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "id": "apbn-web",
+        "status": "error",
+        "error": "Sumber merespons HTTP 500"
+      },
+      {
+        "id": "consumer-survey",
+        "status": "error",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "id": "deposit-bni",
+        "status": "blocked",
+        "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+      },
+      {
+        "id": "deposit-btn",
+        "status": "blocked",
+        "error": "Rute sumber sebelumnya menampilkan penyaringan keamanan; konektor dijeda. Gunakan kanal resmi yang mengizinkan akses."
+      },
+      {
+        "id": "bps-social",
+        "status": "error",
+        "error": "Indikator utama BPS belum terbaca"
+      },
+      {
+        "id": "kemenkeu-news",
+        "status": "error",
+        "error": "Sumber merespons HTTP 500"
+      },
+      {
+        "id": "ojk-news",
+        "status": "error",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "id": "health-bni",
+        "status": "blocked",
+        "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+      },
+      {
+        "id": "health-mega",
+        "status": "error",
+        "error": "The operation was aborted due to timeout"
+      },
+      {
+        "id": "health-danamon",
+        "status": "error",
+        "error": "Tidak menemukan rilis rasio yang lebih baru atau setara"
+      },
+      {
+        "id": "health-btn",
+        "status": "blocked",
+        "error": "Konektor domain dijeda setelah penyaringan keamanan; laporan awal tidak dianggap feed aktif."
+      },
+      {
+        "id": "health-maybank",
+        "status": "error",
+        "error": "The operation was aborted due to timeout"
+      }
+    ]
+  },
+  "browserChecks": {
+    "desktop": true,
+    "width390": true,
+    "IDEN": true,
+    "calculatorDeepLink": true,
+    "powerInputChange": {
+      "incomeGrowth": 5,
+      "costGrowth": 10,
+      "resultRealGrowth": -4.55
+    },
+    "retainsInputsOnLanguageSwitch": true,
+    "bankRows": 10,
+    "bondRows": 38,
+    "registrySearch": true,
+    "noHorizontalOverflowDesktop": true
+  },
+  "productionDeploymentVerified": false
+}

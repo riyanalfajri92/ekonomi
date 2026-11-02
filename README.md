@@ -1,8 +1,8 @@
-# Nadi 6 — ekonomi kita, artinya untuk kita
+# Nadi 7 — ekonomi kita, artinya bagi hidupmu
 
-Website ID/EN untuk memahami kegiatan ekonomi, kehidupan masyarakat, APBN dan pilihan keuangan pribadi. Empat navigasi: **Baca ekonomi, Prospek, Pilihanmu, Sumber**.
+Website ID/EN untuk memahami kegiatan ekonomi, kehidupan masyarakat, APBN dan pilihan keuangan pribadi. Empat navigasi: **Baca ekonomi, Uji masa depan, Alat & pilihan, Sumber**.
 
-Mulai dari `MENUJU_9_DAN_BUKTI.md` untuk tabel seluruh permintaan dan bukti perbaikannya. `VALIDASI.md` mencatat pengujian; `PANDUAN_UPDATE.md` menjelaskan GitHub → Vercel.
+Mulai dari `ROMBAKAN_7.md` untuk alur baru, registri 60 indikator, tambahan konektor dan batas otomatisasi. `VALIDASI_7.json` memuat hasil verifikasi versi ini. Lihat juga `MENUJU_9_DAN_BUKTI.md` untuk tabel seluruh permintaan dan bukti perbaikannya. `VALIDASI.md` mencatat pengujian; `PANDUAN_UPDATE.md` menjelaskan GitHub → Vercel.
 
 ## Hasil versi ini
 
