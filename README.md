@@ -1,3 +1,9 @@
+# Nadi — versi 9: ekonomi bergambar
+
+Lihat [ROMBAKAN_9.md](ROMBAKAN_9.md) untuk alur visual, perbandingan 14 negara dan 17 kalkulator.
+
+**Email GitHub gagal?** Penyebab sudah direproduksi dan diperbaiki. Baca [AUTOMASI_DIPERBAIKI.md](AUTOMASI_DIPERBAIKI.md) untuk bukti dan langkah memasang perbaikan.
+
 # Nadi 8 — 60 indikator, tujuh pertanyaan tentang hidup kita
 
 Website ID/EN untuk memahami kegiatan ekonomi, kehidupan masyarakat, APBN dan pilihan keuangan pribadi. Empat navigasi: **Baca ekonomi, Uji masa depan, Alat & pilihan, Sumber**.

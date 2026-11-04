@@ -1,0 +1,93 @@
+{
+  "version": "9.0.0",
+  "tests": {
+    "passed": 120,
+    "failed": 0
+  },
+  "syntaxImportModules": 77,
+  "verifiedSource": "world-context",
+  "lastRun": {
+    "environment": "local-verification",
+    "runId": "2026-11-04T07:34:01.740Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "world-context"
+    ],
+    "status": "ok",
+    "startedAt": "2026-11-04T07:34:01.740Z",
+    "finishedAt": "2026-11-04T07:34:20.393Z",
+    "dataState": "unchanged"
+  },
+  "series": [
+    {
+      "id": "growth",
+      "status": "ok",
+      "observations": 154,
+      "firstYear": 2015,
+      "lastYear": 2025
+    },
+    {
+      "id": "ppp",
+      "status": "ok",
+      "observations": 154,
+      "firstYear": 2015,
+      "lastYear": 2025
+    },
+    {
+      "id": "inflation",
+      "status": "ok",
+      "observations": 153,
+      "firstYear": 2015,
+      "lastYear": 2025
+    },
+    {
+      "id": "jobs",
+      "status": "ok",
+      "observations": 154,
+      "firstYear": 2015,
+      "lastYear": 2025
+    },
+    {
+      "id": "water",
+      "status": "ok",
+      "observations": 140,
+      "firstYear": 2015,
+      "lastYear": 2024
+    },
+    {
+      "id": "health",
+      "status": "ok",
+      "observations": 127,
+      "firstYear": 2015,
+      "lastYear": 2024
+    },
+    {
+      "id": "life",
+      "status": "ok",
+      "observations": 126,
+      "firstYear": 2015,
+      "lastYear": 2023
+    }
+  ],
+  "automationDiagnosis": {
+    "runs": [
+      "41787137723",
+      "41705027368"
+    ],
+    "failureStep": "npm test",
+    "collectionStep": "skipped",
+    "reproduced": true,
+    "originalPassed": 111,
+    "originalFailed": 1,
+    "deterministicTestFixPassed": 112
+  },
+  "productionApplied": false,
+  "browser": {
+    "calculators17": true,
+    "inputReactive": true,
+    "illustrationTabs": true,
+    "countrySelectors": true,
+    "idEn": true,
+    "searchOpensIndicatorDetails": true
+  }
+}

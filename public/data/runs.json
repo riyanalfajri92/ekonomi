@@ -1,6 +1,37 @@
 [
   {
     "environment": "local-verification",
+    "runId": "2026-11-04T07:34:01.740Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "world-context"
+    ],
+    "status": "ok",
+    "startedAt": "2026-11-04T07:34:01.740Z",
+    "finishedAt": "2026-11-04T07:34:20.393Z",
+    "dataState": "unchanged",
+    "snapshotId": "9a63f0de93ef6f75",
+    "succeeded": 32,
+    "failed": 13,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-11-04T07:31:56.095Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "world-context"
+    ],
+    "status": "partial",
+    "startedAt": "2026-11-04T07:31:56.095Z",
+    "finishedAt": "2026-11-04T07:32:10.818Z",
+    "snapshotId": "9a63f0de93ef6f75",
+    "succeeded": 32,
+    "failed": 13,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
     "runId": "2026-11-02T04:52:21.893Z",
     "scope": "all-sources",
     "sourceIds": null,

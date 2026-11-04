@@ -1,4 +1,5227 @@
 {
+  "worldContext": {
+    "countries": [
+      {
+        "id": "AUS",
+        "name": "Australia",
+        "incomeId": "HIC",
+        "incomeLabel": "High income"
+      },
+      {
+        "id": "BRA",
+        "name": "Brazil",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "DEU",
+        "name": "Germany",
+        "incomeId": "HIC",
+        "incomeLabel": "High income"
+      },
+      {
+        "id": "IDN",
+        "name": "Indonesia",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "JPN",
+        "name": "Japan",
+        "incomeId": "HIC",
+        "incomeLabel": "High income"
+      },
+      {
+        "id": "MEX",
+        "name": "Mexico",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "MYS",
+        "name": "Malaysia",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "PHL",
+        "name": "Philippines",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "SGP",
+        "name": "Singapore",
+        "incomeId": "HIC",
+        "incomeLabel": "High income"
+      },
+      {
+        "id": "THA",
+        "name": "Thailand",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "TUR",
+        "name": "Turkiye",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "USA",
+        "name": "United States",
+        "incomeId": "HIC",
+        "incomeLabel": "High income"
+      },
+      {
+        "id": "VNM",
+        "name": "Viet Nam",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      },
+      {
+        "id": "ZAF",
+        "name": "South Africa",
+        "incomeId": "UMC",
+        "incomeLabel": "Upper middle income"
+      }
+    ],
+    "series": [
+      {
+        "id": "growth",
+        "code": "NY.GDP.MKTP.KD.ZG",
+        "source": "World Bank · World Development Indicators",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG",
+        "api": "https://api.worldbank.org/v2/country/IDN;AUS;DEU;JPN;USA;BRA;MEX;ZAF;TUR;MYS;THA;VNM;PHL;SGP/indicator/NY.GDP.MKTP.KD.ZG;NY.GDP.PCAP.PP.KD;FP.CPI.TOTL.ZG;SL.UEM.TOTL.ZS;SH.H2O.BASW.ZS;SH.XPD.OOPC.CH.ZS?source=2&format=json&per_page=20000&date=2015:2026",
+        "license": "World Bank dataset terms; see indicator metadata",
+        "history": [
+          {
+            "country": "AUS",
+            "year": 2025,
+            "value": 1.35039785076631
+          },
+          {
+            "country": "AUS",
+            "year": 2024,
+            "value": 1.37340773365975
+          },
+          {
+            "country": "AUS",
+            "year": 2023,
+            "value": 3.58382100798981
+          },
+          {
+            "country": "AUS",
+            "year": 2022,
+            "value": 4.25304559238732
+          },
+          {
+            "country": "AUS",
+            "year": 2021,
+            "value": 2.00694844335034
+          },
+          {
+            "country": "AUS",
+            "year": 2020,
+            "value": -0.133531904304775
+          },
+          {
+            "country": "AUS",
+            "year": 2019,
+            "value": 2.19401703622717
+          },
+          {
+            "country": "AUS",
+            "year": 2018,
+            "value": 2.87417039499501
+          },
+          {
+            "country": "AUS",
+            "year": 2017,
+            "value": 2.29331030192918
+          },
+          {
+            "country": "AUS",
+            "year": 2016,
+            "value": 2.75564065529868
+          },
+          {
+            "country": "AUS",
+            "year": 2015,
+            "value": 2.16434780647852
+          },
+          {
+            "country": "BRA",
+            "year": 2025,
+            "value": 2.2857464902475
+          },
+          {
+            "country": "BRA",
+            "year": 2024,
+            "value": 3.41931516501906
+          },
+          {
+            "country": "BRA",
+            "year": 2023,
+            "value": 3.24165532906981
+          },
+          {
+            "country": "BRA",
+            "year": 2022,
+            "value": 3.01669435393015
+          },
+          {
+            "country": "BRA",
+            "year": 2021,
+            "value": 4.76260437908608
+          },
+          {
+            "country": "BRA",
+            "year": 2020,
+            "value": -3.2767587964736
+          },
+          {
+            "country": "BRA",
+            "year": 2019,
+            "value": 1.22077782360842
+          },
+          {
+            "country": "BRA",
+            "year": 2018,
+            "value": 1.783666761634
+          },
+          {
+            "country": "BRA",
+            "year": 2017,
+            "value": 1.32286905404399
+          },
+          {
+            "country": "BRA",
+            "year": 2016,
+            "value": -3.27591690782192
+          },
+          {
+            "country": "BRA",
+            "year": 2015,
+            "value": -3.54576339269425
+          },
+          {
+            "country": "DEU",
+            "year": 2025,
+            "value": 0.239578342117881
+          },
+          {
+            "country": "DEU",
+            "year": 2024,
+            "value": -0.495851897260366
+          },
+          {
+            "country": "DEU",
+            "year": 2023,
+            "value": -0.869647578573321
+          },
+          {
+            "country": "DEU",
+            "year": 2022,
+            "value": 1.8092581243061
+          },
+          {
+            "country": "DEU",
+            "year": 2021,
+            "value": 3.90999994204108
+          },
+          {
+            "country": "DEU",
+            "year": 2020,
+            "value": -4.13191443239947
+          },
+          {
+            "country": "DEU",
+            "year": 2019,
+            "value": 0.977734697038784
+          },
+          {
+            "country": "DEU",
+            "year": 2018,
+            "value": 1.13569604599849
+          },
+          {
+            "country": "DEU",
+            "year": 2017,
+            "value": 2.797906720551
+          },
+          {
+            "country": "DEU",
+            "year": 2016,
+            "value": 2.22222216259371
+          },
+          {
+            "country": "DEU",
+            "year": 2015,
+            "value": 1.66300602334775
+          },
+          {
+            "country": "IDN",
+            "year": 2025,
+            "value": 5.10808904438025
+          },
+          {
+            "country": "IDN",
+            "year": 2024,
+            "value": 5.03257477088519
+          },
+          {
+            "country": "IDN",
+            "year": 2023,
+            "value": 5.04883117855516
+          },
+          {
+            "country": "IDN",
+            "year": 2022,
+            "value": 5.30719722664799
+          },
+          {
+            "country": "IDN",
+            "year": 2021,
+            "value": 3.70288562827751
+          },
+          {
+            "country": "IDN",
+            "year": 2020,
+            "value": -2.06551182934165
+          },
+          {
+            "country": "IDN",
+            "year": 2019,
+            "value": 5.01928768046282
+          },
+          {
+            "country": "IDN",
+            "year": 2018,
+            "value": 5.17429153955024
+          },
+          {
+            "country": "IDN",
+            "year": 2017,
+            "value": 5.06978590134916
+          },
+          {
+            "country": "IDN",
+            "year": 2016,
+            "value": 5.03306918280177
+          },
+          {
+            "country": "IDN",
+            "year": 2015,
+            "value": 4.87632230022123
+          },
+          {
+            "country": "JPN",
+            "year": 2025,
+            "value": 1.19311288444599
+          },
+          {
+            "country": "JPN",
+            "year": 2024,
+            "value": -0.240084236041696
+          },
+          {
+            "country": "JPN",
+            "year": 2023,
+            "value": 0.720785304749811
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "value": 1.33164750653741
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "value": 3.56419531474475
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "value": -4.28327942675573
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "value": -0.308496921143259
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "value": 0.834143845965585
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "value": 1.62345062245441
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "value": 0.704986495111257
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "value": 1.79997735783475
+          },
+          {
+            "country": "MEX",
+            "year": 2025,
+            "value": 0.561683456144578
+          },
+          {
+            "country": "MEX",
+            "year": 2024,
+            "value": 1.35057631384696
+          },
+          {
+            "country": "MEX",
+            "year": 2023,
+            "value": 3.1067964131456
+          },
+          {
+            "country": "MEX",
+            "year": 2022,
+            "value": 3.70975708309098
+          },
+          {
+            "country": "MEX",
+            "year": 2021,
+            "value": 6.04848347173572
+          },
+          {
+            "country": "MEX",
+            "year": 2020,
+            "value": -8.35403459379062
+          },
+          {
+            "country": "MEX",
+            "year": 2019,
+            "value": -0.392690513290532
+          },
+          {
+            "country": "MEX",
+            "year": 2018,
+            "value": 1.97208211101069
+          },
+          {
+            "country": "MEX",
+            "year": 2017,
+            "value": 1.87172854648381
+          },
+          {
+            "country": "MEX",
+            "year": 2016,
+            "value": 1.7724932254128
+          },
+          {
+            "country": "MEX",
+            "year": 2015,
+            "value": 2.70232343024026
+          },
+          {
+            "country": "MYS",
+            "year": 2025,
+            "value": 5.17127082911057
+          },
+          {
+            "country": "MYS",
+            "year": 2024,
+            "value": 5.10545921024041
+          },
+          {
+            "country": "MYS",
+            "year": 2023,
+            "value": 3.5370638041057
+          },
+          {
+            "country": "MYS",
+            "year": 2022,
+            "value": 9.03173723044451
+          },
+          {
+            "country": "MYS",
+            "year": 2021,
+            "value": 3.31534954399166
+          },
+          {
+            "country": "MYS",
+            "year": 2020,
+            "value": -5.45684658426701
+          },
+          {
+            "country": "MYS",
+            "year": 2019,
+            "value": 4.41318742129586
+          },
+          {
+            "country": "MYS",
+            "year": 2018,
+            "value": 4.84308697634881
+          },
+          {
+            "country": "MYS",
+            "year": 2017,
+            "value": 5.81272240983328
+          },
+          {
+            "country": "MYS",
+            "year": 2016,
+            "value": 4.44978139761541
+          },
+          {
+            "country": "MYS",
+            "year": 2015,
+            "value": 5.09153242155011
+          },
+          {
+            "country": "PHL",
+            "year": 2025,
+            "value": 4.40240158710621
+          },
+          {
+            "country": "PHL",
+            "year": 2024,
+            "value": 5.71474526128652
+          },
+          {
+            "country": "PHL",
+            "year": 2023,
+            "value": 5.51894967856043
+          },
+          {
+            "country": "PHL",
+            "year": 2022,
+            "value": 7.58098212785563
+          },
+          {
+            "country": "PHL",
+            "year": 2021,
+            "value": 5.71473313185116
+          },
+          {
+            "country": "PHL",
+            "year": 2020,
+            "value": -9.51829474045297
+          },
+          {
+            "country": "PHL",
+            "year": 2019,
+            "value": 6.11852566221303
+          },
+          {
+            "country": "PHL",
+            "year": 2018,
+            "value": 6.34148557153473
+          },
+          {
+            "country": "PHL",
+            "year": 2017,
+            "value": 6.9309883258402
+          },
+          {
+            "country": "PHL",
+            "year": 2016,
+            "value": 7.14945675000752
+          },
+          {
+            "country": "PHL",
+            "year": 2015,
+            "value": 6.34830971672761
+          },
+          {
+            "country": "SGP",
+            "year": 2025,
+            "value": 5.02588199508003
+          },
+          {
+            "country": "SGP",
+            "year": 2024,
+            "value": 5.3435120192366
+          },
+          {
+            "country": "SGP",
+            "year": 2023,
+            "value": 1.45026775889565
+          },
+          {
+            "country": "SGP",
+            "year": 2022,
+            "value": 4.01027884472296
+          },
+          {
+            "country": "SGP",
+            "year": 2021,
+            "value": 10.1410845197192
+          },
+          {
+            "country": "SGP",
+            "year": 2020,
+            "value": -3.61084281729929
+          },
+          {
+            "country": "SGP",
+            "year": 2019,
+            "value": 1.15877947300108
+          },
+          {
+            "country": "SGP",
+            "year": 2018,
+            "value": 3.18660848474074
+          },
+          {
+            "country": "SGP",
+            "year": 2017,
+            "value": 4.32679370770501
+          },
+          {
+            "country": "SGP",
+            "year": 2016,
+            "value": 3.91095306322606
+          },
+          {
+            "country": "SGP",
+            "year": 2015,
+            "value": 2.97679931634806
+          },
+          {
+            "country": "THA",
+            "year": 2025,
+            "value": 2.44247444990198
+          },
+          {
+            "country": "THA",
+            "year": 2024,
+            "value": 2.94859986593323
+          },
+          {
+            "country": "THA",
+            "year": 2023,
+            "value": 2.24883437970568
+          },
+          {
+            "country": "THA",
+            "year": 2022,
+            "value": 2.63784213566305
+          },
+          {
+            "country": "THA",
+            "year": 2021,
+            "value": 1.55858232076893
+          },
+          {
+            "country": "THA",
+            "year": 2020,
+            "value": -6.09306312966953
+          },
+          {
+            "country": "THA",
+            "year": 2019,
+            "value": 2.11455779628278
+          },
+          {
+            "country": "THA",
+            "year": 2018,
+            "value": 4.22287028746071
+          },
+          {
+            "country": "THA",
+            "year": 2017,
+            "value": 4.1776810321001
+          },
+          {
+            "country": "THA",
+            "year": 2016,
+            "value": 3.43515771692182
+          },
+          {
+            "country": "THA",
+            "year": 2015,
+            "value": 3.13404724911635
+          },
+          {
+            "country": "TUR",
+            "year": 2025,
+            "value": 3.60462514082589
+          },
+          {
+            "country": "TUR",
+            "year": 2024,
+            "value": 3.3276230893799
+          },
+          {
+            "country": "TUR",
+            "year": 2023,
+            "value": 5.04512369812289
+          },
+          {
+            "country": "TUR",
+            "year": 2022,
+            "value": 5.44122511322401
+          },
+          {
+            "country": "TUR",
+            "year": 2021,
+            "value": 11.811094450607
+          },
+          {
+            "country": "TUR",
+            "year": 2020,
+            "value": 1.80306247087255
+          },
+          {
+            "country": "TUR",
+            "year": 2019,
+            "value": 1.30162365464503
+          },
+          {
+            "country": "TUR",
+            "year": 2018,
+            "value": 3.46815306092219
+          },
+          {
+            "country": "TUR",
+            "year": 2017,
+            "value": 7.82585730002594
+          },
+          {
+            "country": "TUR",
+            "year": 2016,
+            "value": 3.32366508200445
+          },
+          {
+            "country": "TUR",
+            "year": 2015,
+            "value": 5.80557386628684
+          },
+          {
+            "country": "USA",
+            "year": 2025,
+            "value": 2.16138195623856
+          },
+          {
+            "country": "USA",
+            "year": 2024,
+            "value": 2.79318715363841
+          },
+          {
+            "country": "USA",
+            "year": 2023,
+            "value": 2.93436322440155
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "value": 2.52421385073222
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "value": 6.15202247867526
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "value": -2.081375977796
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "value": 2.58382533052225
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "value": 2.96650506701943
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "value": 2.45762230126449
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "value": 1.81945147909089
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "value": 2.94555045227337
+          },
+          {
+            "country": "VNM",
+            "year": 2025,
+            "value": 8.01882998978245
+          },
+          {
+            "country": "VNM",
+            "year": 2024,
+            "value": 7.03955197123018
+          },
+          {
+            "country": "VNM",
+            "year": 2023,
+            "value": 4.97865959483225
+          },
+          {
+            "country": "VNM",
+            "year": 2022,
+            "value": 8.53750041218142
+          },
+          {
+            "country": "VNM",
+            "year": 2021,
+            "value": 2.55372852648131
+          },
+          {
+            "country": "VNM",
+            "year": 2020,
+            "value": 2.86541320912272
+          },
+          {
+            "country": "VNM",
+            "year": 2019,
+            "value": 7.35926270105006
+          },
+          {
+            "country": "VNM",
+            "year": 2018,
+            "value": 7.46500685572751
+          },
+          {
+            "country": "VNM",
+            "year": 2017,
+            "value": 6.94019037359206
+          },
+          {
+            "country": "VNM",
+            "year": 2016,
+            "value": 6.69000892660424
+          },
+          {
+            "country": "VNM",
+            "year": 2015,
+            "value": 6.98715430598611
+          },
+          {
+            "country": "ZAF",
+            "year": 2025,
+            "value": 1.11462608103956
+          },
+          {
+            "country": "ZAF",
+            "year": 2024,
+            "value": 0.534843531905139
+          },
+          {
+            "country": "ZAF",
+            "year": 2023,
+            "value": 0.80610455095804
+          },
+          {
+            "country": "ZAF",
+            "year": 2022,
+            "value": 2.05813661692193
+          },
+          {
+            "country": "ZAF",
+            "year": 2021,
+            "value": 4.85864865060148
+          },
+          {
+            "country": "ZAF",
+            "year": 2020,
+            "value": -6.1689177146757
+          },
+          {
+            "country": "ZAF",
+            "year": 2019,
+            "value": 0.25993557687633
+          },
+          {
+            "country": "ZAF",
+            "year": 2018,
+            "value": 1.55678384721676
+          },
+          {
+            "country": "ZAF",
+            "year": 2017,
+            "value": 1.15794695181735
+          },
+          {
+            "country": "ZAF",
+            "year": 2016,
+            "value": 0.664552307858116
+          },
+          {
+            "country": "ZAF",
+            "year": 2015,
+            "value": 1.32186223678229
+          }
+        ],
+        "fetchedAt": "2026-11-04T07:34:01.743Z",
+        "checkedAt": "2026-11-04T07:34:01.743Z",
+        "status": "ok"
+      },
+      {
+        "id": "ppp",
+        "code": "NY.GDP.PCAP.PP.KD",
+        "source": "World Bank · World Development Indicators",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD",
+        "api": "https://api.worldbank.org/v2/country/IDN;AUS;DEU;JPN;USA;BRA;MEX;ZAF;TUR;MYS;THA;VNM;PHL;SGP/indicator/NY.GDP.MKTP.KD.ZG;NY.GDP.PCAP.PP.KD;FP.CPI.TOTL.ZG;SL.UEM.TOTL.ZS;SH.H2O.BASW.ZS;SH.XPD.OOPC.CH.ZS?source=2&format=json&per_page=20000&date=2015:2026",
+        "license": "World Bank dataset terms; see indicator metadata",
+        "history": [
+          {
+            "country": "AUS",
+            "year": 2025,
+            "value": 60194.0633547961
+          },
+          {
+            "country": "AUS",
+            "year": 2024,
+            "value": 60309.5831772339
+          },
+          {
+            "country": "AUS",
+            "year": 2023,
+            "value": 60684.9596204883
+          },
+          {
+            "country": "AUS",
+            "year": 2022,
+            "value": 60029.1329190733
+          },
+          {
+            "country": "AUS",
+            "year": 2021,
+            "value": 58327.4146842325
+          },
+          {
+            "country": "AUS",
+            "year": 2020,
+            "value": 57260.4650530108
+          },
+          {
+            "country": "AUS",
+            "year": 2019,
+            "value": 58048.6188420831
+          },
+          {
+            "country": "AUS",
+            "year": 2018,
+            "value": 57647.8455068105
+          },
+          {
+            "country": "AUS",
+            "year": 2017,
+            "value": 56881.8569859104
+          },
+          {
+            "country": "AUS",
+            "year": 2016,
+            "value": 56529.951824687
+          },
+          {
+            "country": "AUS",
+            "year": 2015,
+            "value": 55879.9958817103
+          },
+          {
+            "country": "BRA",
+            "year": 2025,
+            "value": 20024.6968256903
+          },
+          {
+            "country": "BRA",
+            "year": 2024,
+            "value": 19652.365499171
+          },
+          {
+            "country": "BRA",
+            "year": 2023,
+            "value": 19079.8122134028
+          },
+          {
+            "country": "BRA",
+            "year": 2022,
+            "value": 18554.0461828566
+          },
+          {
+            "country": "BRA",
+            "year": 2021,
+            "value": 18075.7060049068
+          },
+          {
+            "country": "BRA",
+            "year": 2020,
+            "value": 17327.5157249466
+          },
+          {
+            "country": "BRA",
+            "year": 2019,
+            "value": 18018.6209151518
+          },
+          {
+            "country": "BRA",
+            "year": 2018,
+            "value": 17917.7492123359
+          },
+          {
+            "country": "BRA",
+            "year": 2017,
+            "value": 17724.4799577784
+          },
+          {
+            "country": "BRA",
+            "year": 2016,
+            "value": 17620.9272434136
+          },
+          {
+            "country": "BRA",
+            "year": 2015,
+            "value": 18357.0690617991
+          },
+          {
+            "country": "DEU",
+            "year": 2025,
+            "value": 62823.7736648822
+          },
+          {
+            "country": "DEU",
+            "year": 2024,
+            "value": 62654.602264023
+          },
+          {
+            "country": "DEU",
+            "year": 2023,
+            "value": 63140.1949099669
+          },
+          {
+            "country": "DEU",
+            "year": 2022,
+            "value": 63777.9291029299
+          },
+          {
+            "country": "DEU",
+            "year": 2021,
+            "value": 62630.7748127737
+          },
+          {
+            "country": "DEU",
+            "year": 2020,
+            "value": 60299.5767710809
+          },
+          {
+            "country": "DEU",
+            "year": 2019,
+            "value": 62949.8932511855
+          },
+          {
+            "country": "DEU",
+            "year": 2018,
+            "value": 62481.1183971045
+          },
+          {
+            "country": "DEU",
+            "year": 2017,
+            "value": 61965.4342904965
+          },
+          {
+            "country": "DEU",
+            "year": 2016,
+            "value": 60504.5857417161
+          },
+          {
+            "country": "DEU",
+            "year": 2015,
+            "value": 59668.9890355282
+          },
+          {
+            "country": "IDN",
+            "year": 2025,
+            "value": 15091.0088604652
+          },
+          {
+            "country": "IDN",
+            "year": 2024,
+            "value": 14470.7179806578
+          },
+          {
+            "country": "IDN",
+            "year": 2023,
+            "value": 13889.9495012858
+          },
+          {
+            "country": "IDN",
+            "year": 2022,
+            "value": 13334.2653947637
+          },
+          {
+            "country": "IDN",
+            "year": 2021,
+            "value": 12757.0746440204
+          },
+          {
+            "country": "IDN",
+            "year": 2020,
+            "value": 12388.5449268131
+          },
+          {
+            "country": "IDN",
+            "year": 2019,
+            "value": 12757.7850854842
+          },
+          {
+            "country": "IDN",
+            "year": 2018,
+            "value": 12262.2310300771
+          },
+          {
+            "country": "IDN",
+            "year": 2017,
+            "value": 11772.5743296107
+          },
+          {
+            "country": "IDN",
+            "year": 2016,
+            "value": 11319.6634287738
+          },
+          {
+            "country": "IDN",
+            "year": 2015,
+            "value": 10893.6621142169
+          },
+          {
+            "country": "JPN",
+            "year": 2025,
+            "value": 48283.3723959465
+          },
+          {
+            "country": "JPN",
+            "year": 2024,
+            "value": 47479.8448545667
+          },
+          {
+            "country": "JPN",
+            "year": 2023,
+            "value": 47387.2172542523
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "value": 46819.360613609
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "value": 45999.4617966896
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "value": 44212.5503415724
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "value": 46055.3498672487
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "value": 46133.0225978718
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "value": 45693.3776080987
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "value": 44926.6202909525
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "value": 44589.3032854003
+          },
+          {
+            "country": "MEX",
+            "year": 2025,
+            "value": 21911.9292842747
+          },
+          {
+            "country": "MEX",
+            "year": 2024,
+            "value": 21970.3520412926
+          },
+          {
+            "country": "MEX",
+            "year": 2023,
+            "value": 21864.9236104145
+          },
+          {
+            "country": "MEX",
+            "year": 2022,
+            "value": 21391.8573698845
+          },
+          {
+            "country": "MEX",
+            "year": 2021,
+            "value": 20782.5877440905
+          },
+          {
+            "country": "MEX",
+            "year": 2020,
+            "value": 19728.4817827455
+          },
+          {
+            "country": "MEX",
+            "year": 2019,
+            "value": 21704.185952748
+          },
+          {
+            "country": "MEX",
+            "year": 2018,
+            "value": 21997.7730219494
+          },
+          {
+            "country": "MEX",
+            "year": 2017,
+            "value": 21777.5225127275
+          },
+          {
+            "country": "MEX",
+            "year": 2016,
+            "value": 21578.263354126
+          },
+          {
+            "country": "MEX",
+            "year": 2015,
+            "value": 21408.9283216195
+          },
+          {
+            "country": "MYS",
+            "year": 2025,
+            "value": 35461.4465805872
+          },
+          {
+            "country": "MYS",
+            "year": 2024,
+            "value": 34116.2317848885
+          },
+          {
+            "country": "MYS",
+            "year": 2023,
+            "value": 32857.6676600774
+          },
+          {
+            "country": "MYS",
+            "year": 2022,
+            "value": 32129.2217820113
+          },
+          {
+            "country": "MYS",
+            "year": 2021,
+            "value": 29822.8491831618
+          },
+          {
+            "country": "MYS",
+            "year": 2020,
+            "value": 29200.452632127
+          },
+          {
+            "country": "MYS",
+            "year": 2019,
+            "value": 31300.5086554849
+          },
+          {
+            "country": "MYS",
+            "year": 2018,
+            "value": 30459.9655338061
+          },
+          {
+            "country": "MYS",
+            "year": 2017,
+            "value": 29551.5457597197
+          },
+          {
+            "country": "MYS",
+            "year": 2016,
+            "value": 28425.3707609412
+          },
+          {
+            "country": "MYS",
+            "year": 2015,
+            "value": 27699.6278860387
+          },
+          {
+            "country": "PHL",
+            "year": 2025,
+            "value": 10747.5454408601
+          },
+          {
+            "country": "PHL",
+            "year": 2024,
+            "value": 10378.1717703535
+          },
+          {
+            "country": "PHL",
+            "year": 2023,
+            "value": 9898.53294588106
+          },
+          {
+            "country": "PHL",
+            "year": 2022,
+            "value": 9457.10395402883
+          },
+          {
+            "country": "PHL",
+            "year": 2021,
+            "value": 8857.78995115514
+          },
+          {
+            "country": "PHL",
+            "year": 2020,
+            "value": 8455.18457134106
+          },
+          {
+            "country": "PHL",
+            "year": 2019,
+            "value": 9452.2939715981
+          },
+          {
+            "country": "PHL",
+            "year": 2018,
+            "value": 9016.28659637608
+          },
+          {
+            "country": "PHL",
+            "year": 2017,
+            "value": 8584.13622709699
+          },
+          {
+            "country": "PHL",
+            "year": 2016,
+            "value": 8131.82537948653
+          },
+          {
+            "country": "PHL",
+            "year": 2015,
+            "value": 7691.76308685047
+          },
+          {
+            "country": "SGP",
+            "year": 2025,
+            "value": 139592.612210761
+          },
+          {
+            "country": "SGP",
+            "year": 2024,
+            "value": 134548.764138482
+          },
+          {
+            "country": "SGP",
+            "year": 2023,
+            "value": 130296.843789261
+          },
+          {
+            "country": "SGP",
+            "year": 2022,
+            "value": 134828.001392614
+          },
+          {
+            "country": "SGP",
+            "year": 2021,
+            "value": 133990.186782104
+          },
+          {
+            "country": "SGP",
+            "year": 2020,
+            "value": 116684.213596572
+          },
+          {
+            "country": "SGP",
+            "year": 2019,
+            "value": 120678.341978557
+          },
+          {
+            "country": "SGP",
+            "year": 2018,
+            "value": 120668.888726158
+          },
+          {
+            "country": "SGP",
+            "year": 2017,
+            "value": 117492.967994526
+          },
+          {
+            "country": "SGP",
+            "year": 2016,
+            "value": 112719.947951111
+          },
+          {
+            "country": "SGP",
+            "year": 2015,
+            "value": 109894.041337341
+          },
+          {
+            "country": "THA",
+            "year": 2025,
+            "value": 22431.7518380848
+          },
+          {
+            "country": "THA",
+            "year": 2024,
+            "value": 21882.2142474833
+          },
+          {
+            "country": "THA",
+            "year": 2023,
+            "value": 21245.2706771879
+          },
+          {
+            "country": "THA",
+            "year": 2022,
+            "value": 20768.4800093577
+          },
+          {
+            "country": "THA",
+            "year": 2021,
+            "value": 20236.9760408784
+          },
+          {
+            "country": "THA",
+            "year": 2020,
+            "value": 19950.2844063147
+          },
+          {
+            "country": "THA",
+            "year": 2019,
+            "value": 21280.1504518601
+          },
+          {
+            "country": "THA",
+            "year": 2018,
+            "value": 20882.1707419576
+          },
+          {
+            "country": "THA",
+            "year": 2017,
+            "value": 20096.8605455164
+          },
+          {
+            "country": "THA",
+            "year": 2016,
+            "value": 19372.7128024107
+          },
+          {
+            "country": "THA",
+            "year": 2015,
+            "value": 18814.0408554566
+          },
+          {
+            "country": "TUR",
+            "year": 2025,
+            "value": 37300.7485739354
+          },
+          {
+            "country": "TUR",
+            "year": 2024,
+            "value": 36154.490436557
+          },
+          {
+            "country": "TUR",
+            "year": 2023,
+            "value": 35069.1701714685
+          },
+          {
+            "country": "TUR",
+            "year": 2022,
+            "value": 33520.8111384208
+          },
+          {
+            "country": "TUR",
+            "year": 2021,
+            "value": 32105.5474400506
+          },
+          {
+            "country": "TUR",
+            "year": 2020,
+            "value": 28976.7179161611
+          },
+          {
+            "country": "TUR",
+            "year": 2019,
+            "value": 28741.0535082701
+          },
+          {
+            "country": "TUR",
+            "year": 2018,
+            "value": 28780.3036458151
+          },
+          {
+            "country": "TUR",
+            "year": 2017,
+            "value": 28194.688309381
+          },
+          {
+            "country": "TUR",
+            "year": 2016,
+            "value": 26489.6436816046
+          },
+          {
+            "country": "TUR",
+            "year": 2015,
+            "value": 25984.8027306177
+          },
+          {
+            "country": "USA",
+            "year": 2025,
+            "value": 76931.3106990408
+          },
+          {
+            "country": "USA",
+            "year": 2024,
+            "value": 75698.1773354629
+          },
+          {
+            "country": "USA",
+            "year": 2023,
+            "value": 74351.6718197429
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "value": 72828.7430907189
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "value": 71441.231980595
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "value": 67406.8311325507
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "value": 69121.4580016741
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "value": 67728.4424921024
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "value": 66164.0320014289
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "value": 65025.9855980616
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "value": 64367.7188912582
+          },
+          {
+            "country": "VNM",
+            "year": 2025,
+            "value": 15457.3499403547
+          },
+          {
+            "country": "VNM",
+            "year": 2024,
+            "value": 14396.4217369473
+          },
+          {
+            "country": "VNM",
+            "year": 2023,
+            "value": 13534.7997843016
+          },
+          {
+            "country": "VNM",
+            "year": 2022,
+            "value": 12979.7638983711
+          },
+          {
+            "country": "VNM",
+            "year": 2021,
+            "value": 12048.9019935536
+          },
+          {
+            "country": "VNM",
+            "year": 2020,
+            "value": 11851.3965685649
+          },
+          {
+            "country": "VNM",
+            "year": 2019,
+            "value": 11628.6139147451
+          },
+          {
+            "country": "VNM",
+            "year": 2018,
+            "value": 10936.8937859558
+          },
+          {
+            "country": "VNM",
+            "year": 2017,
+            "value": 10290.5487142244
+          },
+          {
+            "country": "VNM",
+            "year": 2016,
+            "value": 9743.1882231455
+          },
+          {
+            "country": "VNM",
+            "year": 2015,
+            "value": 9248.02396069622
+          },
+          {
+            "country": "ZAF",
+            "year": 2025,
+            "value": 13592.0484020929
+          },
+          {
+            "country": "ZAF",
+            "year": 2024,
+            "value": 13597.6538495998
+          },
+          {
+            "country": "ZAF",
+            "year": 2023,
+            "value": 13695.3755694076
+          },
+          {
+            "country": "ZAF",
+            "year": 2022,
+            "value": 13767.4967589936
+          },
+          {
+            "country": "ZAF",
+            "year": 2021,
+            "value": 13681.9548144813
+          },
+          {
+            "country": "ZAF",
+            "year": 2020,
+            "value": 13250.5666594456
+          },
+          {
+            "country": "ZAF",
+            "year": 2019,
+            "value": 14352.6698709871
+          },
+          {
+            "country": "ZAF",
+            "year": 2018,
+            "value": 14553.5615668957
+          },
+          {
+            "country": "ZAF",
+            "year": 2017,
+            "value": 14573.5980840004
+          },
+          {
+            "country": "ZAF",
+            "year": 2016,
+            "value": 14501.2807823402
+          },
+          {
+            "country": "ZAF",
+            "year": 2015,
+            "value": 14541.6748613669
+          }
+        ],
+        "fetchedAt": "2026-11-04T07:34:01.743Z",
+        "checkedAt": "2026-11-04T07:34:01.743Z",
+        "status": "ok"
+      },
+      {
+        "id": "inflation",
+        "code": "FP.CPI.TOTL.ZG",
+        "source": "World Bank · World Development Indicators",
+        "url": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG",
+        "api": "https://api.worldbank.org/v2/country/IDN;AUS;DEU;JPN;USA;BRA;MEX;ZAF;TUR;MYS;THA;VNM;PHL;SGP/indicator/NY.GDP.MKTP.KD.ZG;NY.GDP.PCAP.PP.KD;FP.CPI.TOTL.ZG;SL.UEM.TOTL.ZS;SH.H2O.BASW.ZS;SH.XPD.OOPC.CH.ZS?source=2&format=json&per_page=20000&date=2015:2026",
+        "license": "World Bank dataset terms; see indicator metadata",
+        "history": [
+          {
+            "country": "AUS",
+            "year": 2025,
+            "value": 2.87403791660173
+          },
+          {
+            "country": "AUS",
+            "year": 2024,
+            "value": 3.16656665428797
+          },
+          {
+            "country": "AUS",
+            "year": 2023,
+            "value": 5.59701792296707
+          },
+          {
+            "country": "AUS",
+            "year": 2022,
+            "value": 6.59409658717841
+          },
+          {
+            "country": "AUS",
+            "year": 2021,
+            "value": 2.86391284709318
+          },
+          {
+            "country": "AUS",
+            "year": 2020,
+            "value": 0.846900734607273
+          },
+          {
+            "country": "AUS",
+            "year": 2019,
+            "value": 1.610770929127
+          },
+          {
+            "country": "AUS",
+            "year": 2018,
+            "value": 1.91140002818579
+          },
+          {
+            "country": "AUS",
+            "year": 2017,
+            "value": 1.94864309065653
+          },
+          {
+            "country": "AUS",
+            "year": 2016,
+            "value": 1.27699365720306
+          },
+          {
+            "country": "AUS",
+            "year": 2015,
+            "value": 1.50836803138463
+          },
+          {
+            "country": "BRA",
+            "year": 2025,
+            "value": 5.01675279604836
+          },
+          {
+            "country": "BRA",
+            "year": 2024,
+            "value": 4.36746407652336
+          },
+          {
+            "country": "BRA",
+            "year": 2023,
+            "value": 4.59356282283203
+          },
+          {
+            "country": "BRA",
+            "year": 2022,
+            "value": 9.28010608956872
+          },
+          {
+            "country": "BRA",
+            "year": 2021,
+            "value": 8.30165975585673
+          },
+          {
+            "country": "BRA",
+            "year": 2020,
+            "value": 3.21176803803376
+          },
+          {
+            "country": "BRA",
+            "year": 2019,
+            "value": 3.73297621216893
+          },
+          {
+            "country": "BRA",
+            "year": 2018,
+            "value": 3.66485028376728
+          },
+          {
+            "country": "BRA",
+            "year": 2017,
+            "value": 3.44637335032669
+          },
+          {
+            "country": "BRA",
+            "year": 2016,
+            "value": 8.73914352329393
+          },
+          {
+            "country": "BRA",
+            "year": 2015,
+            "value": 9.02990102416136
+          },
+          {
+            "country": "DEU",
+            "year": 2025,
+            "value": 2.17178770949721
+          },
+          {
+            "country": "DEU",
+            "year": 2024,
+            "value": 2.2564981433876
+          },
+          {
+            "country": "DEU",
+            "year": 2023,
+            "value": 5.94643667725823
+          },
+          {
+            "country": "DEU",
+            "year": 2022,
+            "value": 6.87257438551096
+          },
+          {
+            "country": "DEU",
+            "year": 2021,
+            "value": 3.06666666666673
+          },
+          {
+            "country": "DEU",
+            "year": 2020,
+            "value": 0.144877925813981
+          },
+          {
+            "country": "DEU",
+            "year": 2019,
+            "value": 1.44565976888253
+          },
+          {
+            "country": "DEU",
+            "year": 2018,
+            "value": 1.73216879766941
+          },
+          {
+            "country": "DEU",
+            "year": 2017,
+            "value": 1.50949485109628
+          },
+          {
+            "country": "DEU",
+            "year": 2016,
+            "value": 0.491747008445174
+          },
+          {
+            "country": "DEU",
+            "year": 2015,
+            "value": 0.514426137125456
+          },
+          {
+            "country": "IDN",
+            "year": 2025,
+            "value": 1.91333443295079
+          },
+          {
+            "country": "IDN",
+            "year": 2024,
+            "value": 2.18151273615188
+          },
+          {
+            "country": "IDN",
+            "year": 2023,
+            "value": 3.66938654859761
+          },
+          {
+            "country": "IDN",
+            "year": 2022,
+            "value": 4.20946463714784
+          },
+          {
+            "country": "IDN",
+            "year": 2021,
+            "value": 1.56007882983334
+          },
+          {
+            "country": "IDN",
+            "year": 2020,
+            "value": 1.91983527270792
+          },
+          {
+            "country": "IDN",
+            "year": 2019,
+            "value": 3.0305846094166
+          },
+          {
+            "country": "IDN",
+            "year": 2018,
+            "value": 3.19834755924996
+          },
+          {
+            "country": "IDN",
+            "year": 2017,
+            "value": 3.80879857691948
+          },
+          {
+            "country": "IDN",
+            "year": 2016,
+            "value": 3.52580452815451
+          },
+          {
+            "country": "IDN",
+            "year": 2015,
+            "value": 6.36312061196646
+          },
+          {
+            "country": "JPN",
+            "year": 2025,
+            "value": 3.17253034260247
+          },
+          {
+            "country": "JPN",
+            "year": 2024,
+            "value": 2.7385368163524
+          },
+          {
+            "country": "JPN",
+            "year": 2023,
+            "value": 3.26813365933163
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "value": 2.49770278172254
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "value": -0.233352779398263
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "value": -0.024995834027731
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "value": 0.468776159383949
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "value": 0.989094598021848
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "value": 0.484199796126385
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "value": -0.127258844489753
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "value": 0.795279630579839
+          },
+          {
+            "country": "MEX",
+            "year": 2025,
+            "value": 3.80957950037393
+          },
+          {
+            "country": "MEX",
+            "year": 2024,
+            "value": 4.72225588452931
+          },
+          {
+            "country": "MEX",
+            "year": 2023,
+            "value": 5.52796087314388
+          },
+          {
+            "country": "MEX",
+            "year": 2022,
+            "value": 7.89627619168549
+          },
+          {
+            "country": "MEX",
+            "year": 2021,
+            "value": 5.68920847683753
+          },
+          {
+            "country": "MEX",
+            "year": 2020,
+            "value": 3.39683415570006
+          },
+          {
+            "country": "MEX",
+            "year": 2019,
+            "value": 3.63596142127046
+          },
+          {
+            "country": "MEX",
+            "year": 2018,
+            "value": 4.8993501535655
+          },
+          {
+            "country": "MEX",
+            "year": 2017,
+            "value": 6.04145724018985
+          },
+          {
+            "country": "MEX",
+            "year": 2016,
+            "value": 2.8217078474766
+          },
+          {
+            "country": "MEX",
+            "year": 2015,
+            "value": 2.72064064964022
+          },
+          {
+            "country": "MYS",
+            "year": 2025,
+            "value": 1.38060872293691
+          },
+          {
+            "country": "MYS",
+            "year": 2024,
+            "value": 1.834100204499
+          },
+          {
+            "country": "MYS",
+            "year": 2023,
+            "value": 2.48886560125753
+          },
+          {
+            "country": "MYS",
+            "year": 2022,
+            "value": 3.37869862549928
+          },
+          {
+            "country": "MYS",
+            "year": 2021,
+            "value": 2.47710241465446
+          },
+          {
+            "country": "MYS",
+            "year": 2020,
+            "value": -1.13870215393049
+          },
+          {
+            "country": "MYS",
+            "year": 2019,
+            "value": 0.662891865764326
+          },
+          {
+            "country": "MYS",
+            "year": 2018,
+            "value": 0.884709160571235
+          },
+          {
+            "country": "MYS",
+            "year": 2017,
+            "value": 3.87120115774237
+          },
+          {
+            "country": "MYS",
+            "year": 2016,
+            "value": 2.09056659525742
+          },
+          {
+            "country": "MYS",
+            "year": 2015,
+            "value": 2.10438980238358
+          },
+          {
+            "country": "PHL",
+            "year": 2025,
+            "value": 1.6587364525509
+          },
+          {
+            "country": "PHL",
+            "year": 2024,
+            "value": 3.21260487006347
+          },
+          {
+            "country": "PHL",
+            "year": 2023,
+            "value": 5.97802515541409
+          },
+          {
+            "country": "PHL",
+            "year": 2022,
+            "value": 5.82115811213954
+          },
+          {
+            "country": "PHL",
+            "year": 2021,
+            "value": 3.92718022100332
+          },
+          {
+            "country": "PHL",
+            "year": 2020,
+            "value": 2.3931623931624
+          },
+          {
+            "country": "PHL",
+            "year": 2019,
+            "value": 2.39206534422404
+          },
+          {
+            "country": "PHL",
+            "year": 2018,
+            "value": 5.30934661627706
+          },
+          {
+            "country": "PHL",
+            "year": 2017,
+            "value": 2.85318772590947
+          },
+          {
+            "country": "PHL",
+            "year": 2016,
+            "value": 1.25369880080981
+          },
+          {
+            "country": "PHL",
+            "year": 2015,
+            "value": 0.674192536845408
+          },
+          {
+            "country": "SGP",
+            "year": 2025,
+            "value": 0.902998495002676
+          },
+          {
+            "country": "SGP",
+            "year": 2024,
+            "value": 2.38951123595017
+          },
+          {
+            "country": "SGP",
+            "year": 2023,
+            "value": 4.83372362825797
+          },
+          {
+            "country": "SGP",
+            "year": 2022,
+            "value": 6.13095418919732
+          },
+          {
+            "country": "SGP",
+            "year": 2021,
+            "value": 2.31610315765145
+          },
+          {
+            "country": "SGP",
+            "year": 2020,
+            "value": -0.172111865925382
+          },
+          {
+            "country": "SGP",
+            "year": 2019,
+            "value": 0.567829988405447
+          },
+          {
+            "country": "SGP",
+            "year": 2018,
+            "value": 0.438784215129622
+          },
+          {
+            "country": "SGP",
+            "year": 2017,
+            "value": 0.576763191179995
+          },
+          {
+            "country": "SGP",
+            "year": 2016,
+            "value": -0.529809760375464
+          },
+          {
+            "country": "SGP",
+            "year": 2015,
+            "value": -0.521975611895762
+          },
+          {
+            "country": "THA",
+            "year": 2025,
+            "value": -0.133634356480206
+          },
+          {
+            "country": "THA",
+            "year": 2024,
+            "value": 0.398333333333422
+          },
+          {
+            "country": "THA",
+            "year": 2023,
+            "value": 1.22908986612448
+          },
+          {
+            "country": "THA",
+            "year": 2022,
+            "value": 6.07589952842432
+          },
+          {
+            "country": "THA",
+            "year": 2021,
+            "value": 1.23104516549814
+          },
+          {
+            "country": "THA",
+            "year": 2020,
+            "value": -0.846087518861798
+          },
+          {
+            "country": "THA",
+            "year": 2019,
+            "value": 0.705524801910316
+          },
+          {
+            "country": "THA",
+            "year": 2018,
+            "value": 1.06683487370757
+          },
+          {
+            "country": "THA",
+            "year": 2017,
+            "value": 0.664415139830892
+          },
+          {
+            "country": "THA",
+            "year": 2016,
+            "value": 0.186235191075453
+          },
+          {
+            "country": "THA",
+            "year": 2015,
+            "value": -0.898143410569433
+          },
+          {
+            "country": "TUR",
+            "year": 2025,
+            "value": 34.8811700293777
+          },
+          {
+            "country": "TUR",
+            "year": 2024,
+            "value": 58.5064492168435
+          },
+          {
+            "country": "TUR",
+            "year": 2023,
+            "value": 53.8594084019764
+          },
+          {
+            "country": "TUR",
+            "year": 2022,
+            "value": 72.3088300496956
+          },
+          {
+            "country": "TUR",
+            "year": 2021,
+            "value": 19.5964927532842
+          },
+          {
+            "country": "TUR",
+            "year": 2020,
+            "value": 12.2789597724893
+          },
+          {
+            "country": "TUR",
+            "year": 2019,
+            "value": 15.176809642769
+          },
+          {
+            "country": "TUR",
+            "year": 2018,
+            "value": 16.3324781477783
+          },
+          {
+            "country": "TUR",
+            "year": 2017,
+            "value": 11.1443085201022
+          },
+          {
+            "country": "TUR",
+            "year": 2016,
+            "value": 7.7751335303658
+          },
+          {
+            "country": "TUR",
+            "year": 2015,
+            "value": 7.67085521554052
+          },
+          {
+            "country": "USA",
+            "year": 2024,
+            "value": 2.94952520485207
+          },
+          {
+            "country": "USA",
+            "year": 2023,
+            "value": 4.11633838374487
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "value": 8.00279982052121
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "value": 4.69785886363742
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "value": 1.23358439630629
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "value": 1.8122100752602
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "value": 2.44258329692816
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "value": 2.13011000365961
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "value": 1.26158320570535
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "value": 0.11862713555245
+          },
+          {
+            "country": "VNM",
+            "year": 2025,
+            "value": 3.30999314219739
+          },
+          {
+            "country": "VNM",
+            "year": 2024,
+            "value": 3.62109273885843
+          },
+          {
+            "country": "VNM",
+            "year": 2023,
+            "value": 3.25289282667662
+          },
+          {
+            "country": "VNM",
+            "year": 2022,
+            "value": 3.15650749963111
+          },
+          {
+            "country": "VNM",
+            "year": 2021,
+            "value": 1.83471554810461
+          },
+          {
+            "country": "VNM",
+            "year": 2020,
+            "value": 3.22093436652514
+          },
+          {
+            "country": "VNM",
+            "year": 2019,
+            "value": 2.79582367452243
+          },
+          {
+            "country": "VNM",
+            "year": 2018,
+            "value": 3.53962805942641
+          },
+          {
+            "country": "VNM",
+            "year": 2017,
+            "value": 3.52025688811617
+          },
+          {
+            "country": "VNM",
+            "year": 2016,
+            "value": 2.66824816969082
+          },
+          {
+            "country": "VNM",
+            "year": 2015,
+            "value": 0.631200905175684
+          },
+          {
+            "country": "ZAF",
+            "year": 2025,
+            "value": 3.20550474112603
+          },
+          {
+            "country": "ZAF",
+            "year": 2024,
+            "value": 4.36115246518962
+          },
+          {
+            "country": "ZAF",
+            "year": 2023,
+            "value": 6.07524384579659
+          },
+          {
+            "country": "ZAF",
+            "year": 2022,
+            "value": 7.03987272546481
+          },
+          {
+            "country": "ZAF",
+            "year": 2021,
+            "value": 4.61874544887136
+          },
+          {
+            "country": "ZAF",
+            "year": 2020,
+            "value": 3.23238831615113
+          },
+          {
+            "country": "ZAF",
+            "year": 2019,
+            "value": 4.10285075461155
+          },
+          {
+            "country": "ZAF",
+            "year": 2018,
+            "value": 4.50987264867387
+          },
+          {
+            "country": "ZAF",
+            "year": 2017,
+            "value": 5.18618655524149
+          },
+          {
+            "country": "ZAF",
+            "year": 2016,
+            "value": 6.60290842394871
+          },
+          {
+            "country": "ZAF",
+            "year": 2015,
+            "value": 4.51869094892506
+          }
+        ],
+        "fetchedAt": "2026-11-04T07:34:01.743Z",
+        "checkedAt": "2026-11-04T07:34:01.743Z",
+        "status": "ok"
+      },
+      {
+        "id": "jobs",
+        "code": "SL.UEM.TOTL.ZS",
+        "source": "World Bank · World Development Indicators",
+        "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS",
+        "api": "https://api.worldbank.org/v2/country/IDN;AUS;DEU;JPN;USA;BRA;MEX;ZAF;TUR;MYS;THA;VNM;PHL;SGP/indicator/NY.GDP.MKTP.KD.ZG;NY.GDP.PCAP.PP.KD;FP.CPI.TOTL.ZG;SL.UEM.TOTL.ZS;SH.H2O.BASW.ZS;SH.XPD.OOPC.CH.ZS?source=2&format=json&per_page=20000&date=2015:2026",
+        "license": "World Bank dataset terms; see indicator metadata",
+        "history": [
+          {
+            "country": "AUS",
+            "year": 2025,
+            "value": 4.09
+          },
+          {
+            "country": "AUS",
+            "year": 2024,
+            "value": 3.942
+          },
+          {
+            "country": "AUS",
+            "year": 2023,
+            "value": 3.668
+          },
+          {
+            "country": "AUS",
+            "year": 2022,
+            "value": 3.728
+          },
+          {
+            "country": "AUS",
+            "year": 2021,
+            "value": 5.022
+          },
+          {
+            "country": "AUS",
+            "year": 2020,
+            "value": 6.394
+          },
+          {
+            "country": "AUS",
+            "year": 2019,
+            "value": 5.143
+          },
+          {
+            "country": "AUS",
+            "year": 2018,
+            "value": 5.345
+          },
+          {
+            "country": "AUS",
+            "year": 2017,
+            "value": 5.592
+          },
+          {
+            "country": "AUS",
+            "year": 2016,
+            "value": 5.711
+          },
+          {
+            "country": "AUS",
+            "year": 2015,
+            "value": 6.055
+          },
+          {
+            "country": "BRA",
+            "year": 2025,
+            "value": 5.97
+          },
+          {
+            "country": "BRA",
+            "year": 2024,
+            "value": 6.801
+          },
+          {
+            "country": "BRA",
+            "year": 2023,
+            "value": 7.947
+          },
+          {
+            "country": "BRA",
+            "year": 2022,
+            "value": 9.231
+          },
+          {
+            "country": "BRA",
+            "year": 2021,
+            "value": 13.158
+          },
+          {
+            "country": "BRA",
+            "year": 2020,
+            "value": 13.697
+          },
+          {
+            "country": "BRA",
+            "year": 2019,
+            "value": 11.936
+          },
+          {
+            "country": "BRA",
+            "year": 2018,
+            "value": 12.329
+          },
+          {
+            "country": "BRA",
+            "year": 2017,
+            "value": 12.792
+          },
+          {
+            "country": "BRA",
+            "year": 2016,
+            "value": 11.58
+          },
+          {
+            "country": "BRA",
+            "year": 2015,
+            "value": 8.538
+          },
+          {
+            "country": "DEU",
+            "year": 2025,
+            "value": 3.711
+          },
+          {
+            "country": "DEU",
+            "year": 2024,
+            "value": 3.4
+          },
+          {
+            "country": "DEU",
+            "year": 2023,
+            "value": 3.071
+          },
+          {
+            "country": "DEU",
+            "year": 2022,
+            "value": 3.137
+          },
+          {
+            "country": "DEU",
+            "year": 2021,
+            "value": 3.594
+          },
+          {
+            "country": "DEU",
+            "year": 2020,
+            "value": 3.881
+          },
+          {
+            "country": "DEU",
+            "year": 2019,
+            "value": 3.163
+          },
+          {
+            "country": "DEU",
+            "year": 2018,
+            "value": 3.384
+          },
+          {
+            "country": "DEU",
+            "year": 2017,
+            "value": 3.781
+          },
+          {
+            "country": "DEU",
+            "year": 2016,
+            "value": 4.104
+          },
+          {
+            "country": "DEU",
+            "year": 2015,
+            "value": 4.612
+          },
+          {
+            "country": "IDN",
+            "year": 2025,
+            "value": 3.237
+          },
+          {
+            "country": "IDN",
+            "year": 2024,
+            "value": 3.301
+          },
+          {
+            "country": "IDN",
+            "year": 2023,
+            "value": 3.308
+          },
+          {
+            "country": "IDN",
+            "year": 2022,
+            "value": 3.462
+          },
+          {
+            "country": "IDN",
+            "year": 2021,
+            "value": 3.827
+          },
+          {
+            "country": "IDN",
+            "year": 2020,
+            "value": 4.255
+          },
+          {
+            "country": "IDN",
+            "year": 2019,
+            "value": 3.59
+          },
+          {
+            "country": "IDN",
+            "year": 2018,
+            "value": 4.387
+          },
+          {
+            "country": "IDN",
+            "year": 2017,
+            "value": 3.783
+          },
+          {
+            "country": "IDN",
+            "year": 2016,
+            "value": 4.301
+          },
+          {
+            "country": "IDN",
+            "year": 2015,
+            "value": 4.514
+          },
+          {
+            "country": "JPN",
+            "year": 2025,
+            "value": 2.451
+          },
+          {
+            "country": "JPN",
+            "year": 2024,
+            "value": 2.5
+          },
+          {
+            "country": "JPN",
+            "year": 2023,
+            "value": 2.6
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "value": 2.614
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "value": 2.808
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "value": 2.809
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "value": 2.351
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "value": 2.467
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "value": 2.822
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "value": 3.132
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "value": 3.385
+          },
+          {
+            "country": "MEX",
+            "year": 2025,
+            "value": 2.673
+          },
+          {
+            "country": "MEX",
+            "year": 2024,
+            "value": 2.678
+          },
+          {
+            "country": "MEX",
+            "year": 2023,
+            "value": 2.765
+          },
+          {
+            "country": "MEX",
+            "year": 2022,
+            "value": 3.256
+          },
+          {
+            "country": "MEX",
+            "year": 2021,
+            "value": 4.019
+          },
+          {
+            "country": "MEX",
+            "year": 2020,
+            "value": 4.44
+          },
+          {
+            "country": "MEX",
+            "year": 2019,
+            "value": 3.477
+          },
+          {
+            "country": "MEX",
+            "year": 2018,
+            "value": 3.275
+          },
+          {
+            "country": "MEX",
+            "year": 2017,
+            "value": 3.419
+          },
+          {
+            "country": "MEX",
+            "year": 2016,
+            "value": 3.853
+          },
+          {
+            "country": "MEX",
+            "year": 2015,
+            "value": 4.311
+          },
+          {
+            "country": "MYS",
+            "year": 2025,
+            "value": 3.764
+          },
+          {
+            "country": "MYS",
+            "year": 2024,
+            "value": 3.846
+          },
+          {
+            "country": "MYS",
+            "year": 2023,
+            "value": 3.858
+          },
+          {
+            "country": "MYS",
+            "year": 2022,
+            "value": 3.93
+          },
+          {
+            "country": "MYS",
+            "year": 2021,
+            "value": 4.64
+          },
+          {
+            "country": "MYS",
+            "year": 2020,
+            "value": 4.54
+          },
+          {
+            "country": "MYS",
+            "year": 2019,
+            "value": 3.33
+          },
+          {
+            "country": "MYS",
+            "year": 2018,
+            "value": 3.3
+          },
+          {
+            "country": "MYS",
+            "year": 2017,
+            "value": 3.41
+          },
+          {
+            "country": "MYS",
+            "year": 2016,
+            "value": 3.44
+          },
+          {
+            "country": "MYS",
+            "year": 2015,
+            "value": 3.1
+          },
+          {
+            "country": "PHL",
+            "year": 2025,
+            "value": 2.235
+          },
+          {
+            "country": "PHL",
+            "year": 2024,
+            "value": 2.202
+          },
+          {
+            "country": "PHL",
+            "year": 2023,
+            "value": 2.2
+          },
+          {
+            "country": "PHL",
+            "year": 2022,
+            "value": 2.598
+          },
+          {
+            "country": "PHL",
+            "year": 2021,
+            "value": 3.398
+          },
+          {
+            "country": "PHL",
+            "year": 2020,
+            "value": 2.522
+          },
+          {
+            "country": "PHL",
+            "year": 2019,
+            "value": 2.237
+          },
+          {
+            "country": "PHL",
+            "year": 2018,
+            "value": 2.338
+          },
+          {
+            "country": "PHL",
+            "year": 2017,
+            "value": 2.552
+          },
+          {
+            "country": "PHL",
+            "year": 2016,
+            "value": 2.695
+          },
+          {
+            "country": "PHL",
+            "year": 2015,
+            "value": 3.068
+          },
+          {
+            "country": "SGP",
+            "year": 2025,
+            "value": 2.818
+          },
+          {
+            "country": "SGP",
+            "year": 2024,
+            "value": 2.737
+          },
+          {
+            "country": "SGP",
+            "year": 2023,
+            "value": 3.444
+          },
+          {
+            "country": "SGP",
+            "year": 2022,
+            "value": 3.591
+          },
+          {
+            "country": "SGP",
+            "year": 2021,
+            "value": 4.64
+          },
+          {
+            "country": "SGP",
+            "year": 2020,
+            "value": 4.1
+          },
+          {
+            "country": "SGP",
+            "year": 2019,
+            "value": 3.1
+          },
+          {
+            "country": "SGP",
+            "year": 2018,
+            "value": 3.613
+          },
+          {
+            "country": "SGP",
+            "year": 2017,
+            "value": 4.2
+          },
+          {
+            "country": "SGP",
+            "year": 2016,
+            "value": 4.08
+          },
+          {
+            "country": "SGP",
+            "year": 2015,
+            "value": 3.79
+          },
+          {
+            "country": "THA",
+            "year": 2025,
+            "value": 0.781
+          },
+          {
+            "country": "THA",
+            "year": 2024,
+            "value": 0.781
+          },
+          {
+            "country": "THA",
+            "year": 2023,
+            "value": 0.733
+          },
+          {
+            "country": "THA",
+            "year": 2022,
+            "value": 0.94
+          },
+          {
+            "country": "THA",
+            "year": 2021,
+            "value": 1.215
+          },
+          {
+            "country": "THA",
+            "year": 2020,
+            "value": 1.099
+          },
+          {
+            "country": "THA",
+            "year": 2019,
+            "value": 0.716
+          },
+          {
+            "country": "THA",
+            "year": 2018,
+            "value": 0.765
+          },
+          {
+            "country": "THA",
+            "year": 2017,
+            "value": 0.83
+          },
+          {
+            "country": "THA",
+            "year": 2016,
+            "value": 0.688
+          },
+          {
+            "country": "THA",
+            "year": 2015,
+            "value": 0.597
+          },
+          {
+            "country": "TUR",
+            "year": 2025,
+            "value": 8.52
+          },
+          {
+            "country": "TUR",
+            "year": 2024,
+            "value": 8.8
+          },
+          {
+            "country": "TUR",
+            "year": 2023,
+            "value": 9.388
+          },
+          {
+            "country": "TUR",
+            "year": 2022,
+            "value": 10.465
+          },
+          {
+            "country": "TUR",
+            "year": 2021,
+            "value": 11.969
+          },
+          {
+            "country": "TUR",
+            "year": 2020,
+            "value": 13.148
+          },
+          {
+            "country": "TUR",
+            "year": 2019,
+            "value": 13.73
+          },
+          {
+            "country": "TUR",
+            "year": 2018,
+            "value": 10.956
+          },
+          {
+            "country": "TUR",
+            "year": 2017,
+            "value": 10.919
+          },
+          {
+            "country": "TUR",
+            "year": 2016,
+            "value": 10.899
+          },
+          {
+            "country": "TUR",
+            "year": 2015,
+            "value": 10.304
+          },
+          {
+            "country": "USA",
+            "year": 2025,
+            "value": 4.198
+          },
+          {
+            "country": "USA",
+            "year": 2024,
+            "value": 4.022
+          },
+          {
+            "country": "USA",
+            "year": 2023,
+            "value": 3.638
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "value": 3.65
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "value": 5.349
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "value": 8.055
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "value": 3.669
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "value": 3.896
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "value": 4.355
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "value": 4.869
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "value": 5.28
+          },
+          {
+            "country": "VNM",
+            "year": 2025,
+            "value": 1.523
+          },
+          {
+            "country": "VNM",
+            "year": 2024,
+            "value": 1.602
+          },
+          {
+            "country": "VNM",
+            "year": 2023,
+            "value": 1.645
+          },
+          {
+            "country": "VNM",
+            "year": 2022,
+            "value": 1.57
+          },
+          {
+            "country": "VNM",
+            "year": 2021,
+            "value": 2.383
+          },
+          {
+            "country": "VNM",
+            "year": 2020,
+            "value": 2.103
+          },
+          {
+            "country": "VNM",
+            "year": 2019,
+            "value": 1.681
+          },
+          {
+            "country": "VNM",
+            "year": 2018,
+            "value": 1.161
+          },
+          {
+            "country": "VNM",
+            "year": 2017,
+            "value": 1.874
+          },
+          {
+            "country": "VNM",
+            "year": 2016,
+            "value": 1.848
+          },
+          {
+            "country": "VNM",
+            "year": 2015,
+            "value": 1.848
+          },
+          {
+            "country": "ZAF",
+            "year": 2025,
+            "value": 32.391
+          },
+          {
+            "country": "ZAF",
+            "year": 2024,
+            "value": 32.279
+          },
+          {
+            "country": "ZAF",
+            "year": 2023,
+            "value": 32.098
+          },
+          {
+            "country": "ZAF",
+            "year": 2022,
+            "value": 33.268
+          },
+          {
+            "country": "ZAF",
+            "year": 2021,
+            "value": 34.007
+          },
+          {
+            "country": "ZAF",
+            "year": 2020,
+            "value": 29.217
+          },
+          {
+            "country": "ZAF",
+            "year": 2019,
+            "value": 28.468
+          },
+          {
+            "country": "ZAF",
+            "year": 2018,
+            "value": 26.906
+          },
+          {
+            "country": "ZAF",
+            "year": 2017,
+            "value": 27.035
+          },
+          {
+            "country": "ZAF",
+            "year": 2016,
+            "value": 26.536
+          },
+          {
+            "country": "ZAF",
+            "year": 2015,
+            "value": 25.149
+          }
+        ],
+        "fetchedAt": "2026-11-04T07:34:01.743Z",
+        "checkedAt": "2026-11-04T07:34:01.743Z",
+        "status": "ok"
+      },
+      {
+        "id": "water",
+        "code": "SH.H2O.BASW.ZS",
+        "source": "World Bank · World Development Indicators",
+        "url": "https://data.worldbank.org/indicator/SH.H2O.BASW.ZS",
+        "api": "https://api.worldbank.org/v2/country/IDN;AUS;DEU;JPN;USA;BRA;MEX;ZAF;TUR;MYS;THA;VNM;PHL;SGP/indicator/NY.GDP.MKTP.KD.ZG;NY.GDP.PCAP.PP.KD;FP.CPI.TOTL.ZG;SL.UEM.TOTL.ZS;SH.H2O.BASW.ZS;SH.XPD.OOPC.CH.ZS?source=2&format=json&per_page=20000&date=2015:2026",
+        "license": "World Bank dataset terms; see indicator metadata",
+        "history": [
+          {
+            "country": "AUS",
+            "year": 2024,
+            "value": 99.9696359649334
+          },
+          {
+            "country": "AUS",
+            "year": 2023,
+            "value": 99.9696841388095
+          },
+          {
+            "country": "AUS",
+            "year": 2022,
+            "value": 99.9697269040604
+          },
+          {
+            "country": "AUS",
+            "year": 2021,
+            "value": 99.9697732704149
+          },
+          {
+            "country": "AUS",
+            "year": 2020,
+            "value": 99.9698157102474
+          },
+          {
+            "country": "AUS",
+            "year": 2019,
+            "value": 99.9698532048744
+          },
+          {
+            "country": "AUS",
+            "year": 2018,
+            "value": 99.9698940747082
+          },
+          {
+            "country": "AUS",
+            "year": 2017,
+            "value": 99.9699329598972
+          },
+          {
+            "country": "AUS",
+            "year": 2016,
+            "value": 99.9699685481919
+          },
+          {
+            "country": "AUS",
+            "year": 2015,
+            "value": 99.9700064923964
+          },
+          {
+            "country": "BRA",
+            "year": 2024,
+            "value": 99.9999987323028
+          },
+          {
+            "country": "BRA",
+            "year": 2023,
+            "value": 99.8980595100623
+          },
+          {
+            "country": "BRA",
+            "year": 2022,
+            "value": 99.6149419025106
+          },
+          {
+            "country": "BRA",
+            "year": 2021,
+            "value": 99.4272648803619
+          },
+          {
+            "country": "BRA",
+            "year": 2020,
+            "value": 99.0720677672897
+          },
+          {
+            "country": "BRA",
+            "year": 2019,
+            "value": 98.773134154073
+          },
+          {
+            "country": "BRA",
+            "year": 2018,
+            "value": 98.5580120515387
+          },
+          {
+            "country": "BRA",
+            "year": 2017,
+            "value": 98.1978808317894
+          },
+          {
+            "country": "BRA",
+            "year": 2016,
+            "value": 97.921760549945
+          },
+          {
+            "country": "BRA",
+            "year": 2015,
+            "value": 97.7078492139171
+          },
+          {
+            "country": "DEU",
+            "year": 2024,
+            "value": 100
+          },
+          {
+            "country": "DEU",
+            "year": 2023,
+            "value": 99.9999970615884
+          },
+          {
+            "country": "DEU",
+            "year": 2022,
+            "value": 99.9999971569363
+          },
+          {
+            "country": "DEU",
+            "year": 2021,
+            "value": 99.9999988425523
+          },
+          {
+            "country": "DEU",
+            "year": 2020,
+            "value": 99.9999988416059
+          },
+          {
+            "country": "DEU",
+            "year": 2019,
+            "value": 99.9999994577197
+          },
+          {
+            "country": "DEU",
+            "year": 2018,
+            "value": 100
+          },
+          {
+            "country": "DEU",
+            "year": 2017,
+            "value": 100
+          },
+          {
+            "country": "DEU",
+            "year": 2016,
+            "value": 99.9999994713636
+          },
+          {
+            "country": "DEU",
+            "year": 2015,
+            "value": 100
+          },
+          {
+            "country": "IDN",
+            "year": 2024,
+            "value": 89.008759557411
+          },
+          {
+            "country": "IDN",
+            "year": 2023,
+            "value": 89.3578482222748
+          },
+          {
+            "country": "IDN",
+            "year": 2022,
+            "value": 89.7113532580834
+          },
+          {
+            "country": "IDN",
+            "year": 2021,
+            "value": 89.4041137814594
+          },
+          {
+            "country": "IDN",
+            "year": 2020,
+            "value": 89.0851606060889
+          },
+          {
+            "country": "IDN",
+            "year": 2019,
+            "value": 88.7538936468124
+          },
+          {
+            "country": "IDN",
+            "year": 2018,
+            "value": 88.410420237217
+          },
+          {
+            "country": "IDN",
+            "year": 2017,
+            "value": 88.0541295680055
+          },
+          {
+            "country": "IDN",
+            "year": 2016,
+            "value": 87.6849895715078
+          },
+          {
+            "country": "IDN",
+            "year": 2015,
+            "value": 87.3023728948535
+          },
+          {
+            "country": "JPN",
+            "year": 2024,
+            "value": 99.1831679675454
+          },
+          {
+            "country": "JPN",
+            "year": 2023,
+            "value": 99.1831679675454
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "value": 99.1482440697849
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "value": 99.1133201720243
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "value": 99.0783962742638
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "value": 99.0434723765032
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "value": 99.0085484787426
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "value": 98.973624580982
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "value": 98.9387006832215
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "value": 98.9037767854609
+          },
+          {
+            "country": "MEX",
+            "year": 2024,
+            "value": 99.5413676283293
+          },
+          {
+            "country": "MEX",
+            "year": 2023,
+            "value": 99.4095196134934
+          },
+          {
+            "country": "MEX",
+            "year": 2022,
+            "value": 99.2737986132837
+          },
+          {
+            "country": "MEX",
+            "year": 2021,
+            "value": 99.0090934864526
+          },
+          {
+            "country": "MEX",
+            "year": 2020,
+            "value": 98.7408072689782
+          },
+          {
+            "country": "MEX",
+            "year": 2019,
+            "value": 98.46943436997
+          },
+          {
+            "country": "MEX",
+            "year": 2018,
+            "value": 98.1950089060211
+          },
+          {
+            "country": "MEX",
+            "year": 2017,
+            "value": 97.9175037608425
+          },
+          {
+            "country": "MEX",
+            "year": 2016,
+            "value": 97.6369085403618
+          },
+          {
+            "country": "MEX",
+            "year": 2015,
+            "value": 97.3531385567766
+          },
+          {
+            "country": "MYS",
+            "year": 2024,
+            "value": 97.9424657751403
+          },
+          {
+            "country": "MYS",
+            "year": 2023,
+            "value": 97.8919385183286
+          },
+          {
+            "country": "MYS",
+            "year": 2022,
+            "value": 97.8397514976645
+          },
+          {
+            "country": "MYS",
+            "year": 2021,
+            "value": 97.7858740262041
+          },
+          {
+            "country": "MYS",
+            "year": 2020,
+            "value": 97.7301935332944
+          },
+          {
+            "country": "MYS",
+            "year": 2019,
+            "value": 97.6726796234952
+          },
+          {
+            "country": "MYS",
+            "year": 2018,
+            "value": 97.6132438171196
+          },
+          {
+            "country": "MYS",
+            "year": 2017,
+            "value": 97.5518244346184
+          },
+          {
+            "country": "MYS",
+            "year": 2016,
+            "value": 97.4883578339003
+          },
+          {
+            "country": "MYS",
+            "year": 2015,
+            "value": 97.4227111540385
+          },
+          {
+            "country": "PHL",
+            "year": 2024,
+            "value": 95.8592214925506
+          },
+          {
+            "country": "PHL",
+            "year": 2023,
+            "value": 95.465506033898
+          },
+          {
+            "country": "PHL",
+            "year": 2022,
+            "value": 95.070405889347
+          },
+          {
+            "country": "PHL",
+            "year": 2021,
+            "value": 94.6741026690457
+          },
+          {
+            "country": "PHL",
+            "year": 2020,
+            "value": 94.2767858134665
+          },
+          {
+            "country": "PHL",
+            "year": 2019,
+            "value": 93.8786426296812
+          },
+          {
+            "country": "PHL",
+            "year": 2018,
+            "value": 93.4798496793252
+          },
+          {
+            "country": "PHL",
+            "year": 2017,
+            "value": 93.0805992720253
+          },
+          {
+            "country": "PHL",
+            "year": 2016,
+            "value": 92.6811507144986
+          },
+          {
+            "country": "PHL",
+            "year": 2015,
+            "value": 92.2815392767777
+          },
+          {
+            "country": "SGP",
+            "year": 2024,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2023,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2022,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2021,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2020,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2019,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2018,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2017,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2016,
+            "value": 100
+          },
+          {
+            "country": "SGP",
+            "year": 2015,
+            "value": 100
+          },
+          {
+            "country": "THA",
+            "year": 2024,
+            "value": 100
+          },
+          {
+            "country": "THA",
+            "year": 2023,
+            "value": 100
+          },
+          {
+            "country": "THA",
+            "year": 2022,
+            "value": 99.9999987802384
+          },
+          {
+            "country": "THA",
+            "year": 2021,
+            "value": 99.9512350608319
+          },
+          {
+            "country": "THA",
+            "year": 2020,
+            "value": 99.487572734038
+          },
+          {
+            "country": "THA",
+            "year": 2019,
+            "value": 99.4287701898312
+          },
+          {
+            "country": "THA",
+            "year": 2018,
+            "value": 99.2453414879961
+          },
+          {
+            "country": "THA",
+            "year": 2017,
+            "value": 99.0141678969544
+          },
+          {
+            "country": "THA",
+            "year": 2016,
+            "value": 98.7563664509808
+          },
+          {
+            "country": "THA",
+            "year": 2015,
+            "value": 98.4945735276121
+          },
+          {
+            "country": "TUR",
+            "year": 2024,
+            "value": 95.9866257794699
+          },
+          {
+            "country": "TUR",
+            "year": 2023,
+            "value": 95.9784417716969
+          },
+          {
+            "country": "TUR",
+            "year": 2022,
+            "value": 95.9700345956399
+          },
+          {
+            "country": "TUR",
+            "year": 2021,
+            "value": 95.9614082696356
+          },
+          {
+            "country": "TUR",
+            "year": 2020,
+            "value": 95.9525757495893
+          },
+          {
+            "country": "TUR",
+            "year": 2019,
+            "value": 95.8081999457908
+          },
+          {
+            "country": "TUR",
+            "year": 2018,
+            "value": 95.6607630886075
+          },
+          {
+            "country": "TUR",
+            "year": 2017,
+            "value": 95.5101526427098
+          },
+          {
+            "country": "TUR",
+            "year": 2016,
+            "value": 95.3562997823
+          },
+          {
+            "country": "TUR",
+            "year": 2015,
+            "value": 95.1990408276222
+          },
+          {
+            "country": "USA",
+            "year": 2024,
+            "value": 99.9804443465812
+          },
+          {
+            "country": "USA",
+            "year": 2023,
+            "value": 99.9804979047021
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "value": 99.9641146737575
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "value": 99.894943997231
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "value": 99.8204204612721
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "value": 99.7446316773149
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "value": 99.6675822614626
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "value": 99.5893429085867
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "value": 99.509898178586
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "value": 99.4293350987693
+          },
+          {
+            "country": "VNM",
+            "year": 2024,
+            "value": 98.761246653694
+          },
+          {
+            "country": "VNM",
+            "year": 2023,
+            "value": 98.160662651459
+          },
+          {
+            "country": "VNM",
+            "year": 2022,
+            "value": 97.5492793224641
+          },
+          {
+            "country": "VNM",
+            "year": 2021,
+            "value": 96.9270863481492
+          },
+          {
+            "country": "VNM",
+            "year": 2020,
+            "value": 96.2941639364055
+          },
+          {
+            "country": "VNM",
+            "year": 2019,
+            "value": 95.6342556825242
+          },
+          {
+            "country": "VNM",
+            "year": 2018,
+            "value": 94.8327946840432
+          },
+          {
+            "country": "VNM",
+            "year": 2017,
+            "value": 93.8136963360805
+          },
+          {
+            "country": "VNM",
+            "year": 2016,
+            "value": 93.1077859229268
+          },
+          {
+            "country": "VNM",
+            "year": 2015,
+            "value": 92.3918615614749
+          },
+          {
+            "country": "ZAF",
+            "year": 2024,
+            "value": 90.1916801364739
+          },
+          {
+            "country": "ZAF",
+            "year": 2023,
+            "value": 90.4386965804708
+          },
+          {
+            "country": "ZAF",
+            "year": 2022,
+            "value": 90.6825361107103
+          },
+          {
+            "country": "ZAF",
+            "year": 2021,
+            "value": 90.9231026021655
+          },
+          {
+            "country": "ZAF",
+            "year": 2020,
+            "value": 91.1598368082793
+          },
+          {
+            "country": "ZAF",
+            "year": 2019,
+            "value": 91.3923995625225
+          },
+          {
+            "country": "ZAF",
+            "year": 2018,
+            "value": 91.6208678269317
+          },
+          {
+            "country": "ZAF",
+            "year": 2017,
+            "value": 91.844654961916
+          },
+          {
+            "country": "ZAF",
+            "year": 2016,
+            "value": 92.0633898282653
+          },
+          {
+            "country": "ZAF",
+            "year": 2015,
+            "value": 92.2766813341795
+          }
+        ],
+        "fetchedAt": "2026-11-04T07:34:01.743Z",
+        "checkedAt": "2026-11-04T07:34:01.743Z",
+        "status": "ok"
+      },
+      {
+        "id": "health",
+        "code": "SH.XPD.OOPC.CH.ZS",
+        "source": "World Bank · World Development Indicators",
+        "url": "https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS",
+        "api": "https://api.worldbank.org/v2/country/IDN;AUS;DEU;JPN;USA;BRA;MEX;ZAF;TUR;MYS;THA;VNM;PHL;SGP/indicator/NY.GDP.MKTP.KD.ZG;NY.GDP.PCAP.PP.KD;FP.CPI.TOTL.ZG;SL.UEM.TOTL.ZS;SH.H2O.BASW.ZS;SH.XPD.OOPC.CH.ZS?source=2&format=json&per_page=20000&date=2015:2026",
+        "license": "World Bank dataset terms; see indicator metadata",
+        "history": [
+          {
+            "country": "AUS",
+            "year": 2023,
+            "value": 15.84897614
+          },
+          {
+            "country": "AUS",
+            "year": 2022,
+            "value": 15.13268661
+          },
+          {
+            "country": "AUS",
+            "year": 2021,
+            "value": 14.4608345
+          },
+          {
+            "country": "AUS",
+            "year": 2020,
+            "value": 15.23493195
+          },
+          {
+            "country": "AUS",
+            "year": 2019,
+            "value": 15.01641464
+          },
+          {
+            "country": "AUS",
+            "year": 2018,
+            "value": 16.48277283
+          },
+          {
+            "country": "AUS",
+            "year": 2017,
+            "value": 16.31333733
+          },
+          {
+            "country": "AUS",
+            "year": 2016,
+            "value": 16.63350677
+          },
+          {
+            "country": "AUS",
+            "year": 2015,
+            "value": 16.91646767
+          },
+          {
+            "country": "BRA",
+            "year": 2023,
+            "value": 26.23070717
+          },
+          {
+            "country": "BRA",
+            "year": 2022,
+            "value": 27.25102234
+          },
+          {
+            "country": "BRA",
+            "year": 2021,
+            "value": 25.26789093
+          },
+          {
+            "country": "BRA",
+            "year": 2020,
+            "value": 26.09086418
+          },
+          {
+            "country": "BRA",
+            "year": 2019,
+            "value": 24.87984657
+          },
+          {
+            "country": "BRA",
+            "year": 2018,
+            "value": 24.82529449
+          },
+          {
+            "country": "BRA",
+            "year": 2017,
+            "value": 24.46793365
+          },
+          {
+            "country": "BRA",
+            "year": 2016,
+            "value": 24.42057228
+          },
+          {
+            "country": "BRA",
+            "year": 2015,
+            "value": 24.70735931
+          },
+          {
+            "country": "DEU",
+            "year": 2024,
+            "value": 10.7067318
+          },
+          {
+            "country": "DEU",
+            "year": 2023,
+            "value": 11.05290699
+          },
+          {
+            "country": "DEU",
+            "year": 2022,
+            "value": 10.43201256
+          },
+          {
+            "country": "DEU",
+            "year": 2021,
+            "value": 11.36333561
+          },
+          {
+            "country": "DEU",
+            "year": 2020,
+            "value": 11.3380394
+          },
+          {
+            "country": "DEU",
+            "year": 2019,
+            "value": 12.37548542
+          },
+          {
+            "country": "DEU",
+            "year": 2018,
+            "value": 12.1757164
+          },
+          {
+            "country": "DEU",
+            "year": 2017,
+            "value": 12.01707077
+          },
+          {
+            "country": "DEU",
+            "year": 2016,
+            "value": 12.18544674
+          },
+          {
+            "country": "DEU",
+            "year": 2015,
+            "value": 12.35095024
+          },
+          {
+            "country": "IDN",
+            "year": 2023,
+            "value": 31.0836544
+          },
+          {
+            "country": "IDN",
+            "year": 2022,
+            "value": 32.9629097
+          },
+          {
+            "country": "IDN",
+            "year": 2021,
+            "value": 27.1673317
+          },
+          {
+            "country": "IDN",
+            "year": 2020,
+            "value": 31.19621658
+          },
+          {
+            "country": "IDN",
+            "year": 2019,
+            "value": 34.55001068
+          },
+          {
+            "country": "IDN",
+            "year": 2018,
+            "value": 35.23954773
+          },
+          {
+            "country": "IDN",
+            "year": 2017,
+            "value": 36.17775345
+          },
+          {
+            "country": "IDN",
+            "year": 2016,
+            "value": 38.12414932
+          },
+          {
+            "country": "IDN",
+            "year": 2015,
+            "value": 42.71576691
+          },
+          {
+            "country": "JPN",
+            "year": 2023,
+            "value": 12.23568153
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "value": 11.1480875
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "value": 10.81970024
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "value": 11.5586462
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "value": 12.9017725
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "value": 12.99456692
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "value": 12.65492725
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "value": 12.85439873
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "value": 12.94767094
+          },
+          {
+            "country": "MEX",
+            "year": 2023,
+            "value": 41.23572922
+          },
+          {
+            "country": "MEX",
+            "year": 2022,
+            "value": 39.08966446
+          },
+          {
+            "country": "MEX",
+            "year": 2021,
+            "value": 41.37071991
+          },
+          {
+            "country": "MEX",
+            "year": 2020,
+            "value": 38.76134109
+          },
+          {
+            "country": "MEX",
+            "year": 2019,
+            "value": 42.28219223
+          },
+          {
+            "country": "MEX",
+            "year": 2018,
+            "value": 42.30939865
+          },
+          {
+            "country": "MEX",
+            "year": 2017,
+            "value": 41.78836441
+          },
+          {
+            "country": "MEX",
+            "year": 2016,
+            "value": 41.3722229
+          },
+          {
+            "country": "MEX",
+            "year": 2015,
+            "value": 41.04377365
+          },
+          {
+            "country": "MYS",
+            "year": 2023,
+            "value": 37.09352112
+          },
+          {
+            "country": "MYS",
+            "year": 2022,
+            "value": 37.8710556
+          },
+          {
+            "country": "MYS",
+            "year": 2021,
+            "value": 32.08134842
+          },
+          {
+            "country": "MYS",
+            "year": 2020,
+            "value": 34.24639893
+          },
+          {
+            "country": "MYS",
+            "year": 2019,
+            "value": 36.0626564
+          },
+          {
+            "country": "MYS",
+            "year": 2018,
+            "value": 36.64058304
+          },
+          {
+            "country": "MYS",
+            "year": 2017,
+            "value": 35.93440247
+          },
+          {
+            "country": "MYS",
+            "year": 2016,
+            "value": 35.94845581
+          },
+          {
+            "country": "MYS",
+            "year": 2015,
+            "value": 33.70749283
+          },
+          {
+            "country": "PHL",
+            "year": 2023,
+            "value": 44.36006165
+          },
+          {
+            "country": "PHL",
+            "year": 2022,
+            "value": 44.63491821
+          },
+          {
+            "country": "PHL",
+            "year": 2021,
+            "value": 41.21797943
+          },
+          {
+            "country": "PHL",
+            "year": 2020,
+            "value": 44.56456757
+          },
+          {
+            "country": "PHL",
+            "year": 2019,
+            "value": 48.78687668
+          },
+          {
+            "country": "PHL",
+            "year": 2018,
+            "value": 50.4368515
+          },
+          {
+            "country": "PHL",
+            "year": 2017,
+            "value": 50.14805984
+          },
+          {
+            "country": "PHL",
+            "year": 2016,
+            "value": 50.49208069
+          },
+          {
+            "country": "PHL",
+            "year": 2015,
+            "value": 51.1785965
+          },
+          {
+            "country": "SGP",
+            "year": 2023,
+            "value": 25.41850281
+          },
+          {
+            "country": "SGP",
+            "year": 2022,
+            "value": 23.48412514
+          },
+          {
+            "country": "SGP",
+            "year": 2021,
+            "value": 23.46938705
+          },
+          {
+            "country": "SGP",
+            "year": 2020,
+            "value": 24.358181
+          },
+          {
+            "country": "SGP",
+            "year": 2019,
+            "value": 28.39058113
+          },
+          {
+            "country": "SGP",
+            "year": 2018,
+            "value": 29.09645271
+          },
+          {
+            "country": "SGP",
+            "year": 2017,
+            "value": 32.06229782
+          },
+          {
+            "country": "SGP",
+            "year": 2016,
+            "value": 32.62351227
+          },
+          {
+            "country": "SGP",
+            "year": 2015,
+            "value": 33.08611679
+          },
+          {
+            "country": "THA",
+            "year": 2023,
+            "value": 9.93404865
+          },
+          {
+            "country": "THA",
+            "year": 2022,
+            "value": 9.21155357
+          },
+          {
+            "country": "THA",
+            "year": 2021,
+            "value": 9.04449558
+          },
+          {
+            "country": "THA",
+            "year": 2020,
+            "value": 10.54276752
+          },
+          {
+            "country": "THA",
+            "year": 2019,
+            "value": 8.66960335
+          },
+          {
+            "country": "THA",
+            "year": 2018,
+            "value": 10.11109638
+          },
+          {
+            "country": "THA",
+            "year": 2017,
+            "value": 11.83790398
+          },
+          {
+            "country": "THA",
+            "year": 2016,
+            "value": 10.8130331
+          },
+          {
+            "country": "THA",
+            "year": 2015,
+            "value": 11.91061687
+          },
+          {
+            "country": "TUR",
+            "year": 2023,
+            "value": 19.04723167
+          },
+          {
+            "country": "TUR",
+            "year": 2022,
+            "value": 19.47843933
+          },
+          {
+            "country": "TUR",
+            "year": 2021,
+            "value": 16.27120399
+          },
+          {
+            "country": "TUR",
+            "year": 2020,
+            "value": 16.43061447
+          },
+          {
+            "country": "TUR",
+            "year": 2019,
+            "value": 17.04763412
+          },
+          {
+            "country": "TUR",
+            "year": 2018,
+            "value": 17.49141884
+          },
+          {
+            "country": "TUR",
+            "year": 2017,
+            "value": 17.38420105
+          },
+          {
+            "country": "TUR",
+            "year": 2016,
+            "value": 16.46614456
+          },
+          {
+            "country": "TUR",
+            "year": 2015,
+            "value": 16.94873238
+          },
+          {
+            "country": "USA",
+            "year": 2023,
+            "value": 10.92723846
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "value": 10.96877766
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "value": 10.72964573
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "value": 10.06959915
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "value": 11.30872917
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "value": 11.32081032
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "value": 11.34881878
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "value": 11.62600517
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "value": 11.75374031
+          },
+          {
+            "country": "VNM",
+            "year": 2023,
+            "value": 39.20284653
+          },
+          {
+            "country": "VNM",
+            "year": 2022,
+            "value": 39.62643814
+          },
+          {
+            "country": "VNM",
+            "year": 2021,
+            "value": 40.46375656
+          },
+          {
+            "country": "VNM",
+            "year": 2020,
+            "value": 42.40335083
+          },
+          {
+            "country": "VNM",
+            "year": 2019,
+            "value": 45.11730576
+          },
+          {
+            "country": "VNM",
+            "year": 2018,
+            "value": 44.58100891
+          },
+          {
+            "country": "VNM",
+            "year": 2017,
+            "value": 42.58786774
+          },
+          {
+            "country": "VNM",
+            "year": 2016,
+            "value": 41.35647964
+          },
+          {
+            "country": "VNM",
+            "year": 2015,
+            "value": 42.13227844
+          },
+          {
+            "country": "ZAF",
+            "year": 2023,
+            "value": 6.69263172
+          },
+          {
+            "country": "ZAF",
+            "year": 2022,
+            "value": 6.71828651
+          },
+          {
+            "country": "ZAF",
+            "year": 2021,
+            "value": 6.61017942
+          },
+          {
+            "country": "ZAF",
+            "year": 2020,
+            "value": 6.42942715
+          },
+          {
+            "country": "ZAF",
+            "year": 2019,
+            "value": 5.74111795
+          },
+          {
+            "country": "ZAF",
+            "year": 2018,
+            "value": 5.84666348
+          },
+          {
+            "country": "ZAF",
+            "year": 2017,
+            "value": 5.83464384
+          },
+          {
+            "country": "ZAF",
+            "year": 2016,
+            "value": 5.78551435
+          },
+          {
+            "country": "ZAF",
+            "year": 2015,
+            "value": 5.73639154
+          }
+        ],
+        "fetchedAt": "2026-11-04T07:34:01.743Z",
+        "checkedAt": "2026-11-04T07:34:01.743Z",
+        "status": "ok"
+      },
+      {
+        "id": "life",
+        "code": "life-expectancy",
+        "source": "Our World in Data · Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024)",
+        "url": "https://ourworldindata.org/grapher/life-expectancy",
+        "api": "https://ourworldindata.org/grapher/life-expectancy.csv",
+        "citation": "Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024)",
+        "license": "OWID CC BY; underlying source terms apply",
+        "history": [
+          {
+            "country": "AUS",
+            "year": 2015,
+            "value": 82.605
+          },
+          {
+            "country": "AUS",
+            "year": 2016,
+            "value": 82.8014
+          },
+          {
+            "country": "AUS",
+            "year": 2017,
+            "value": 82.7184
+          },
+          {
+            "country": "AUS",
+            "year": 2018,
+            "value": 83.2582
+          },
+          {
+            "country": "AUS",
+            "year": 2019,
+            "value": 83.2412
+          },
+          {
+            "country": "AUS",
+            "year": 2020,
+            "value": 83.6639
+          },
+          {
+            "country": "AUS",
+            "year": 2021,
+            "value": 83.564
+          },
+          {
+            "country": "AUS",
+            "year": 2022,
+            "value": 82.7662
+          },
+          {
+            "country": "AUS",
+            "year": 2023,
+            "value": 83.9228
+          },
+          {
+            "country": "BRA",
+            "year": 2015,
+            "value": 75.1064
+          },
+          {
+            "country": "BRA",
+            "year": 2016,
+            "value": 75.0805
+          },
+          {
+            "country": "BRA",
+            "year": 2017,
+            "value": 75.3835
+          },
+          {
+            "country": "BRA",
+            "year": 2018,
+            "value": 75.6335
+          },
+          {
+            "country": "BRA",
+            "year": 2019,
+            "value": 75.8093
+          },
+          {
+            "country": "BRA",
+            "year": 2020,
+            "value": 74.5058
+          },
+          {
+            "country": "BRA",
+            "year": 2021,
+            "value": 73.0377
+          },
+          {
+            "country": "BRA",
+            "year": 2022,
+            "value": 74.8719
+          },
+          {
+            "country": "BRA",
+            "year": 2023,
+            "value": 75.8482
+          },
+          {
+            "country": "DEU",
+            "year": 2015,
+            "value": 80.5658
+          },
+          {
+            "country": "DEU",
+            "year": 2016,
+            "value": 80.8371
+          },
+          {
+            "country": "DEU",
+            "year": 2017,
+            "value": 80.9371
+          },
+          {
+            "country": "DEU",
+            "year": 2018,
+            "value": 80.8747
+          },
+          {
+            "country": "DEU",
+            "year": 2019,
+            "value": 81.1893
+          },
+          {
+            "country": "DEU",
+            "year": 2020,
+            "value": 81.0036
+          },
+          {
+            "country": "DEU",
+            "year": 2021,
+            "value": 81.1059
+          },
+          {
+            "country": "DEU",
+            "year": 2022,
+            "value": 80.5796
+          },
+          {
+            "country": "DEU",
+            "year": 2023,
+            "value": 81.3777
+          },
+          {
+            "country": "IDN",
+            "year": 2015,
+            "value": 69.5196
+          },
+          {
+            "country": "IDN",
+            "year": 2016,
+            "value": 69.7333
+          },
+          {
+            "country": "IDN",
+            "year": 2017,
+            "value": 69.9533
+          },
+          {
+            "country": "IDN",
+            "year": 2018,
+            "value": 70.0797
+          },
+          {
+            "country": "IDN",
+            "year": 2019,
+            "value": 70.3491
+          },
+          {
+            "country": "IDN",
+            "year": 2020,
+            "value": 68.8173
+          },
+          {
+            "country": "IDN",
+            "year": 2021,
+            "value": 67.4516
+          },
+          {
+            "country": "IDN",
+            "year": 2022,
+            "value": 70.9246
+          },
+          {
+            "country": "IDN",
+            "year": 2023,
+            "value": 71.1457
+          },
+          {
+            "country": "JPN",
+            "year": 2015,
+            "value": 83.8832
+          },
+          {
+            "country": "JPN",
+            "year": 2016,
+            "value": 84.0568
+          },
+          {
+            "country": "JPN",
+            "year": 2017,
+            "value": 84.1891
+          },
+          {
+            "country": "JPN",
+            "year": 2018,
+            "value": 84.289
+          },
+          {
+            "country": "JPN",
+            "year": 2019,
+            "value": 84.4177
+          },
+          {
+            "country": "JPN",
+            "year": 2020,
+            "value": 84.6703
+          },
+          {
+            "country": "JPN",
+            "year": 2021,
+            "value": 84.55
+          },
+          {
+            "country": "JPN",
+            "year": 2022,
+            "value": 84.0541
+          },
+          {
+            "country": "JPN",
+            "year": 2023,
+            "value": 84.7123
+          },
+          {
+            "country": "MYS",
+            "year": 2015,
+            "value": 75.2876
+          },
+          {
+            "country": "MYS",
+            "year": 2016,
+            "value": 75.3712
+          },
+          {
+            "country": "MYS",
+            "year": 2017,
+            "value": 75.542
+          },
+          {
+            "country": "MYS",
+            "year": 2018,
+            "value": 75.7341
+          },
+          {
+            "country": "MYS",
+            "year": 2019,
+            "value": 75.9005
+          },
+          {
+            "country": "MYS",
+            "year": 2020,
+            "value": 76.0566
+          },
+          {
+            "country": "MYS",
+            "year": 2021,
+            "value": 73.9172
+          },
+          {
+            "country": "MYS",
+            "year": 2022,
+            "value": 75.4442
+          },
+          {
+            "country": "MYS",
+            "year": 2023,
+            "value": 76.6571
+          },
+          {
+            "country": "MEX",
+            "year": 2015,
+            "value": 74.4315
+          },
+          {
+            "country": "MEX",
+            "year": 2016,
+            "value": 74.3763
+          },
+          {
+            "country": "MEX",
+            "year": 2017,
+            "value": 74.2609
+          },
+          {
+            "country": "MEX",
+            "year": 2018,
+            "value": 74.3009
+          },
+          {
+            "country": "MEX",
+            "year": 2019,
+            "value": 74.5302
+          },
+          {
+            "country": "MEX",
+            "year": 2020,
+            "value": 70.4492
+          },
+          {
+            "country": "MEX",
+            "year": 2021,
+            "value": 69.7499
+          },
+          {
+            "country": "MEX",
+            "year": 2022,
+            "value": 73.9731
+          },
+          {
+            "country": "MEX",
+            "year": 2023,
+            "value": 75.069
+          },
+          {
+            "country": "PHL",
+            "year": 2015,
+            "value": 69.4501
+          },
+          {
+            "country": "PHL",
+            "year": 2016,
+            "value": 69.4896
+          },
+          {
+            "country": "PHL",
+            "year": 2017,
+            "value": 69.9661
+          },
+          {
+            "country": "PHL",
+            "year": 2018,
+            "value": 69.7615
+          },
+          {
+            "country": "PHL",
+            "year": 2019,
+            "value": 69.6804
+          },
+          {
+            "country": "PHL",
+            "year": 2020,
+            "value": 70.0974
+          },
+          {
+            "country": "PHL",
+            "year": 2021,
+            "value": 66.6755
+          },
+          {
+            "country": "PHL",
+            "year": 2022,
+            "value": 69.4723
+          },
+          {
+            "country": "PHL",
+            "year": 2023,
+            "value": 69.8327
+          },
+          {
+            "country": "SGP",
+            "year": 2015,
+            "value": 82.7479
+          },
+          {
+            "country": "SGP",
+            "year": 2016,
+            "value": 82.897
+          },
+          {
+            "country": "SGP",
+            "year": 2017,
+            "value": 83.0947
+          },
+          {
+            "country": "SGP",
+            "year": 2018,
+            "value": 83.3783
+          },
+          {
+            "country": "SGP",
+            "year": 2019,
+            "value": 83.6622
+          },
+          {
+            "country": "SGP",
+            "year": 2020,
+            "value": 83.6607
+          },
+          {
+            "country": "SGP",
+            "year": 2021,
+            "value": 83.4846
+          },
+          {
+            "country": "SGP",
+            "year": 2022,
+            "value": 82.9211
+          },
+          {
+            "country": "SGP",
+            "year": 2023,
+            "value": 83.7362
+          },
+          {
+            "country": "ZAF",
+            "year": 2015,
+            "value": 64.0532
+          },
+          {
+            "country": "ZAF",
+            "year": 2016,
+            "value": 64.7495
+          },
+          {
+            "country": "ZAF",
+            "year": 2017,
+            "value": 65.4222
+          },
+          {
+            "country": "ZAF",
+            "year": 2018,
+            "value": 65.726
+          },
+          {
+            "country": "ZAF",
+            "year": 2019,
+            "value": 66.0711
+          },
+          {
+            "country": "ZAF",
+            "year": 2020,
+            "value": 65.1502
+          },
+          {
+            "country": "ZAF",
+            "year": 2021,
+            "value": 62.0099
+          },
+          {
+            "country": "ZAF",
+            "year": 2022,
+            "value": 65.4536
+          },
+          {
+            "country": "ZAF",
+            "year": 2023,
+            "value": 66.1387
+          },
+          {
+            "country": "THA",
+            "year": 2015,
+            "value": 76.5631
+          },
+          {
+            "country": "THA",
+            "year": 2016,
+            "value": 76.7693
+          },
+          {
+            "country": "THA",
+            "year": 2017,
+            "value": 76.9888
+          },
+          {
+            "country": "THA",
+            "year": 2018,
+            "value": 77.1903
+          },
+          {
+            "country": "THA",
+            "year": 2019,
+            "value": 77.1967
+          },
+          {
+            "country": "THA",
+            "year": 2020,
+            "value": 77.3314
+          },
+          {
+            "country": "THA",
+            "year": 2021,
+            "value": 77.6065
+          },
+          {
+            "country": "THA",
+            "year": 2022,
+            "value": 75.2913
+          },
+          {
+            "country": "THA",
+            "year": 2023,
+            "value": 76.4115
+          },
+          {
+            "country": "TUR",
+            "year": 2015,
+            "value": 76.5389
+          },
+          {
+            "country": "TUR",
+            "year": 2016,
+            "value": 76.5948
+          },
+          {
+            "country": "TUR",
+            "year": 2017,
+            "value": 77.0372
+          },
+          {
+            "country": "TUR",
+            "year": 2018,
+            "value": 77.4535
+          },
+          {
+            "country": "TUR",
+            "year": 2019,
+            "value": 77.737
+          },
+          {
+            "country": "TUR",
+            "year": 2020,
+            "value": 76.5255
+          },
+          {
+            "country": "TUR",
+            "year": 2021,
+            "value": 75.7222
+          },
+          {
+            "country": "TUR",
+            "year": 2022,
+            "value": 77.5913
+          },
+          {
+            "country": "TUR",
+            "year": 2023,
+            "value": 77.1557
+          },
+          {
+            "country": "USA",
+            "year": 2015,
+            "value": 78.7219
+          },
+          {
+            "country": "USA",
+            "year": 2016,
+            "value": 78.686
+          },
+          {
+            "country": "USA",
+            "year": 2017,
+            "value": 78.6483
+          },
+          {
+            "country": "USA",
+            "year": 2018,
+            "value": 78.7997
+          },
+          {
+            "country": "USA",
+            "year": 2019,
+            "value": 78.916
+          },
+          {
+            "country": "USA",
+            "year": 2020,
+            "value": 77.0115
+          },
+          {
+            "country": "USA",
+            "year": 2021,
+            "value": 76.3836
+          },
+          {
+            "country": "USA",
+            "year": 2022,
+            "value": 77.9789
+          },
+          {
+            "country": "USA",
+            "year": 2023,
+            "value": 79.3043
+          },
+          {
+            "country": "VNM",
+            "year": 2015,
+            "value": 73.9554
+          },
+          {
+            "country": "VNM",
+            "year": 2016,
+            "value": 73.9837
+          },
+          {
+            "country": "VNM",
+            "year": 2017,
+            "value": 74.0265
+          },
+          {
+            "country": "VNM",
+            "year": 2018,
+            "value": 74.1004
+          },
+          {
+            "country": "VNM",
+            "year": 2019,
+            "value": 74.2113
+          },
+          {
+            "country": "VNM",
+            "year": 2020,
+            "value": 75.3832
+          },
+          {
+            "country": "VNM",
+            "year": 2021,
+            "value": 74.1448
+          },
+          {
+            "country": "VNM",
+            "year": 2022,
+            "value": 74.5025
+          },
+          {
+            "country": "VNM",
+            "year": 2023,
+            "value": 74.5883
+          }
+        ],
+        "fetchedAt": "2026-11-04T07:34:01.743Z",
+        "checkedAt": "2026-11-04T07:34:01.743Z",
+        "status": "ok"
+      }
+    ],
+    "checkedAt": "2026-11-04T07:34:01.743Z"
+  },
   "drivers": [
     {
       "id": "household",
@@ -3436,6 +8659,11 @@
   ],
   "extendedChecks": [
     {
+      "id": "world-context",
+      "status": "ok",
+      "checkedAt": "2026-11-04T07:34:01.743Z"
+    },
+    {
       "id": "social-structural",
       "status": "ok",
       "checkedAt": "2026-11-02T04:52:21.894Z"
@@ -3545,9 +8773,9 @@
     }
   ],
   "schemaVersion": 1,
-  "snapshotId": "b87a87354ccb0e86",
-  "dataChangedAt": "2026-11-02T04:55:10.328Z",
-  "checkedAt": "2026-11-02T04:52:21.894Z",
+  "snapshotId": "9a63f0de93ef6f75",
+  "dataChangedAt": "2026-11-04T07:28:35.728Z",
+  "checkedAt": "2026-11-04T07:34:01.743Z",
   "metrics": [
     {
       "id": "m2Growth",
@@ -7018,7 +12246,7 @@
   "forecast": {
     "status": "unavailable",
     "reason": "expired",
-    "asOf": "2026-11-02T04:55:10.328Z"
+    "asOf": "2026-11-04T07:34:20.393Z"
   },
   "gaps": [
     {
@@ -7037,18 +12265,21 @@
       "reason": "Belum terhubung ke seri BPS/daerah. Data tahunan World Bank tidak menggantikan indikator bulanan atau semesteran BPS."
     }
   ],
-  "newsFetchedAt": "2026-11-02T04:52:21.894Z",
-  "publicationsFetchedAt": "2026-11-02T04:52:21.894Z",
+  "newsFetchedAt": "2026-11-04T07:34:01.743Z",
+  "publicationsFetchedAt": "2026-11-04T07:34:01.743Z",
   "coverage": "BI, APBN Kita, sepuluh bank pembanding, laporan kondisi bank, kurva yield ADB, statistik BPS awal, penggerak ekonomi/distribusi historis dan seri struktural World Bank. Cakupan dan keberhasilan koneksi berbeda; lihat checks dan extendedChecks. Bukan terminal pasar real-time.",
   "rejections": [],
   "pipeline": {
     "environment": "local-verification",
-    "runId": "2026-11-02T04:52:21.893Z",
-    "scope": "all-sources",
-    "sourceIds": null,
-    "status": "partial",
-    "startedAt": "2026-11-02T04:52:21.893Z",
-    "finishedAt": "2026-11-02T04:55:10.328Z"
+    "runId": "2026-11-04T07:34:01.740Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "world-context"
+    ],
+    "status": "ok",
+    "startedAt": "2026-11-04T07:34:01.740Z",
+    "finishedAt": "2026-11-04T07:34:20.393Z",
+    "dataState": "unchanged"
   },
   "forecastArchive": [
     {
