@@ -1,0 +1,134 @@
+{
+  "version": "11.0.0",
+  "verifiedAt": "2026-11-04T13:49:23.917Z",
+  "tests": 142,
+  "targets": 20,
+  "computed": 17,
+  "withheld": [
+    {
+      "id": "unemployment",
+      "reason": "short-history",
+      "availableHistory": 2
+    },
+    {
+      "id": "wage",
+      "reason": "short-history",
+      "availableHistory": 1
+    },
+    {
+      "id": "realWage",
+      "reason": "short-history",
+      "availableHistory": 1
+    }
+  ],
+  "pipeline": {
+    "environment": "local-verification",
+    "runId": "2026-11-04T13:46:02.314Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "predictions"
+    ],
+    "status": "partial",
+    "startedAt": "2026-11-04T13:46:02.314Z",
+    "finishedAt": "2026-11-04T13:46:14.368Z",
+    "sources": {
+      "succeeded": 13,
+      "failed": 1,
+      "paused": 0
+    },
+    "configuration": {
+      "bpsApiKeyConfigured": false
+    },
+    "dataState": "unchanged"
+  },
+  "sourceChecks": [
+    {
+      "id": "prediction-gdp-expenditure",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-gdp-industry",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-credit",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-deposits",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-loan-rate",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-deposit-rate",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-exports",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-imports",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-fx",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Workbook cache 24 jam; waktu data asli dipertahankan"
+    },
+    {
+      "id": "prediction-npl",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z"
+    },
+    {
+      "id": "prediction-inflation-components",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Arsip tersimpan diperiksa; waktu pengambilan sumber tidak diubah."
+    },
+    {
+      "id": "prediction-retail",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Arsip SPE tersimpan diperiksa; waktu pengambilan sumber dipertahankan."
+    },
+    {
+      "id": "prediction-npl-releases",
+      "status": "ok",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "note": "Rilis OJK tersimpan diperiksa; waktu pengambilan sumber dipertahankan."
+    },
+    {
+      "id": "prediction-bps-labour",
+      "status": "error",
+      "checkedAt": "2026-11-04T13:46:02.327Z",
+      "error": "BPS_API_KEY belum diatur; histori Sakernas untuk TPT, upah nominal dan upah riil belum dapat dilengkapi."
+    }
+  ],
+  "browser": {
+    "indonesianPanels": 20,
+    "horizonsTested": true
+  },
+  "deployedToOwner": false
+}

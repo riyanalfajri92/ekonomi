@@ -1,3 +1,7 @@
+# Pembaruan Nadi 11
+
+Bagian **Uji Masa Depan** sudah dirombak menjadi penjelajah **20 sasaran prediksi**. Paket saat ini menghitung 17; tiga sasaran tenaga kerja/upah menunggu histori BPS. Baca [PREDIKSI_20.md](PREDIKSI_20.md) untuk sumber, metode, batas, dan pemasangan workflow.
+
 # Nadi 10 — perbaikan otomasi dan 20 perbandingan negara
 
 **Mulai di [PERBAIKAN_10.md](PERBAIKAN_10.md).** Ada diagnosis run GitHub terbaru, pembaruan inflasi Oktober,20indikator lintas negara dan langkah memasang.
