@@ -1,3 +1,5 @@
+> Pembaruan versi10: baca PERBAIKAN_10.md terlebih dahulu. check-readiness tanpa opsi kini advisory; gunakan --strict untuk gerbang rilis ketat. Diagnosis tes di bawah adalah kegagalan terdahulu; kegagalan run terbaru terjadi pada gerbang kesiapan.
+
 # Mengapa email GitHub gagal terus? — audit 4 November 2026
 
 ## Penyebab terverifikasi

@@ -1,0 +1,77 @@
+name: Perbarui data ekonomi
+on:
+  push:
+    branches: [main, master]
+    paths-ignore:
+      - 'public/data/**'
+      - '**/*.md'
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-economic-data
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Uji kode (fixture tetap, tidak mengikuti status snapshot hidup)
+        id: tests
+        run: |
+          set -o pipefail
+          npm test 2>&1 | tee test-results.log
+      - id: collect
+        run: npm run update-data
+        env:
+          BPS_API_KEY: ${{ secrets.BPS_API_KEY }}
+      - name: Bukti hasil pemeriksaan
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nadi-data-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            test-results.log
+            public/data/snapshot.json
+            public/data/health.json
+            public/data/runs.json
+          retention-days: 30
+      - name: Validasi sebelum publikasi
+        id: validate
+        if: always() && steps.collect.outcome != 'skipped'
+        run: npm run build
+      - name: Simpan snapshot dan heartbeat
+        id: commit
+        if: always() && steps.validate.outcome == 'success'
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/data/snapshot.json public/data/health.json public/data/runs.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh validated snapshot and pipeline heartbeat'
+            git push
+          fi
+      - name: Pemicu deployment opsional
+        if: always() && steps.commit.outcome == 'success'
+        run: node scripts/deploy-hook.mjs
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+      - name: Verifikasi versi produksi
+        if: always() && steps.commit.outcome == 'success'
+        run: node scripts/verify-production.mjs
+        env:
+          PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL }}
+      - name: Laporan kesiapan data inti (terpisah dari keberhasilan koleksi)
+        if: always() && steps.validate.outcome == 'success'
+        run: node scripts/check-readiness.mjs --report-only

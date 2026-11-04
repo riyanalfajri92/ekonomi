@@ -1,0 +1,38 @@
+{
+  "version": "10.0.0",
+  "unitTests": 130,
+  "syntaxModules": 81,
+  "comparisonIndicators": 20,
+  "countries": 14,
+  "comparisonGroups": 3,
+  "browserComparisonsPassed": 60,
+  "snapshot": "c4ba867b3817f98a",
+  "pipeline": {
+    "environment": "local-verification",
+    "runId": "2026-11-04T09:37:32.514Z",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-11-04T09:37:32.514Z",
+    "finishedAt": "2026-11-04T09:41:02.384Z",
+    "dataState": "changed"
+  },
+  "sourceChecks": {
+    "inflationRelease": {
+      "id": "inflation-release",
+      "status": "ok",
+      "checkedAt": "2026-11-04T09:37:32.515Z",
+      "error": null
+    },
+    "world": {
+      "id": "world-context",
+      "status": "ok",
+      "checkedAt": "2026-11-04T09:37:32.515Z"
+    }
+  },
+  "readinessReportExit": 0,
+  "strictReadinessExit": 1,
+  "latestOwnerRunInspected": "41798677264-1",
+  "ownerFailureStep": "Gerbang kesiapan data inti",
+  "newCodeDeployedToOwner": false
+}

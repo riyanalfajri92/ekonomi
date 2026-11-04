@@ -1,6 +1,6 @@
 {
   "name": "nadi-ekonomi-otomatis",
-  "version": "9.1.0",
+  "version": "10.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -12,7 +12,8 @@
     "test": "node --test",
     "dev": "node --use-env-proxy scripts/dev.mjs",
     "check-readiness": "node scripts/check-readiness.mjs",
-    "doctor": "node --use-env-proxy scripts/doctor.mjs"
+    "doctor": "node --use-env-proxy scripts/doctor.mjs",
+    "check-readiness:strict": "node scripts/check-readiness.mjs --strict"
   },
   "dependencies": {
     "pdf-parse": "2.4.5"

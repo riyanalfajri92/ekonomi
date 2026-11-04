@@ -14,7 +14,7 @@ Alur: pengamatan ekonomi → jalur dampak → empat skenario → keuangan keluar
 ## Status prediksi dan pembaruan
 Model statistik yang telah tersedia tetap AR(1) inflasi dengan benchmark dan pengujian historis. Nowcast PDB, proyeksi pengangguran, mikrosimulasi kemiskinan dan probabilitas krisis belum diestimasi/validasi pada versi ini; tidak menerbitkan angka buatan untuk mengisinya. Simulasi utang/anggaran/bank adalah hasil bersyarat dari asumsi, bukan ramalan probabilistik.
 
-Pada pengujian 4 November 2026, sumber inflasi utama mengalami timeout. Data September 2026 dipertahankan dengan tanggal aslinya; proyeksi terbaru ditahan oleh aturan kesegaran data. Panel menerangkan statusnya, bukan menghilang. Kolektor berikutnya mencoba sesuai jadwal. Setelah data yang sesuai berhasil masuk, proyeksi dihitung ulang otomatis.
+Catatan pengujian awal versi9.1: sumber inflasi utama mengalami timeout. Versi10 telah menambahkan jalur rilis resmi yang berhasil mengambil Oktober2026; proyeksi kembali aktif. Data September 2026 dipertahankan dengan tanggal aslinya; proyeksi terbaru ditahan oleh aturan kesegaran data. Panel menerangkan statusnya, bukan menghilang. Kolektor berikutnya mencoba sesuai jadwal. Setelah data yang sesuai berhasil masuk, proyeksi dihitung ulang otomatis.
 
 ## Validasi
 125 tes lulus, 79 modul lolos sintaks/import. Browser: preset gabungan mengubah arus kas dan sensitivitas APBN; perubahan pendapatan membuat defisit dan petunjuk persiapan ikut berubah; surplus primer mengubah lintasan utang; PD mengubah CAR stress; navigasi anchor dan bahasa ID/EN diperiksa.

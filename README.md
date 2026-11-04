@@ -1,3 +1,7 @@
+# Nadi 10 — perbaikan otomasi dan 20 perbandingan negara
+
+**Mulai di [PERBAIKAN_10.md](PERBAIKAN_10.md).** Ada diagnosis run GitHub terbaru, pembaruan inflasi Oktober,20indikator lintas negara dan langkah memasang.
+
 **Versi 9.1:** bagian Uji masa depan sudah dirombak. Lihat [UJI_MASA_DEPAN.md](UJI_MASA_DEPAN.md) untuk fitur, rumus dan batas prediksi.
 
 # Nadi — versi 9: ekonomi bergambar

@@ -1,6 +1,37 @@
 [
   {
     "environment": "local-verification",
+    "runId": "2026-11-04T09:37:32.514Z",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-11-04T09:37:32.514Z",
+    "finishedAt": "2026-11-04T09:41:02.384Z",
+    "dataState": "changed",
+    "snapshotId": "c4ba867b3817f98a",
+    "succeeded": 32,
+    "failed": 13,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
+    "runId": "2026-11-04T09:31:56.544Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "world-context",
+      "inflation-release"
+    ],
+    "status": "partial",
+    "startedAt": "2026-11-04T09:31:56.544Z",
+    "finishedAt": "2026-11-04T09:33:01.562Z",
+    "dataState": "changed",
+    "snapshotId": "dae45e60f5782e7f",
+    "succeeded": 31,
+    "failed": 15,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
     "runId": "2026-11-04T08:09:48.430Z",
     "scope": "selected-sources",
     "sourceIds": [

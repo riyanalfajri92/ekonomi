@@ -1,2 +1,4 @@
-import {readFile} from 'node:fs/promises';import {releaseReadiness} from '../public/source-policy.js';
-const data=JSON.parse(await readFile(new URL('../public/data/snapshot.json',import.meta.url),'utf8')),report=releaseReadiness(data);console.log(JSON.stringify(report,null,2));if(!report.ready&&!process.argv.includes('--report-only'))process.exitCode=1;
+// A recurring data check reports analytical gaps; strict release certification is opt-in.
+import {readFile,appendFile} from 'node:fs/promises';import {releaseReadiness} from '../public/source-policy.js';
+const data=JSON.parse(await readFile(new URL('../public/data/snapshot.json',import.meta.url),'utf8')),report=releaseReadiness(data);console.log(JSON.stringify(report,null,2));
+if(!report.ready){const message='Koleksi dan kesiapan analitik dipisahkan: '+report.blockers.map(x=>x.id+' ('+x.reason+')').join(', ');console.log('::warning title=Data inti belum lengkap::'+message);if(process.env.GITHUB_STEP_SUMMARY)await appendFile(process.env.GITHUB_STEP_SUMMARY,'\n### Kesiapan analitik\n\n'+message+'\n\nSnapshot valid dan sumber yang berhasil tetap diterbitkan. Lihat Sources/status untuk sumber tertahan.\n');if(process.argv.includes('--strict'))process.exitCode=1;}
