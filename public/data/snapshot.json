@@ -8775,7 +8775,7 @@
   "schemaVersion": 1,
   "snapshotId": "9a63f0de93ef6f75",
   "dataChangedAt": "2026-11-04T07:28:35.728Z",
-  "checkedAt": "2026-11-04T07:34:01.743Z",
+  "checkedAt": "2026-11-04T08:09:48.432Z",
   "metrics": [
     {
       "id": "m2Growth",
@@ -10066,7 +10066,7 @@
       "rangeStart": null,
       "officialForecast": null,
       "pdfUrl": null,
-      "checkedAt": "2026-11-02T04:52:21.894Z",
+      "checkedAt": "2026-11-04T08:09:48.432Z",
       "fetchedAt": "2026-11-02T04:52:21.894Z",
       "historySources": [
         {
@@ -10080,8 +10080,8 @@
       ],
       "historyNote": "Older CPI-derived archive and domestic published yoy observations; gaps are not imputed. Current-value retrieval status/time is unchanged.",
       "datasetUpdated": null,
-      "status": "ok",
-      "error": null,
+      "status": "fallback",
+      "error": "The operation was aborted due to timeout",
       "observationOld": false,
       "note": "Tanggal mengacu pada observasi sumber, bukan waktu halaman dibuka."
     },
@@ -11138,9 +11138,9 @@
     },
     {
       "id": "inflation",
-      "status": "ok",
-      "checkedAt": "2026-11-02T04:52:21.894Z",
-      "error": null
+      "status": "error",
+      "checkedAt": "2026-11-04T08:09:48.432Z",
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "inflation-components",
@@ -12246,7 +12246,7 @@
   "forecast": {
     "status": "unavailable",
     "reason": "expired",
-    "asOf": "2026-11-04T07:34:20.393Z"
+    "asOf": "2026-11-04T08:10:17.387Z"
   },
   "gaps": [
     {
@@ -12265,20 +12265,20 @@
       "reason": "Belum terhubung ke seri BPS/daerah. Data tahunan World Bank tidak menggantikan indikator bulanan atau semesteran BPS."
     }
   ],
-  "newsFetchedAt": "2026-11-04T07:34:01.743Z",
-  "publicationsFetchedAt": "2026-11-04T07:34:01.743Z",
+  "newsFetchedAt": "2026-11-04T08:09:48.432Z",
+  "publicationsFetchedAt": "2026-11-04T08:09:48.432Z",
   "coverage": "BI, APBN Kita, sepuluh bank pembanding, laporan kondisi bank, kurva yield ADB, statistik BPS awal, penggerak ekonomi/distribusi historis dan seri struktural World Bank. Cakupan dan keberhasilan koneksi berbeda; lihat checks dan extendedChecks. Bukan terminal pasar real-time.",
   "rejections": [],
   "pipeline": {
     "environment": "local-verification",
-    "runId": "2026-11-04T07:34:01.740Z",
+    "runId": "2026-11-04T08:09:48.430Z",
     "scope": "selected-sources",
     "sourceIds": [
-      "world-context"
+      "inflation"
     ],
-    "status": "ok",
-    "startedAt": "2026-11-04T07:34:01.740Z",
-    "finishedAt": "2026-11-04T07:34:20.393Z",
+    "status": "failed",
+    "startedAt": "2026-11-04T08:09:48.430Z",
+    "finishedAt": "2026-11-04T08:10:17.387Z",
     "dataState": "unchanged"
   },
   "forecastArchive": [

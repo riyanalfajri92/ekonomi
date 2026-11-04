@@ -1,6 +1,22 @@
 [
   {
     "environment": "local-verification",
+    "runId": "2026-11-04T08:09:48.430Z",
+    "scope": "selected-sources",
+    "sourceIds": [
+      "inflation"
+    ],
+    "status": "failed",
+    "startedAt": "2026-11-04T08:09:48.430Z",
+    "finishedAt": "2026-11-04T08:10:17.387Z",
+    "dataState": "unchanged",
+    "snapshotId": "9a63f0de93ef6f75",
+    "succeeded": 31,
+    "failed": 14,
+    "rejected": 0
+  },
+  {
+    "environment": "local-verification",
     "runId": "2026-11-04T07:34:01.740Z",
     "scope": "selected-sources",
     "sourceIds": [

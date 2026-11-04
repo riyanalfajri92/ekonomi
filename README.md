@@ -1,3 +1,5 @@
+**Versi 9.1:** bagian Uji masa depan sudah dirombak. Lihat [UJI_MASA_DEPAN.md](UJI_MASA_DEPAN.md) untuk fitur, rumus dan batas prediksi.
+
 # Nadi — versi 9: ekonomi bergambar
 
 Lihat [ROMBAKAN_9.md](ROMBAKAN_9.md) untuk alur visual, perbandingan 14 negara dan 17 kalkulator.
