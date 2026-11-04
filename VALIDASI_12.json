@@ -1,0 +1,36 @@
+{
+  "version": "12.0.0",
+  "checkedAt": "2026-11-04T14:33:40.076Z",
+  "tests": {
+    "total": 148,
+    "passed": 148,
+    "failed": 0
+  },
+  "buildModules": 87,
+  "communication": {
+    "primaryJourneys": 3,
+    "dynamicExamples": 7,
+    "indicatorsPreserved": 60,
+    "calculatorsPreserved": 17,
+    "forecastTargets": 20,
+    "computedForecasts": 17,
+    "bilingual": true,
+    "calculatorSourcePrefillVerified": true,
+    "browserThreeJourneysVerified": true
+  },
+  "automation": {
+    "verifiedRuns": [
+      41842293365,
+      41810580917
+    ],
+    "conclusions": [
+      "success",
+      "success"
+    ],
+    "productionRun": "41842293365-1",
+    "productionSnapshot": "f20f34ac024a277f",
+    "productionHeartbeat": "on-time",
+    "analyticalReadiness": false
+  },
+  "ownerDeploymentOfVersion12": false
+}

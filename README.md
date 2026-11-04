@@ -1,3 +1,9 @@
+# Nadi 12 — ekonomi, kemungkinan, rencanamu
+
+Perombakan komunikasi menjadi tiga alur: **Kondisi sekarang → Arah ke depan → Rencanamu**. Tujuh contoh/perumpamaan mengikuti data, penjelasan prediksi diperjelas, dan 17 kalkulator tetap tersedia.
+
+Baca [KOMUNIKASI_12.md](KOMUNIKASI_12.md) untuk konsep, bukti dua workflow terbaru berhasil, batas data, dan petunjuk pemasangan.
+
 # Pembaruan Nadi 11
 
 Bagian **Uji Masa Depan** sudah dirombak menjadi penjelajah **20 sasaran prediksi**. Paket saat ini menghitung 17; tiga sasaran tenaga kerja/upah menunggu histori BPS. Baca [PREDIKSI_20.md](PREDIKSI_20.md) untuk sumber, metode, batas, dan pemasangan workflow.
