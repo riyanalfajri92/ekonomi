@@ -1,6 +1,28 @@
 [
   {
     "environment": "github-actions",
+    "runId": "42775636913-1",
+    "scope": "all-sources",
+    "sourceIds": null,
+    "status": "partial",
+    "startedAt": "2026-11-10T07:29:47.546Z",
+    "finishedAt": "2026-11-10T07:31:21.878Z",
+    "sources": {
+      "succeeded": 36,
+      "failed": 19,
+      "paused": 4
+    },
+    "configuration": {
+      "bpsApiKeyConfigured": false
+    },
+    "dataState": "changed",
+    "snapshotId": "0e75ead1c3bbbafa",
+    "succeeded": 36,
+    "failed": 23,
+    "rejected": 0
+  },
+  {
+    "environment": "github-actions",
     "runId": "42712451903-1",
     "scope": "all-sources",
     "sourceIds": null,
